@@ -464,7 +464,49 @@ let BattleStatuses = {
 	},
 
 	// weather is implemented here since it's so important to the game
-
+	newmoon: {
+		name: 'NewMoon',
+		id: 'newmoon',
+		num: 0,
+		effectType: 'Weather',
+		duration: 5,
+		durationCallback(source, effect) {
+			if (source && source.hasItem('darkrock')) {
+				return 8;
+			}
+			return 5;
+		},
+		onWeatherModifyDamage(damage, attacker, defender, move) {
+			if (move.type === 'Dark') {
+				this.debug('new moon dark boost');
+				return this.chainModify(1.35);
+			}
+			if (move.type === 'Ghost') {
+				this.debug('new moon ghost boost');
+				return this.chainModify(1.35);
+			}
+			if (move.type === 'Fairy') {
+				this.debug('new moon fairy suppress');
+				return this.chainModify(0.75);
+			}
+		},
+		onStart(battle, source, effect) {
+			if (effect && effect.effectType === 'Ability') {
+				if (this.gen <= 5) this.effectData.duration = 0;
+				this.add('-weather', 'NewMoon', '[from] ability: ' + effect, '[of] ' + source);
+			} else {
+				this.add('-weather', 'NewMoon');
+			}
+		},
+		onResidualOrder: 1,
+		onResidual() {
+			this.add('-weather', 'NewMoon', '[upkeep]');
+			this.eachEvent('Weather');
+		},
+		onEnd() {
+			this.add('-weather', 'none');
+		},
+	},
 	raindance: {
 		name: 'RainDance',
 		id: 'raindance',
@@ -479,7 +521,6 @@ let BattleStatuses = {
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			if (move.type === 'Water') {
-				if (defender.item === "utilityumbrella") return;
 				this.debug('rain water boost');
 				return this.chainModify(1.5);
 			}
@@ -522,7 +563,6 @@ let BattleStatuses = {
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			if (move.type === 'Water') {
-				if (defender.item === "utilityumbrella") return;
 				this.debug('Rain water boost');
 				return this.chainModify(1.5);
 			}
@@ -553,12 +593,10 @@ let BattleStatuses = {
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			if (move.type === 'Fire') {
-				if (defender.item === "utilityumbrella") return;
 				this.debug('Sunny Day fire boost');
 				return this.chainModify(1.5);
 			}
 			if (move.type === 'Water') {
-				if (defender.item === "utilityumbrella") return;
 				this.debug('Sunny Day water suppress');
 				return this.chainModify(0.5);
 			}
@@ -571,8 +609,7 @@ let BattleStatuses = {
 				this.add('-weather', 'SunnyDay');
 			}
 		},
-		onImmunity(type, pokemon) {
-			if (pokemon.item === "utilityumbrella") return;
+		onImmunity(type) {
 			if (type === 'frz') return false;
 		},
 		onResidualOrder: 1,
@@ -601,7 +638,6 @@ let BattleStatuses = {
 		},
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			if (move.type === 'Fire') {
-				if (defender.item === "utilityumbrella") return;
 				this.debug('Sunny Day fire boost');
 				return this.chainModify(1.5);
 			}
@@ -609,8 +645,7 @@ let BattleStatuses = {
 		onStart(battle, source, effect) {
 			this.add('-weather', 'DesolateLand', '[from] ability: ' + effect, '[of] ' + source);
 		},
-		onImmunity(type, pokemon) {
-			if (pokemon.item === "utilityumbrella") return;
+		onImmunity(type) {
 			if (type === 'frz') return false;
 		},
 		onResidualOrder: 1,
@@ -694,6 +729,38 @@ let BattleStatuses = {
 			this.add('-weather', 'none');
 		},
 	},
+	sleet: {
+		name: 'Sleet',
+		id: 'sleet',
+		num: 0,
+		effectType: 'Weather',
+		duration: 5,
+		durationCallback(source, effect) {
+			if (source && source.hasItem('icyrock')) {
+				return 8;
+			}
+			return 5;
+		},
+		onStart(battle, source, effect) {
+			if (effect && effect.effectType === 'Ability') {
+				if (this.gen <= 5) this.effectData.duration = 0;
+				this.add('-weather', 'Sleet', '[from] ability: ' + effect, '[of] ' + source);
+			} else {
+				this.add('-weather', 'Sleet');
+			}
+		},
+		onResidualOrder: 1,
+		onResidual() {
+			this.add('-weather', 'Sleet', '[upkeep]');
+			if (this.field.isWeather('Sleet')) this.eachEvent('Weather');
+		},
+		onWeather(target) {
+			this.damage(target.maxhp / 5);
+		},
+		onEnd() {
+			this.add('-weather', 'none');
+		},
+	},
 	deltastream: {
 		name: 'DeltaStream',
 		id: 'deltastream',
@@ -701,7 +768,6 @@ let BattleStatuses = {
 		effectType: 'Weather',
 		duration: 0,
 		onEffectiveness(typeMod, target, type, move) {
-			if (target && target.item === "utilityumbrella") return;
 			if (move && move.effectType === 'Move' && move.category !== 'Status' && type === 'Flying' && typeMod > 0) {
 				this.add('-activate', '', 'deltastream');
 				return 0;
@@ -724,7 +790,6 @@ let BattleStatuses = {
 		name: 'Dynamax',
 		id: 'dynamax',
 		num: 0,
-		noCopy: true,
 		duration: 3,
 		onStart(pokemon) {
 			if (pokemon.species === 'Eternatus-Eternamax') return;

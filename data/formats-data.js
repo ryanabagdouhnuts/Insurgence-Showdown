@@ -17,9 +17,15 @@ let BattleFormatsData = {
 		isUnreleased: true,
 		tier: "Unreleased",
 	},
+	bulbasaurdelta: {
+		tier: "LC",
+	},
 	ivysaur: {
 		isUnreleased: true,
 		tier: "Unreleased",
+	},
+	ivysaurdelta: {
+		tier: "NFE",
 	},
 	venusaur: {
 		randomBattleMoves: ["gigadrain", "leechseed", "sleeppowder", "sludgebomb", "substitute"],
@@ -29,10 +35,17 @@ let BattleFormatsData = {
 		isUnreleased: true,
 		tier: "Unreleased",
 	},
+	venusaurdelta: {
+		tier: "RU",
+	},
 	venusaurmega: {
 		requiredItem: "Venusaurite",
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	venusaurdeltamega: {
+		requiredItem: "Delta Venusaurite",
+		tier: "UU",
 	},
 	charmander: {
 		eventPokemon: [
@@ -51,7 +64,13 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	charmanderdelta: {
+		tier: "LC",
+	},
 	charmeleon: {
+		tier: "NFE",
+	},
+	charmeleondelta: {
 		tier: "NFE",
 	},
 	charizard: {
@@ -70,6 +89,9 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	charizarddelta: {
+		tier: "RU",
+	},
 	charizardmegax: {
 		requiredItem: "Charizardite X",
 		isNonstandard: "Past",
@@ -85,6 +107,10 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	charizarddeltamega: {
+		requiredItem: "Delta Charizardite",
+		tier: "OU",
+	},
 	squirtle: {
 		eventPokemon: [
 			{"generation": 3, "level": 10, "gender": "M", "moves": ["tackle", "tailwhip", "bubble", "withdraw"], "pokeball": "pokeball"},
@@ -99,9 +125,15 @@ let BattleFormatsData = {
 		isUnreleased: true,
 		tier: "Unreleased",
 	},
+	squirtledelta: {
+		tier: "LC",
+	},
 	wartortle: {
 		isUnreleased: true,
 		tier: "Unreleased",
+	},
+	wartortledelta: {
+		tier: "NFE",
 	},
 	blastoise: {
 		randomBattleMoves: ["aurasphere", "hydropump", "icebeam", "rapidspin", "scald", "shellsmash"],
@@ -112,10 +144,17 @@ let BattleFormatsData = {
 		isUnreleased: true,
 		tier: "Unreleased",
 	},
+	blastoisedelta: {
+		tier: "RU",
+	},
 	blastoisemega: {
 		requiredItem: "Blastoisinite",
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	blastoisedeltamega: {
+		requiredItem: "Delta Blastoisinite",
+		tier: "UU",
 	},
 	caterpie: {
 		encounters: [
@@ -199,6 +238,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	pidgeydelta: {
+		tier: "LC",
+	},
 	pidgeotto: {
 		eventPokemon: [
 			{"generation": 3, "level": 30, "abilities": ["keeneye"], "moves": ["refresh", "wingattack", "steelwing", "featherdance"]},
@@ -212,6 +254,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	pidgeottodelta: {
+		tier: "NFE",
+	},
 	pidgeot: {
 		eventPokemon: [
 			{"generation": 5, "level": 61, "gender": "M", "nature": "Naughty", "ivs": {"hp": 30, "atk": 30, "def": 30, "spa": 30, "spd": 30, "spe": 30}, "isHidden": false, "abilities": ["keeneye"], "moves": ["whirlwind", "wingattack", "skyattack", "mirrormove"], "pokeball": "cherishball"},
@@ -222,9 +267,16 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	pidgeotdelta: {
+		tier: "RU",
+	},
 	pidgeotmega: {
 		requiredItem: "Pidgeotite",
 		isNonstandard: "Past",
+	},
+	pidgeotdeltamega: {
+		requiredItem: "Delta Pidgeotite",
+		tier: "UU",
 	},
 	rattata: {
 		encounters: [
@@ -320,6 +372,9 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	pichudelta: {
+		tier: "LC",
+	},
 	pichuspikyeared: {
 		eventPokemon: [
 			{"generation": 4, "level": 30, "gender": "F", "nature": "Naughty", "moves": ["helpinghand", "volttackle", "swagger", "painsplit"], "pokeball": "pokeball"},
@@ -388,6 +443,9 @@ let BattleFormatsData = {
 			{"generation": 2, "level": 4},
 			{"generation": 3, "level": 3},
 		],
+		tier: "NFE",
+	},
+	pikachudelta: {
 		tier: "NFE",
 	},
 	pikachucosplay: {
@@ -529,6 +587,9 @@ let BattleFormatsData = {
 		randomBattleMoves: ["encore", "focusblast", "grassknot", "nastyplot", "thunderbolt", "voltswitch"],
 		tier: "New",
 		doublesTier: "New",
+	},
+	raichudelta: {
+		tier: "NU",
 	},
 	raichualola: {
 		randomBattleMoves: ["focusblast", "nastyplot", "psychic", "surf", "thunderbolt", "voltswitch"],
@@ -780,6 +841,9 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	diglettdelta: {
+		tier: "LC",
+	},
 	diglettalola: {
 		eventPokemon: [
 			{"generation": 7, "level": 10, "isHidden": false, "abilities": ["tanglinghair"], "moves": ["mudslap", "astonish", "growl", "metalclaw"], "pokeball": "cherishball"},
@@ -799,6 +863,9 @@ let BattleFormatsData = {
 		],
 		tier: "New",
 		doublesTier: "New",
+	},
+	dugtriodelta: {
+		tier: "PU",
 	},
 	dugtrioalola: {
 		randomBattleMoves: ["earthquake", "ironhead", "stoneedge", "substitute", "suckerpunch"],
@@ -913,6 +980,9 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	growlithedelta: {
+		tier: "LC",
+	},
 	arcanine: {
 		randomBattleMoves: ["closecombat", "crunch", "extremespeed", "flareblitz", "morningsun", "roar", "wildcharge", "willowisp"],
 		eventPokemon: [
@@ -921,6 +991,9 @@ let BattleFormatsData = {
 		],
 		tier: "New",
 		doublesTier: "New",
+	},
+	arcaninedelta: {
+		tier: "UU",
 	},
 	poliwag: {
 		eventPokemon: [
@@ -952,12 +1025,20 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	poliwrathmega: {
+		requiredItem: "Poliwrathite",
+		tier: "UU",
+	},
 	politoed: {
 		eventPokemon: [
 			{"generation": 5, "level": 50, "gender": "M", "nature": "Calm", "ivs": {"hp": 31, "atk": 13, "def": 31, "spa": 5, "spd": 31, "spe": 5}, "isHidden": true, "moves": ["scald", "icebeam", "perishsong", "protect"], "pokeball": "cherishball"},
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	politoedmega: {
+		requiredItem: "Politoedite",
+		tier: "UU",
 	},
 	abra: {
 		encounters: [
@@ -1056,6 +1137,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	tentacooldelta: {
+		tier: "LC",
+	},
 	tentacruel: {
 		encounters: [
 			{"generation": 1, "level": 20},
@@ -1067,6 +1151,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	tentacrueldelta: {
+		tier: "NU",
+	},
 	geodude: {
 		encounters: [
 			{"generation": 1, "level": 7, "shiny": false},
@@ -1074,6 +1161,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	geodudedelta: {
+		tier: "LC",
 	},
 	geodudealola: {
 		isNonstandard: "Past",
@@ -1088,6 +1178,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	gravelerdelta: {
+		tier: "NFE",
+	},
 	graveleralola: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -1095,6 +1188,9 @@ let BattleFormatsData = {
 	golem: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	golemdelta: {
+		tier: "NU",
 	},
 	golemalola: {
 		isNonstandard: "Past",
@@ -1215,6 +1311,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	doduodelta: {
+		tier: "LC",
+	},
 	dodrio: {
 		eventPokemon: [
 			{"generation": 3, "level": 34, "moves": ["batonpass", "drillpeck", "agility", "triattack"]},
@@ -1228,6 +1327,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	dodriodelta: {
+		tier: "PU",
 	},
 	seel: {
 		eventPokemon: [
@@ -1260,6 +1362,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	grimerdelta: {
+		tier: "LC",
+	},
 	grimeralola: {
 		eventPokemon: [
 			{"generation": 7, "level": 10, "isHidden": false, "abilities": ["poisontouch"], "moves": ["bite", "harden", "poisongas", "pound"], "pokeball": "cherishball"},
@@ -1279,6 +1384,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	mukdelta: {
+		tier: "RU",
 	},
 	mukalola: {
 		isNonstandard: "Past",
@@ -1360,6 +1468,10 @@ let BattleFormatsData = {
 		requiredItem: "Steelixite",
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	steelixmegaf: {
+		requiredItem: "Steelixite Fire",
+		tier: "RU",
 	},
 	drowzee: {
 		eventPokemon: [
@@ -1478,6 +1590,10 @@ let BattleFormatsData = {
 		eventOnly: true,
 		isNonstandard: "Past",
 	},
+	marowakmega: {
+		requiredItem: "Marowite",
+		tier: "RU",
+	},
 	tyrogue: {
 		tier: "LC",
 	},
@@ -1532,6 +1648,9 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	koffingdelta: {
+		tier: "LC",
+	},
 	weezing: {
 		randomBattleMoves: ["defog", "fireblast", "painsplit", "sludgebomb", "toxicspikes", "willowisp"],
 		encounters: [
@@ -1546,6 +1665,9 @@ let BattleFormatsData = {
 		randomBattleMoves: ["defog", "fireblast", "painsplit", "sludgebomb", "strangesteam", "toxicspikes", "willowisp"],
 		tier: "New",
 		doublesTier: "New",
+	},
+	weezingdelta: {
+		tier: "RU",
 	},
 	rhyhorn: {
 		encounters: [
@@ -1603,12 +1725,18 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	tangeladelta: {
+		tier: "LC",
+	},
 	tangrowth: {
 		eventPokemon: [
 			{"generation": 4, "level": 50, "gender": "M", "nature": "Brave", "moves": ["sunnyday", "morningsun", "ancientpower", "naturalgift"], "pokeball": "cherishball"},
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	tangrowthdelta: {
+		tier: "RU",
 	},
 	kangaskhan: {
 		eventPokemon: [
@@ -1731,6 +1859,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	scytherdelta: {
+		tier: "NU",
+	},
 	scizor: {
 		eventPokemon: [
 			{"generation": 3, "level": 50, "gender": "M", "abilities": ["swarm"], "moves": ["furycutter", "metalclaw", "swordsdance", "slash"], "pokeball": "pokeball"},
@@ -1745,9 +1876,16 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	scizordelta: {
+		tier: "RU",
+	},
 	scizormega: {
 		requiredItem: "Scizorite",
 		isNonstandard: "Past",
+	},
+	scizordeltamega: {
+		requiredItem: "Delta Scizorite",
+		tier: "OU",
 	},
 	smoochum: {
 		isNonstandard: "Past",
@@ -1771,6 +1909,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	elekidelta: {
+		tier: "LC",
+	},
 	electabuzz: {
 		eventPokemon: [
 			{"generation": 3, "level": 10, "gender": "M", "moves": ["quickattack", "leer", "thunderpunch"], "pokeball": "pokeball"},
@@ -1788,6 +1929,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	electabuzzdelta: {
+		tier: "NFE",
+	},
 	electivire: {
 		eventPokemon: [
 			{"generation": 4, "level": 50, "gender": "M", "nature": "Adamant", "moves": ["thunderpunch", "icepunch", "crosschop", "earthquake"], "pokeball": "pokeball"},
@@ -1796,9 +1940,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	electiviredelta: {
+		tier: "NU",
+	},
 	magby: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	magbydelta: {
+		tier: "LC",
 	},
 	magmar: {
 		eventPokemon: [
@@ -1817,6 +1967,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	magmardelta: {
+		tier: "NFE",
+	},
 	magmortar: {
 		eventPokemon: [
 			{"generation": 4, "level": 50, "gender": "F", "nature": "Modest", "moves": ["flamethrower", "psychic", "hyperbeam", "solarbeam"], "pokeball": "pokeball"},
@@ -1824,6 +1977,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	magmortardelta: {
+		tier: "RU",
 	},
 	pinsir: {
 		eventPokemon: [
@@ -1924,6 +2080,9 @@ let BattleFormatsData = {
 		],
 		tier: "New",
 		doublesTier: "New",
+	},
+	dittodelta: {
+		tier: "PU",
 	},
 	eevee: {
 		eventPokemon: [
@@ -2081,9 +2240,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	kabutodelta: {
+		tier: "LC",
+	},
 	kabutops: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	kabutopsdelta: {
+		tier: "NU",
 	},
 	aerodactyl: {
 		eventPokemon: [
@@ -2108,6 +2273,9 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	munchlaxdelta: {
+		tier: "LC",
+	},
 	snorlax: {
 		randomBattleMoves: ["bodyslam", "curse", "darkestlariat", "earthquake", "firepunch", "rest", "sleeptalk"],
 		eventPokemon: [
@@ -2124,6 +2292,9 @@ let BattleFormatsData = {
 		isGigantamax: "G-Max Replenish",
 		isUnreleased: true,
 		tier: "Unreleased",
+	},
+	snorlaxdelta: {
+		tier: "RU",
 	},
 	articuno: {
 		eventPokemon: [
@@ -2186,6 +2357,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	dratinidelta: {
+		tier: "LC",
+	},
 	dragonair: {
 		encounters: [
 			{"generation": 1, "level": 15},
@@ -2196,6 +2370,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	dragonairdelta: {
+		tier: "NFE",
 	},
 	dragonite: {
 		eventPokemon: [
@@ -2216,6 +2393,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	dragonitedelta: {
+		tier: "OU",
+	},
 	mewtwo: {
 		randomBattleMoves: ["aurasphere", "icebeam", "nastyplot", "psystrike", "recover"],
 		eventPokemon: [
@@ -2234,6 +2414,13 @@ let BattleFormatsData = {
 		isUnreleased: true,
 		tier: "Unreleased",
 	},
+	mewtwoarmor: {
+		requiredItem: "mewtwoarmor",
+		tier: "Uber",
+	},
+	mewtwoshadow: {
+		tier: "Uber",
+	},
 	mewtwomegax: {
 		requiredItem: "Mewtwonite X",
 		isNonstandard: "Past",
@@ -2243,6 +2430,10 @@ let BattleFormatsData = {
 		requiredItem: "Mewtwonite Y",
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	mewtwoshadowmega: {
+		requiredItem: "Shadow Mewtwonite",
+		tier: "Uber",
 	},
 	mew: {
 		randomBattleMoves: ["closecombat", "megahorn", "powerwhip", "psychicfangs", "swordsdance", "uturn"],
@@ -2298,6 +2489,10 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	meganiummega: {
+		requiredItem: "Meganiumite",
+		tier: "UU",
+	},
 	cyndaquil: {
 		eventPokemon: [
 			{"generation": 3, "level": 10, "gender": "M", "moves": ["tackle", "leer", "smokescreen"], "pokeball": "pokeball"},
@@ -2307,9 +2502,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	cyndaquildelta: {
+		tier: "LC",
+	},
 	quilava: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	quilavadelta: {
+		tier: "NFE",
 	},
 	typhlosion: {
 		eventPokemon: [
@@ -2318,6 +2519,17 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	typhlosionmega: {
+		requiredItem: "Typhlosionite",
+		tier: "OU",
+	},
+	typhlosiondelta: {
+		tier: "RU",
+	},
+	typhlosiondeltamega: {
+		requiredItem: "Delta Typhlosionite",
+		tier: "OU",
 	},
 	totodile: {
 		eventPokemon: [
@@ -2338,6 +2550,10 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	feraligatrmega: {
+		requiredItem: "Feraligatite",
+		tier: "OU",
 	},
 	sentret: {
 		encounters: [
@@ -2364,6 +2580,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "LC",
 	},
+	hoothootdelta: {
+		tier: "LC",
+	},
 	noctowl: {
 		randomBattleMoves: ["defog", "heatwave", "hurricane", "nastyplot", "roost", "whirlwind"],
 		encounters: [
@@ -2374,6 +2593,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "New",
 		doublesTier: "New",
+	},
+	noctowldelta: {
+		tier: "PU",
 	},
 	ledyba: {
 		eventPokemon: [
@@ -2416,6 +2638,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "LC",
 	},
+	chinchoudelta: {
+		tier: "LC",
+	},
 	lanturn: {
 		randomBattleMoves: ["hydropump", "icebeam", "scald", "thunderbolt", "thunderwave", "voltswitch"],
 		encounters: [
@@ -2426,6 +2651,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "New",
 		doublesTier: "New",
+	},
+	lanturndelta: {
+		tier: "RU",
 	},
 	togepi: {
 		eventPokemon: [
@@ -2513,6 +2741,10 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	sudowoodomega: {
+		requiredItem: "Sudowoodite",
+		tier: "RU",
+	},
 	hoppip: {
 		encounters: [
 			{"generation": 2, "level": 3},
@@ -2541,9 +2773,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	aipomdelta: {
+		tier: "LC",
+	},
 	ambipom: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	ambipomdelta: {
+		tier: "RU",
 	},
 	sunkern: {
 		eventPokemon: [
@@ -2552,22 +2790,45 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	sunkerndelta: {
+		tier: "LC",
+	},
 	sunflora: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	sunfloradelta: {
+		tier: "PU",
+	},
+	sunfloramega: {
+		requiredItem: "Sunflorite",
+		tier: "NU",
+	},
+	sunfloradeltamega: {
+		requiredItem: "Delta Sunflorite",
+		tier: "NU",
 	},
 	yanma: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	yanmadelta: {
+		tier: "LC Uber",
+	},
 	yanmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	yanmegadelta: {
+		tier: "RU",
 	},
 	wooper: {
 		encounters: [
 			{"generation": 2, "level": 4},
 		],
+		tier: "LC",
+	},
+	wooperdelta: {
 		tier: "LC",
 	},
 	quagsire: {
@@ -2578,6 +2839,9 @@ let BattleFormatsData = {
 		],
 		tier: "New",
 		doublesTier: "New",
+	},
+	quagsiredelta: {
+		tier: "PU",
 	},
 	murkrow: {
 		eventPokemon: [
@@ -2600,9 +2864,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	misdreavusdelta: {
+		tier: "LC",
+	},
 	mismagius: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	mismagiusdelta: {
+		tier: "RU",
 	},
 	unown: {
 		encounters: [
@@ -2639,6 +2909,17 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	girafarigdelta: {
+		tier: "NU",
+	},
+	girafarigmega: {
+		requiredItem: "Etigirafarigite",
+		tier: "RU",
+	},
+	girafarigdeltamega: {
+		requiredItem: "Delta Etigirafarigite",
+		tier: "RU",
+	},
 	pineco: {
 		eventPokemon: [
 			{"generation": 3, "level": 10, "gender": "M", "moves": ["tackle", "protect", "selfdestruct"], "pokeball": "pokeball"},
@@ -2657,6 +2938,9 @@ let BattleFormatsData = {
 	dunsparce: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	dunsparcedelta: {
+		tier: "PU",
 	},
 	gligar: {
 		eventPokemon: [
@@ -2699,6 +2983,9 @@ let BattleFormatsData = {
 		],
 		tier: "New",
 		doublesTier: "New",
+	},
+	shuckledelta: {
+		tier: "PU",
 	},
 	heracross: {
 		eventPokemon: [
@@ -2760,6 +3047,10 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	magcargomega: {
+		requiredItem: "Magcargonite",
+		tier: "NU",
+	},
 	swinub: {
 		eventPokemon: [
 			{"generation": 3, "level": 22, "abilities": ["oblivious"], "moves": ["charm", "ancientpower", "mist", "mudshot"]},
@@ -2802,6 +3093,9 @@ let BattleFormatsData = {
 	remoraid: {
 		tier: "LC",
 	},
+	remoraidelta: {
+		tier: "LC",
+	},
 	octillery: {
 		randomBattleMoves: ["energyball", "fireblast", "gunkshot", "hydropump", "icebeam", "protect", "rockblast"],
 		eventPokemon: [
@@ -2813,6 +3107,9 @@ let BattleFormatsData = {
 		],
 		tier: "New",
 		doublesTier: "New",
+	},
+	octillerydelta: {
+		tier: "NU",
 	},
 	delibird: {
 		randomBattleMoves: ["freezedry", "memento", "rapidspin", "spikes"],
@@ -2875,6 +3172,10 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	donphanmega: {
+		requiredItem: "Donphanite",
+		tier: "UU",
+	},
 	stantler: {
 		eventPokemon: [
 			{"generation": 3, "level": 10, "gender": "M", "abilities": ["intimidate"], "moves": ["tackle", "leer"], "pokeball": "pokeball"},
@@ -2907,6 +3208,10 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	miltankmega: {
+		requiredItem: "Miltankite",
+		tier: "UU",
 	},
 	raikou: {
 		eventPokemon: [
@@ -2990,6 +3295,10 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	tyranitararmor: {
+		requiredItem: "tyranitararmor",
+		tier: "OU",
+	},
 	tyranitarmega: {
 		requiredItem: "Tyranitarite",
 		isNonstandard: "Past",
@@ -3063,9 +3372,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	treeckodelta: {
+		tier: "LC",
+	},
 	grovyle: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	grovyledelta: {
+		tier: "NFE",
 	},
 	sceptile: {
 		eventPokemon: [
@@ -3073,6 +3388,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	sceptiledelta: {
+		tier: "RU",
 	},
 	sceptilemega: {
 		requiredItem: "Sceptilite",
@@ -3087,9 +3405,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	torchicdelta: {
+		tier: "LC",
+	},
 	combusken: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	combuskendelta: {
+		tier: "NFE",
 	},
 	blaziken: {
 		eventPokemon: [
@@ -3098,6 +3422,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	blazikendelta: {
+		tier: "NU",
 	},
 	blazikenmega: {
 		requiredItem: "Blazikenite",
@@ -3219,10 +3546,16 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	lotaddelta: {
+		tier: "LC",
+	},
 	lombre: {
 		encounters: [
 			{"generation": 6, "level": 13, "maxEggMoves": 1},
 		],
+		tier: "NFE",
+	},
+	lombredelta: {
 		tier: "NFE",
 	},
 	ludicolo: {
@@ -3234,6 +3567,9 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	ludicolodelta: {
+		tier: "NU",
+	},
 	seedot: {
 		eventPokemon: [
 			{"generation": 3, "level": 10, "gender": "M", "moves": ["bide", "harden", "growth"], "pokeball": "pokeball"},
@@ -3244,16 +3580,29 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	seedotdelta: {
+		tier: "LC",
+	},
 	nuzleaf: {
 		encounters: [
 			{"generation": 6, "level": 13, "maxEggMoves": 1},
 		],
 		tier: "NFE",
 	},
+	nuzleafdelta: {
+		tier: "NFE",
+	},
 	shiftry: {
 		randomBattleMoves: ["defog", "leafblade", "leafstorm", "suckerpunch", "swordsdance", "throatchop"],
 		tier: "New",
 		doublesTier: "New",
+	},
+	shiftrydelta: {
+		tier: "NU",
+	},
+	shiftrymega: {
+		requiredItem: "Shiftrite",
+		tier: "UU",
 	},
 	taillow: {
 		eventPokemon: [
@@ -3304,10 +3653,16 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	raltsdelta: {
+		tier: "LC",
+	},
 	kirlia: {
 		encounters: [
 			{"generation": 4, "level": 6},
 		],
+		tier: "NFE",
+	},
+	kirliadelta: {
 		tier: "NFE",
 	},
 	gardevoir: {
@@ -3319,20 +3674,34 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	gardevoirdelta: {
+		tier: "RU",
+	},
 	gardevoirmega: {
 		requiredItem: "Gardevoirite",
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	gardevoirdeltamega: {
+		requiredItem: "Delta Gardevoirite",
+		tier: "UU",
 	},
 	gallade: {
 		randomBattleMoves: ["closecombat", "knockoff", "shadowsneak", "swordsdance", "trick", "zenheadbutt"],
 		tier: "New",
 		doublesTier: "New",
 	},
+	galladedelta: {
+		tier: "RU",
+	},
 	gallademega: {
 		requiredItem: "Galladite",
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	galladedeltamega: {
+		requiredItem: "Delta Galladite",
+		tier: "OU",
 	},
 	surskit: {
 		eventPokemon: [
@@ -3472,10 +3841,17 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	sableyedelta: {
+		tier: "PU",
+	},
 	sableyemega: {
 		requiredItem: "Sablenite",
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	sableyedeltamega: {
+		requiredItem: "Delta Sablenite",
+		tier: "NU",
 	},
 	mawile: {
 		randomBattleMoves: ["ironhead", "playrough", "suckerpunch", "stealthrock", "swordsdance"],
@@ -3488,18 +3864,31 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	mawiledelta: {
+		tier: "PU",
+	},
 	mawilemega: {
 		requiredItem: "Mawilite",
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	mawiledeltamega: {
+		requiredItem: "Delta Mawilite",
+		tier: "RU",
+	},
 	aron: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	arondelta: {
+		tier: "LC",
+	},
 	lairon: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	lairondelta: {
+		tier: "NFE",
 	},
 	aggron: {
 		eventPokemon: [
@@ -3509,6 +3898,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	aggrondelta: {
+		tier: "RU",
 	},
 	aggronmega: {
 		requiredItem: "Aggronite",
@@ -3522,6 +3914,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	medititedelta: {
+		tier: "LC",
+	},
 	medicham: {
 		encounters: [
 			{"generation": 4, "level": 35},
@@ -3530,9 +3925,16 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	medichamdelta: {
+		tier: "RU",
+	},
 	medichammega: {
 		requiredItem: "Medichamite",
 		isNonstandard: "Past",
+	},
+	medichamdeltamega: {
+		requiredItem: "Delta Medichamite",
+		tier: "OU",
 	},
 	electrike: {
 		unreleasedHidden: true,
@@ -3561,6 +3963,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	plusledelta: {
+		tier: "PU",
+	},
 	minun: {
 		eventPokemon: [
 			{"generation": 3, "level": 5, "shiny": 1, "moves": ["growl", "thunderwave", "watersport"], "pokeball": "pokeball"},
@@ -3568,6 +3973,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	minundelta: {
+		tier: "PU",
 	},
 	volbeat: {
 		isNonstandard: "Past",
@@ -3580,6 +3988,9 @@ let BattleFormatsData = {
 	budew: {
 		tier: "LC",
 	},
+	budewdelta: {
+		tier: "LC",
+	},
 	roselia: {
 		eventPokemon: [
 			{"generation": 3, "level": 10, "gender": "M", "moves": ["absorb", "growth", "poisonsting"], "pokeball": "pokeball"},
@@ -3587,10 +3998,16 @@ let BattleFormatsData = {
 		],
 		tier: "NFE",
 	},
+	roseliadelta: {
+		tier: "NFE",
+	},
 	roserade: {
 		randomBattleMoves: ["leafstorm", "sleeppowder", "sludgebomb", "spikes", "synthesis", "toxicspikes"],
 		tier: "New",
 		doublesTier: "New",
+	},
+	roseradedelta: {
+		tier: "UU",
 	},
 	gulpin: {
 		eventPokemon: [
@@ -3629,6 +4046,9 @@ let BattleFormatsData = {
 	wailmer: {
 		tier: "LC",
 	},
+	wailmerdelta: {
+		tier: "LC",
+	},
 	wailord: {
 		randomBattleMoves: ["hydropump", "hypervoice", "icebeam", "waterspout"],
 		eventPokemon: [
@@ -3644,6 +4064,9 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	wailorddelta: {
+		tier: "PU",
+	},
 	numel: {
 		eventPokemon: [
 			{"generation": 3, "level": 14, "abilities": ["oblivious"], "moves": ["charm", "takedown", "dig", "ember"]},
@@ -3651,6 +4074,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	numeldelta: {
+		tier: "LC",
 	},
 	camerupt: {
 		eventPokemon: [
@@ -3662,9 +4088,16 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	cameruptdelta: {
+		tier: "NU",
+	},
 	cameruptmega: {
 		requiredItem: "Cameruptite",
 		isNonstandard: "Past",
+	},
+	cameruptdeltamega: {
+		requiredItem: "Delta Cameruptite",
+		tier: "RU",
 	},
 	torkoal: {
 		randomBattleMoves: ["earthquake", "lavaplume", "rapidspin", "solarbeam", "stealthrock"],
@@ -3710,6 +4143,14 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	flygonarmor: {
+		requiredItem: "flygonarmor",
+		tier: "UU",
+	},
+	flygonmega: {
+		requiredItem: "Flygonite",
+		tier: "OU",
+	},
 	cacnea: {
 		eventPokemon: [
 			{"generation": 3, "level": 5, "shiny": 1, "moves": ["poisonsting", "leer", "absorb", "encore"], "pokeball": "pokeball"},
@@ -3726,6 +4167,10 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	cacturnemega: {
+		requiredItem: "Cacturnite",
+		tier: "UU",
 	},
 	swablu: {
 		eventPokemon: [
@@ -3823,6 +4268,10 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	crawdauntmega: {
+		requiredItem: "Crawdite",
+		tier: "OU",
+	},
 	baltoy: {
 		eventPokemon: [
 			{"generation": 3, "level": 17, "moves": ["refresh", "rocktomb", "mudslap", "psybeam"]},
@@ -3862,6 +4311,9 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	feebasdelta: {
+		tier: "LC",
+	},
 	milotic: {
 		randomBattleMoves: ["dragontail", "icebeam", "recover", "rest", "scald", "sleeptalk"],
 		eventPokemon: [
@@ -3873,6 +4325,17 @@ let BattleFormatsData = {
 		],
 		tier: "New",
 		doublesTier: "New",
+	},
+	miloticdelta: {
+		tier: "UU",
+	},
+	miloticmega: {
+		requiredItem: "Milotite",
+		tier: "OU",
+	},
+	miloticdeltamega: {
+		requiredItem: "Delta Milotite",
+		tier: "OU",
 	},
 	castform: {
 		isNonstandard: "Past",
@@ -3889,6 +4352,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 	},
 	castformsnowy: {
+		randomBattleMoves: ["hail", "blizzard", "thunderbolt", "fireblast"],
+		requiredAbility: 'Forecast',
+		battleOnly: true,
+	},
+	castformnewmoon: {
+		requiredAbility: 'Forecast',
+		battleOnly: true,
+	},
+	castformsandstorm: {
 		requiredAbility: 'Forecast',
 		battleOnly: true,
 		isNonstandard: "Past",
@@ -3976,20 +4448,40 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	snoruntdelta: {
+		tier: "LC",
+	},
 	glalie: {
 		randomBattleMoves: ["earthquake", "freezedry", "protect", "spikes", "taunt"],
 		tier: "New",
 		doublesTier: "New",
+	},
+	glaliedelta: {
+		tier: "PU",
 	},
 	glaliemega: {
 		requiredItem: "Glalitite",
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	glaliedeltamega: {
+		requiredItem: "Delta Glalitite",
+		tier: "NU",
+	},
 	froslass: {
 		randomBattleMoves: ["destinybond", "icebeam", "shadowball", "spikes", "taunt", "thunderwave"],
 		tier: "New",
 		doublesTier: "New",
+	},
+	froslassdelta: {
+		tier: "NU",
+	},
+	froslassmega: {
+		tier: "UU",
+	},
+	froslassdeltamega: {
+		requiredItem: "Delta Froslassite",
+		tier: "UU",
 	},
 	spheal: {
 		eventPokemon: [
@@ -4020,13 +4512,22 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	clamperldelta: {
+		tier: "LC",
+	},
 	huntail: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	huntaildelta: {
+		tier: "RU",
+	},
 	gorebyss: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	gorebyssdelta: {
+		tier: "NU",
 	},
 	relicanth: {
 		isNonstandard: "Past",
@@ -4077,12 +4578,24 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	beldumdeltas: {
+		tier: "LC",
+	},
+	beldumdeltar: {
+		tier: "LC",
+	},
 	metang: {
 		eventPokemon: [
 			{"generation": 3, "level": 30, "moves": ["takedown", "confusion", "metalclaw", "refresh"], "pokeball": "pokeball"},
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	metangdeltas: {
+		tier: "NFE",
+	},
+	metangdeltar: {
+		tier: "NFE",
 	},
 	metagross: {
 		eventPokemon: [
@@ -4098,9 +4611,23 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	metagrossdeltas: {
+		tier: "UU",
+	},
+	metagrossdeltar: {
+		tier: "RU",
+	},
 	metagrossmega: {
 		requiredItem: "Metagrossite",
 		isNonstandard: "Past",
+	},
+	metagrossdeltasmega: {
+		requiredItem: "Delta Metagrossite Spider",
+		tier: "OU",
+	},
+	metagrossdeltarmega: {
+		requiredItem: "Delta Metagrossite Ruin",
+		tier: "OU",
 	},
 	regirock: {
 		eventPokemon: [
@@ -4116,6 +4643,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	regirockdelta: {
+		tier: "UU",
+	},
 	regice: {
 		eventPokemon: [
 			{"generation": 3, "level": 40, "shiny": 1, "moves": ["icywind", "curse", "superpower", "ancientpower"]},
@@ -4130,6 +4660,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	regicedelta: {
+		tier: "UU",
+	},
 	registeel: {
 		eventPokemon: [
 			{"generation": 3, "level": 40, "shiny": 1, "moves": ["metalclaw", "curse", "superpower", "ancientpower"]},
@@ -4143,6 +4676,9 @@ let BattleFormatsData = {
 		eventOnly: true,
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	registeeldelta: {
+		tier: "RU",
 	},
 	latias: {
 		eventPokemon: [
@@ -4323,9 +4859,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	turtwigdelta: {
+		tier: "LC",
+	},
 	grotle: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	grotledelta: {
+		tier: "NFE",
 	},
 	torterra: {
 		eventPokemon: [
@@ -4333,6 +4875,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	torterradelta: {
+		tier: "RU",
 	},
 	chimchar: {
 		eventPokemon: [
@@ -4423,13 +4968,22 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	shinxdelta: {
+		tier: "LC",
+	},
 	luxio: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	luxiodelta: {
+		tier: "NFE",
+	},
 	luxray: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	luxraydelta: {
+		tier: "NU",
 	},
 	cranidos: {
 		eventPokemon: [
@@ -4476,10 +5030,16 @@ let BattleFormatsData = {
 	combee: {
 		tier: "LC",
 	},
+	combeedelta: {
+		tier: "LC",
+	},
 	vespiquen: {
 		randomBattleMoves: ["airslash", "bugbuzz", "powergem", "sludgebomb", "uturn"],
 		tier: "New",
 		doublesTier: "New",
+	},
+	vespiquendelta: {
+		tier: "UU",
 	},
 	pachirisu: {
 		eventPokemon: [
@@ -4528,6 +5088,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "LC",
 	},
+	drifloondelta: {
+		tier: "LC",
+	},
 	drifblim: {
 		randomBattleMoves: ["acrobatics", "destinybond", "shadowball", "strengthsap", "substitute"],
 		encounters: [
@@ -4537,17 +5100,30 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	drifblimdelta: {
+		tier: "PU",
+	},
 	buneary: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	bunearydelta: {
+		tier: "LC",
 	},
 	lopunny: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	lopunnydelta: {
+		tier: "NU",
+	},
 	lopunnymega: {
 		requiredItem: "Lopunnite",
 		isNonstandard: "Past",
+	},
+	lopunnydeltamega: {
+		requiredItem: "Delta Lopunnite",
+		tier: "UU",
 	},
 	glameow: {
 		isNonstandard: "Past",
@@ -4591,12 +5167,20 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	chatotmega: {
+		requiredItem: "Chatotite",
+		tier: "RU",
+	},
 	spiritomb: {
 		eventPokemon: [
 			{"generation": 5, "level": 61, "gender": "F", "nature": "Quiet", "ivs": {"hp": 30, "atk": 30, "def": 30, "spa": 30, "spd": 30, "spe": 30}, "isHidden": false, "moves": ["darkpulse", "psychic", "silverwind", "embargo"], "pokeball": "cherishball"},
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	spiritombmega: {
+		requiredItem: "Spiritombite",
+		tier: "UU",
 	},
 	gible: {
 		isNonstandard: "Past",
@@ -4627,6 +5211,9 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	rioludelta: {
+		tier: "LC",
+	},
 	lucario: {
 		randomBattleMoves: ["closecombat", "extremespeed", "icepunch", "meteormash", "swordsdance"],
 		eventPokemon: [
@@ -4640,10 +5227,17 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	lucariodelta: {
+		tier: "UU",
+	},
 	lucariomega: {
 		requiredItem: "Lucarionite",
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	lucariodeltamega: {
+		requiredItem: "Delta Lucarionite",
+		tier: "OU",
 	},
 	hippopotas: {
 		tier: "LC",
@@ -4675,6 +5269,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "LC",
 	},
+	croagunkdelta: {
+		tier: "LC",
+	},
 	toxicroak: {
 		randomBattleMoves: ["drainpunch", "gunkshot", "icepunch", "substitute", "suckerpunch", "swordsdance"],
 		encounters: [
@@ -4684,6 +5281,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "New",
 		doublesTier: "New",
+	},
+	toxicroakdelta: {
+		tier: "RU",
 	},
 	carnivine: {
 		isNonstandard: "Past",
@@ -4855,6 +5455,10 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	regigigasprimal: {
+		requiredItem: "crystalpieceregigigas",
+		tier: "Uber",
+	},
 	giratina: {
 		eventPokemon: [
 			{"generation": 4, "level": 70, "shiny": 1, "moves": ["shadowforce", "healblock", "earthpower", "slash"]},
@@ -4875,6 +5479,10 @@ let BattleFormatsData = {
 		requiredItem: "Griseous Orb",
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	giratinaprimal: {
+		requiredItem: "crystalpiecegiratina",
+		tier: "Uber",
 	},
 	cresselia: {
 		eventPokemon: [
@@ -4953,6 +5561,10 @@ let BattleFormatsData = {
 		eventOnly: true,
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	arceusprimal: {
+		requiredItem: "crystalpiecearceus",
+		tier: "Uber",
 	},
 	arceusbug: {
 		eventOnly: true,
@@ -5061,9 +5673,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	snivydelta: {
+		tier: "LC",
+	},
 	servine: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	servinedelta: {
+		tier: "NFE",
 	},
 	serperior: {
 		eventPokemon: [
@@ -5072,6 +5690,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	serperiordelta: {
+		tier: "OU",
 	},
 	tepig: {
 		isNonstandard: "Past",
@@ -5135,6 +5756,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "LC",
 	},
+	purrloindelta: {
+		tier: "LC",
+	},
 	liepard: {
 		randomBattleMoves: ["copycat", "darkpulse", "encore", "nastyplot", "playrough", "substitute", "thunderwave", "uturn"],
 		eventPokemon: [
@@ -5143,6 +5767,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "New",
 		doublesTier: "New",
+	},
+	lieparddelta: {
+		tier: "NU",
 	},
 	pansage: {
 		eventPokemon: [
@@ -5222,6 +5849,10 @@ let BattleFormatsData = {
 	zebstrika: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	zebstrikamega: {
+		requiredItem: "Zebstrikite",
+		tier: "UU",
 	},
 	roggenrola: {
 		tier: "LC",
@@ -5327,17 +5958,30 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	leavannyarmor: {
+		requiredItem: "leavannyarmor",
+		tier: "PU",
+	},
 	venipede: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	venipededelta: {
+		tier: "LC",
 	},
 	whirlipede: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	whirlipededelta: {
+		tier: "NFE",
+	},
 	scolipede: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	scolipededelta: {
+		tier: "NU",
 	},
 	cottonee: {
 		tier: "LC",
@@ -5354,9 +5998,21 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	petilildeltaw: {
+		tier: "LC",
+	},
+	petilildeltaf: {
+		tier: "LC",
+	},
 	lilligant: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	lilligantdeltaw: {
+		tier: "RU",
+	},
+	lilligantdeltaf: {
+		tier: "NU",
 	},
 	basculin: {
 		randomBattleMoves: ["aquajet", "crunch", "headsmash", "liquidation", "psychicfangs"],
@@ -5389,6 +6045,9 @@ let BattleFormatsData = {
 	darumakagalar: {
 		tier: "LC",
 	},
+	darumakadelta: {
+		tier: "LC",
+	},
 	darmanitan: {
 		randomBattleMoves: ["earthquake", "flareblitz", "rockslide", "superpower", "uturn"],
 		eventPokemon: [
@@ -5401,9 +6060,11 @@ let BattleFormatsData = {
 		isUnreleased: true,
 		tier: "Unreleased",
 	},
+	darmanitandelta: {
+		tier: "UU",
+	},
 	darmanitanzen: {
-		requiredAbility: "Zen Mode",
-		battleOnly: true,
+		tier: "OU",
 	},
 	darmanitangalar: {
 		randomBattleMoves: ["earthquake", "flareblitz", "iciclecrash", "superpower", "uturn"],
@@ -5420,7 +6081,16 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	maractusdelta: {
+		tier: "NU",
+	},
 	dwebble: {
+		tier: "LC",
+	},
+	dwebbledeltab: {
+		tier: "LC",
+	},
+	dwebbledeltac: {
 		tier: "LC",
 	},
 	crustle: {
@@ -5431,10 +6101,19 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	crustledeltab: {
+		tier: "NU",
+	},
+	crustledeltac: {
+		tier: "OU",
+	},
 	scraggy: {
 		eventPokemon: [
 			{"generation": 5, "level": 1, "gender": "M", "nature": "Adamant", "isHidden": false, "abilities": ["moxie"], "moves": ["headbutt", "leer", "highjumpkick", "lowkick"], "pokeball": "cherishball"},
 		],
+		tier: "LC",
+	},
+	scraggydelta: {
 		tier: "LC",
 	},
 	scrafty: {
@@ -5445,12 +6124,18 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	scraftydelta: {
+		tier: "RU",
+	},
 	sigilyph: {
 		randomBattleMoves: ["airslash", "energyball", "heatwave", "icebeam", "psychic"],
 		tier: "New",
 		doublesTier: "New",
 	},
 	yamask: {
+		tier: "LC",
+	},
+	yamaskdelta: {
 		tier: "LC",
 	},
 	yamaskgalar: {
@@ -5471,6 +6156,9 @@ let BattleFormatsData = {
 		randomBattleMoves: ["earthquake", "haze", "nightshade", "stealthrock", "toxicspikes", "willowisp"],
 		tier: "New",
 		doublesTier: "New",
+	},
+	cofagrigusdelta: {
+		tier: "RU",
 	},
 	tirtouga: {
 		eventPokemon: [
@@ -5528,6 +6216,10 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	zoroarkmega: {
+		requiredItem: "Zoronite",
+		tier: "UU",
+	},
 	minccino: {
 		tier: "LC",
 	},
@@ -5557,13 +6249,23 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	gothitellemega: {
+		requiredItem: "Gothitite",
+		tier: "UU",
+	},
 	solosis: {
+		tier: "LC",
+	},
+	solosisdelta: {
 		tier: "LC",
 	},
 	duosion: {
 		encounters: [
 			{"generation": 5, "level": 31, "isHidden": false},
 		],
+		tier: "NFE",
+	},
+	duosiondelta: {
 		tier: "NFE",
 	},
 	reuniclus: {
@@ -5573,6 +6275,13 @@ let BattleFormatsData = {
 		],
 		tier: "New",
 		doublesTier: "New",
+	},
+	reuniclusmega: {
+		requiredItem: "Reuniclite",
+		tier: "UU",
+	},
+	reuniclusdelta: {
+		tier: "RU",
 	},
 	ducklett: {
 		isNonstandard: "Past",
@@ -5614,6 +6323,9 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	emolgadelta: {
+		tier: "UU",
+	},
 	karrablast: {
 		eventPokemon: [
 			{"generation": 5, "level": 30, "isHidden": false, "moves": ["furyattack", "headbutt", "falseswipe", "bugbuzz"], "pokeball": "cherishball"},
@@ -5621,14 +6333,23 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	karrablastdelta: {
+		tier: "LC",
+	},
 	escavalier: {
 		randomBattleMoves: ["closecombat", "drillrun", "ironhead", "knockoff", "megahorn", "swordsdance"],
 		tier: "New",
 		doublesTier: "New",
 	},
+	escavalierdelta: {
+		tier: "UU",
+	},
 	foongus: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	foongusdelta: {
+		tier: "LC",
 	},
 	amoonguss: {
 		encounters: [
@@ -5637,6 +6358,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	amoongussdelta: {
+		tier: "UU",
 	},
 	frillish: {
 		tier: "LC",
@@ -5714,10 +6438,16 @@ let BattleFormatsData = {
 	litwick: {
 		tier: "LC",
 	},
+	litwickdelta: {
+		tier: "LC",
+	},
 	lampent: {
 		encounters: [
 			{"generation": 6, "level": 30},
 		],
+		tier: "NFE",
+	},
+	lampentdelta: {
 		tier: "NFE",
 	},
 	chandelure: {
@@ -5728,6 +6458,9 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	chandeluredelta: {
+		tier: "UU",
+	},
 	axew: {
 		eventPokemon: [
 			{"generation": 5, "level": 1, "shiny": 1, "gender": "M", "nature": "Naive", "ivs": {"spe": 31}, "isHidden": false, "abilities": ["moldbreaker"], "moves": ["scratch", "dragonrage"], "pokeball": "pokeball"},
@@ -5736,10 +6469,16 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	axewdelta: {
+		tier: "LC",
+	},
 	fraxure: {
 		encounters: [
 			{"generation": 6, "level": 30},
 		],
+		tier: "NFE",
+	},
+	fraxuredelta: {
 		tier: "NFE",
 	},
 	haxorus: {
@@ -5749,6 +6488,13 @@ let BattleFormatsData = {
 		],
 		tier: "New",
 		doublesTier: "New",
+	},
+	haxorusmega: {
+		requiredItem: "Haxorite",
+		tier: "Uber",
+	},
+	haxorusdelta: {
+		tier: "UU",
 	},
 	cubchoo: {
 		eventPokemon: [
@@ -5769,6 +6515,10 @@ let BattleFormatsData = {
 	cryogonal: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	cryogonalmega: {
+		requiredItem: "Cryogonite",
+		tier: "UU",
 	},
 	shelmet: {
 		eventPokemon: [
@@ -5792,6 +6542,10 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	stunfiskmega: {
+		requiredItem: "Stunfiskite",
+		tier: "UU",
+	},
 	mienfoo: {
 		isNonstandard: "Past",
 		tier: "Illegal",
@@ -5814,6 +6568,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "LC",
 	},
+	golettdelta: {
+		tier: "LC",
+	},
 	golurk: {
 		randomBattleMoves: ["drainpunch", "earthquake", "icepunch", "shadowpunch", "substitute"],
 		eventPokemon: [
@@ -5826,7 +6583,13 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	golurkdelta: {
+		tier: "RU",
+	},
 	pawniard: {
+		tier: "LC",
+	},
+	parniarddelta: {
 		tier: "LC",
 	},
 	bisharp: {
@@ -5836,6 +6599,17 @@ let BattleFormatsData = {
 		],
 		tier: "New",
 		doublesTier: "New",
+	},
+	bisharpdelta: {
+		tier: "OU",
+	},
+	bisharpmega: {
+		requiredItem: "Bisharpite",
+		tier: "OU",
+	},
+	bisharpdeltamega: {
+		requiredItem: "Delta Bisharpite",
+		tier: "Uber",
 	},
 	bouffalant: {
 		eventPokemon: [
@@ -5874,6 +6648,9 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	heatmordelta: {
+		tier: "RU",
+	},
 	durant: {
 		randomBattleMoves: ["firstimpression", "ironhead", "rockslide", "superpower"],
 		tier: "New",
@@ -5885,10 +6662,16 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	deinodelta: {
+		tier: "LC",
+	},
 	zweilous: {
 		encounters: [
 			{"generation": 5, "level": 49},
 		],
+		tier: "NFE",
+	},
+	zweilousdelta: {
 		tier: "NFE",
 	},
 	hydreigon: {
@@ -5903,9 +6686,19 @@ let BattleFormatsData = {
 		tier: "New",
 		doublesTier: "New",
 	},
+	hydreigonmega: {
+		requiredItem: "Hydreigonite",
+		tier: "Uber",
+	},
+	hydreigondelta: {
+		tier: "UU",
+	},
 	larvesta: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	larvestadelta: {
+		tier: "LC",
 	},
 	volcarona: {
 		eventPokemon: [
@@ -5917,6 +6710,13 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	volcaronadelta: {
+		tier: "OU",
+	},
+	volcaronadeltaarmor: {
+		requiredItem: "volcaronadeltaarmor",
+		tier: "OU",
 	},
 	cobalion: {
 		randomBattleMoves: ["closecombat", "ironhead", "stealthrock", "stoneedge", "swordsdance", "voltswitch"],
@@ -6025,6 +6825,10 @@ let BattleFormatsData = {
 		isUnreleased: true,
 		tier: "Unreleased",
 	},
+	zekromarmor: {
+		requiredItem: "zekromarmor",
+		tier: "Uber",
+	},
 	landorus: {
 		eventPokemon: [
 			{"generation": 5, "level": 70, "shiny": 1, "isHidden": false, "moves": ["rockslide", "earthquake", "sandstorm", "fissure"]},
@@ -6110,9 +6914,15 @@ let BattleFormatsData = {
 		tier: "Illegal",
 	},
 	meloettapirouette: {
-		requiredMove: "Relic Song",
-		battleOnly: true,
-		isNonstandard: "Past",
+		randomBattleMoves: ["relicsong", "closecombat", "knockoff", "return"],
+		randomDoubleBattleMoves: ["relicsong", "closecombat", "knockoff", "return", "protect"],
+		tier: "OU",
+	},
+	meloettadeltamime: {
+		tier: "OU",
+	},
+	meloettadeltamagician: {
+		tier: "RU",
 	},
 	genesect: {
 		eventPokemon: [
@@ -6179,9 +6989,15 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	froakiedelta: {
+		tier: "LC",
+	},
 	frogadier: {
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	frogadierdelta: {
+		tier: "NFE",
 	},
 	greninja: {
 		eventPokemon: [
@@ -6190,6 +7006,9 @@ let BattleFormatsData = {
 		],
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	greninjadelta: {
+		tier: "NU",
 	},
 	greninjaash: {
 		eventPokemon: [
@@ -6438,9 +7257,28 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	amauradelta: {
+		tier: "LC",
+	},
 	aurorus: {
-		isNonstandard: "Past",
-		tier: "Illegal",
+		randomBattleMoves: ["ancientpower", "blizzard", "thunderwave", "earthpower", "freezedry", "hypervoice", "stealthrock"],
+		randomDoubleBattleMoves: ["hypervoice", "ancientpower", "thunderwave", "flashcannon", "freezedry", "icywind", "protect"],
+		tier: "PU",
+		doublesTier: "(DUU)",
+	},
+	aurorusdelta: {
+		tier: "RU",
+	},
+	sylveon: {
+		randomBattleMoves: ["hypervoice", "calmmind", "psyshock", "hiddenpowerfire", "wish", "protect"],
+		randomDoubleBattleMoves: ["hypervoice", "calmmind", "wish", "protect", "psyshock", "helpinghand", "shadowball", "hiddenpowerground"],
+		eventPokemon: [
+			{"generation": 6, "level": 10, "isHidden": false, "moves": ["celebrate", "helpinghand", "sandattack", "fairywind"], "pokeball": "cherishball"},
+			{"generation": 6, "level": 10, "gender": "F", "isHidden": false, "moves": ["disarmingvoice", "babydolleyes", "quickattack", "drainingkiss"], "pokeball": "cherishball"},
+			{"generation": 7, "level": 50, "gender": "F", "isHidden": true, "moves": ["hyperbeam", "drainingkiss", "psyshock", "calmmind"], "pokeball": "cherishball"},
+		],
+		tier: "UU",
+		doublesTier: "DUU",
 	},
 	hawlucha: {
 		randomBattleMoves: ["acrobatics", "closecombat", "stoneedge", "substitute", "swordsdance"],
@@ -6461,16 +7299,25 @@ let BattleFormatsData = {
 		],
 		tier: "LC",
 	},
+	goomydelta: {
+		tier: "LC",
+	},
 	sliggoo: {
 		encounters: [
 			{"generation": 6, "level": 30},
 		],
 		tier: "NFE",
 	},
+	sliggoodelta: {
+		tier: "NFE",
+	},
 	goodra: {
 		randomBattleMoves: ["dracometeor", "earthquake", "fireblast", "irontail", "outrage", "powerwhip"],
 		tier: "New",
 		doublesTier: "New",
+	},
+	goodradelta: {
+		tier: "RU",
 	},
 	klefki: {
 		isNonstandard: "Past",
@@ -6479,10 +7326,16 @@ let BattleFormatsData = {
 	phantump: {
 		tier: "LC",
 	},
+	phantumpdelta: {
+		tier: "LC",
+	},
 	trevenant: {
 		randomBattleMoves: ["earthquake", "hornleech", "rockslide", "shadowclaw", "trickroom", "woodhammer"],
 		tier: "New",
 		doublesTier: "New",
+	},
+	trevenantdelta: {
+		tier: "PU",
 	},
 	pumpkaboo: {
 		tier: "LC",
@@ -6527,14 +7380,23 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "LC",
 	},
+	bergmitedelta: {
+		tier: "LC",
+	},
 	avalugg: {
 		randomBattleMoves: ["avalanche", "bodypress", "curse", "rapidspin", "recover"],
 		unreleasedHidden: true,
 		tier: "New",
 		doublesTier: "New",
 	},
+	avaluggdelta: {
+		tier: "RU",
+	},
 	noibat: {
 		unreleasedHidden: true,
+		tier: "LC",
+	},
+	noibatdelta: {
 		tier: "LC",
 	},
 	noivern: {
@@ -6542,6 +7404,9 @@ let BattleFormatsData = {
 		unreleasedHidden: true,
 		tier: "New",
 		doublesTier: "New",
+	},
+	noiverndelta: {
+		tier: "RU",
 	},
 	xerneas: {
 		eventPokemon: [
@@ -6624,10 +7489,16 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
+	hoopadelta: {
+		tier: "UU",
+	},
 	hoopaunbound: {
 		eventOnly: true,
 		isNonstandard: "Past",
 		tier: "Illegal",
+	},
+	hoopaunbounddelta: {
+		tier: "OU",
 	},
 	volcanion: {
 		eventPokemon: [

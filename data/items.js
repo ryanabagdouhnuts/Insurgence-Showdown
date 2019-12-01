@@ -471,6 +471,20 @@ let BattleItems = {
 		gen: 5,
 		desc: "Holder's partial-trapping moves deal 1/6 max HP per turn instead of 1/8.",
 	},
+	"bisharpite": {
+		id: "bisharpite",
+		name: "Bisharpite",
+		spritenum: 709,
+		megaStone: "Bisharp-Mega",
+		megaEvolves: "Bisharp",
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		num: 937,
+		gen: 7,
+		desc: "If held by a Bisharp, this item allows it to Mega Evolve in battle.",
+	},
 	"blackbelt": {
 		id: "blackbelt",
 		name: "Black Belt",
@@ -708,6 +722,20 @@ let BattleItems = {
 		gen: 5,
 		desc: "Holder's Techno Blast is Fire type.",
 	},
+	"cacturnite": {
+		id: "cacturnite",
+		name: "Cacturnite",
+		spritenum: 710,
+		megaStone: "Cacturne-Mega",
+		megaEvolves: "Cacturne",
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		num: 938,
+		gen: 7,
+		desc: "If held by a Cacturne, this item allows it to Mega Evolve in battle.",
+	},
 	"cameruptite": {
 		id: "cameruptite",
 		name: "Cameruptite",
@@ -811,6 +839,20 @@ let BattleItems = {
 		num: 195,
 		gen: 4,
 		desc: "Halves damage taken from a supereffective Rock-type attack. Single use.",
+	},
+	"chatotite": {
+		id: "chatotite",
+		name: "Chatotite",
+		spritenum: 711,
+		megaStone: "Chatot-Mega",
+		megaEvolves: "Chatot",
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		num: 939,
+		gen: 7,
+		desc: "If held by a Chatot, this item allows it to Mega Evolve in battle.",
 	},
 	"cheriberry": {
 		id: "cheriberry",
@@ -1123,6 +1165,94 @@ let BattleItems = {
 		gen: 8,
 		desc: "Evolves Sinistea into Polteageist when used.",
 	},
+	"crawdite": {
+		id: "crawdite",
+		name: "Crawdite",
+		spritenum: 712,
+		megaStone: "Crawdaunt-Mega",
+		megaEvolves: "Crawdaunt",
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		num: 940,
+		gen: 7,
+		desc: "If held by a Crawdaunt, this item allows it to Mega Evolve in battle.",
+	},
+	"cryogonite": {
+		id: "cryogonite",
+		name: "Cryogonite",
+		spritenum: 713,
+		megaStone: "Cryogonal-Mega",
+		megaEvolves: "Cryogonal",
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		num: 941,
+		gen: 7,
+		desc: "If held by a Cryogonal, this item allows it to Mega Evolve in battle.",
+	},
+	"crystalpiecearceus": {
+		id: "crystalpiecearceus",
+		name: "Crystal Piece Arceus",
+		spritenum: 702,
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Arceus') {
+				this.insertQueue({pokemon: pokemon, choice: 'runPrimal'});
+			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Arceus-Primal', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseTemplate.baseSpecies === 'Arceus') return false;
+			return true;
+		},
+		num: 929,
+		gen: 7,
+		desc: "If held by an Arceus this item triggers its Primal Reversion in battle.",
+	},
+	"crystalpiecegiratina": {
+		id: "crystalpiecegiratina",
+		name: "Crystal Piece Giratina",
+		spritenum: 702,
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Giratina') {
+				this.insertQueue({pokemon: pokemon, choice: 'runPrimal'});
+			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Giratina-Primal', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseTemplate.baseSpecies === 'Giratina') return false;
+			return true;
+		},
+		num: 930,
+		gen: 7,
+		desc: "If held by a Giratina this item triggers its Primal Reversion in battle.",
+	},
+	"crystalpieceregigigas": {
+		id: "crystalpieceregigigas",
+		name: "Crystal Piece Regigigas",
+		spritenum: 702,
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Regigigas') {
+				this.insertQueue({pokemon: pokemon, choice: 'runPrimal'});
+			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Regigigas-Primal', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseTemplate.baseSpecies === 'Regigigas') return false;
+			return true;
+		},
+		num: 930,
+		gen: 7,
+		desc: "If held by a Regigigas this item triggers its Primal Reversion in battle.",
+	},
 	"custapberry": {
 		id: "custapberry",
 		name: "Custap Berry",
@@ -1147,6 +1277,26 @@ let BattleItems = {
 		num: 210,
 		gen: 4,
 		desc: "Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.",
+	},
+	"volcaronadeltaarmor": {
+		id: "volcaronadeltaarmor",
+		name: "Volcarona-Delta Armor",
+		spritenum: 707,
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Volcarona-Delta') {
+				this.insertQueue({pokemon: pokemon, choice: 'runPrimal'});
+			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Volcarona-Delta-Armor', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseTemplate.baseSpecies === 'Volcarona-Delta') return false;
+			return true;
+		},
+		num: 935,
+		gen: 7,
+		desc: "If held by a Volcarona-Delta this item triggers its Armor in battle.",
 	},
 	"damprock": {
 		id: "damprock",
@@ -1208,6 +1358,17 @@ let BattleItems = {
 		gen: 7,
 		isNonstandard: "Past",
 		desc: "If holder has a Dark move, this item allows it to use a Dark Z-Move.",
+	},
+	"darkrock": {
+		id: "darkrock",
+		name: "Dark Rock",
+		spritenum: 700,
+		fling: {
+			basePower: 60,
+		},
+		num: 927,
+		gen: 7,
+		desc: "Holder's use of New Moon lasts 8 turns instead of 5.",
 	},
 	"dawnstone": {
 		id: "dawnstone",
@@ -1272,6 +1433,314 @@ let BattleItems = {
 		desc: "If held by a Clamperl, its Sp. Atk is doubled. Evolves Clamperl into Huntail when traded.",
 		shortDesc: "If held by a Clamperl, its Sp. Atk is doubled.",
 	},
+	"deltabisharpite": {
+		id: "deltabisharpite",
+		name: "Delta Bisharpite",
+		spritenum: 741,
+		megaStone: "Bisharp-Delta-Mega",
+		megaEvolves: "Bisharp-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 969,
+		gen: 7,
+		desc: "If held by a Bisharp-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltablastoisinite": {
+		id: "deltablastoisinite",
+		name: "Delta Blastoisinite",
+		spritenum: 742,
+		megaStone: "Blastoise-Delta-Mega",
+		megaEvolves: "Blastoise-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 970,
+		gen: 7,
+		desc: "If held by a Blastoise-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltacameruptite": {
+		id: "deltacameruptite",
+		name: "Delta Cameruptite",
+		spritenum: 743,
+		megaStone: "Camerupt-Delta-Mega",
+		megaEvolves: "Camerupt-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 971,
+		gen: 7,
+		desc: "If held by a Camerupt-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltacharizardite": {
+		id: "deltacharizardite",
+		name: "Delta Charizardite",
+		spritenum: 744,
+		megaStone: "Charizard-Delta-Mega",
+		megaEvolves: "Charizard-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 972,
+		gen: 7,
+		desc: "If held by a Charizard-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltaetigirafarigite": {
+		id: "deltaetigirafarigite",
+		name: "Delta Etigirafarigite",
+		spritenum: 745,
+		megaStone: "Girafarig-Delta-Mega",
+		megaEvolves: "Girafarig-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 973,
+		gen: 7,
+		desc: "If held by a Girafarig-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltafroslassite": {
+		id: "deltafroslassite",
+		name: "Delta Froslassite",
+		spritenum: 746,
+		megaStone: "Froslass-Delta-Mega",
+		megaEvolves: "Froslass-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 974,
+		gen: 7,
+		desc: "If held by a Froslass-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltagalladite": {
+		id: "deltagalladite",
+		name: "Delta Galladite",
+		spritenum: 747,
+		megaStone: "Gallade-Delta-Mega",
+		megaEvolves: "Gallade-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 975,
+		gen: 7,
+		desc: "If held by a Gallade-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltagardevoirite": {
+		id: "deltagardevoirite",
+		name: "Delta Gardevoirite",
+		spritenum: 748,
+		megaStone: "Gardevoir-Delta-Mega",
+		megaEvolves: "Gardevoir-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 976,
+		gen: 7,
+		desc: "If held by a Gardevoir-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltaglalitite": {
+		id: "deltaglalitite",
+		name: "Delta Glalitite",
+		spritenum: 749,
+		megaStone: "Glalie-Delta-Mega",
+		megaEvolves: "Glalie-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 977,
+		gen: 7,
+		desc: "If held by a Glalie-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltalopunnite": {
+		id: "deltalopunnite",
+		name: "Delta Lopunnite",
+		spritenum: 750,
+		megaStone: "Lopunny-Delta-Mega",
+		megaEvolves: "Lopunny-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 978,
+		gen: 7,
+		desc: "If held by a Lopunny-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltalucarionite": {
+		id: "deltalucarionite",
+		name: "Delta Lucarionite",
+		spritenum: 751,
+		megaStone: "Lucario-Delta-Mega",
+		megaEvolves: "Lucario-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 979,
+		gen: 7,
+		desc: "If held by a Lucario-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltamawilite": {
+		id: "deltamawilite",
+		name: "Delta Mawilite",
+		spritenum: 752,
+		megaStone: "Mawile-Delta-Mega",
+		megaEvolves: "Mawile-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 980,
+		gen: 7,
+		desc: "If held by a Mawile-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltamedichamite": {
+		id: "deltamedichamite",
+		name: "Delta Medichamite",
+		spritenum: 753,
+		megaStone: "Medicham-Delta-Mega",
+		megaEvolves: "Medicham-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 981,
+		gen: 7,
+		desc: "If held by a Medicham-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltametagrossiteruin": {
+		id: "deltametagrossiteruin",
+		name: "Delta Metagrossite Ruin",
+		spritenum: 754,
+		megaStone: "Metagross-Delta-R-Mega",
+		megaEvolves: "Metagross-Delta-R",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 982,
+		gen: 7,
+		desc: "If held by a Metagross-Delta-Ruin, this item allows it to Mega Evolve in battle.",
+	},
+	"deltametagrossitespider": {
+		id: "deltametagrossitespider",
+		name: "Delta Metagrossite Spider",
+		spritenum: 755,
+		megaStone: "Metagross-Delta-S-Mega",
+		megaEvolves: "Metagross-Delta-S",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 983,
+		gen: 7,
+		desc: "If held by a Metagross-Delta-Spider, this item allows it to Mega Evolve in battle.",
+	},
+	"deltamilotite": {
+		id: "deltamilotite",
+		name: "Delta Milotite",
+		spritenum: 756,
+		megaStone: "Milotic-Delta-Mega",
+		megaEvolves: "Milotic-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 984,
+		gen: 7,
+		desc: "If held by a Milotic-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltapidgeotite": {
+		id: "deltapidgeotite",
+		name: "Delta Pidgeotite",
+		spritenum: 757,
+		megaStone: "Pidgeot-Delta-Mega",
+		megaEvolves: "Pidgeot-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 985,
+		gen: 7,
+		desc: "If held by a Pidgeot-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltasablenite": {
+		id: "deltasablenite",
+		name: "Delta Sablenite",
+		spritenum: 758,
+		megaStone: "Sableye-Delta-Mega",
+		megaEvolves: "Sableye-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 986,
+		gen: 7,
+		desc: "If held by a Sableye-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltascizorite": {
+		id: "deltascizorite",
+		name: "Delta Scizorite",
+		spritenum: 759,
+		megaStone: "Scizor-Delta-Mega",
+		megaEvolves: "Scizor-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 987,
+		gen: 7,
+		desc: "If held by a Scizor-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltasunflorite": {
+		id: "deltasunflorite",
+		name: "Delta Sunflorite",
+		spritenum: 760,
+		megaStone: "Sunflora-Delta-Mega",
+		megaEvolves: "Sunflora-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 988,
+		gen: 7,
+		desc: "If held by a Sunflora-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltatyphlosionite": {
+		id: "deltatyphlosionite",
+		name: "Delta Typhlosionite",
+		spritenum: 761,
+		megaStone: "Typhlosion-Delta-Mega",
+		megaEvolves: "Typhlosion-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 989,
+		gen: 7,
+		desc: "If held by a Typhlosion-Delta, this item allows it to Mega Evolve in battle.",
+	},
+	"deltavenusaurite": {
+		id: "deltavenusaurite",
+		name: "Delta Venusaurite",
+		spritenum: 762,
+		megaStone: "Venusaur-Delta-Mega",
+		megaEvolves: "Venusaur-Delta",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 990,
+		gen: 7,
+		desc: "If held by a Venusaur-Delta, this item allows it to Mega Evolve in battle.",
+	},
 	"destinyknot": {
 		id: "destinyknot",
 		name: "Destiny Knot",
@@ -1324,6 +1793,20 @@ let BattleItems = {
 		num: 102,
 		gen: 3,
 		desc: "Can be revived into Kabuto.",
+	},
+	"donphanite": {
+		id: "donphanite",
+		name: "Donphanite",
+		spritenum: 714,
+		megaStone: "Donphan-Mega",
+		megaEvolves: "Donphan",
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		num: 942,
+		gen: 7,
+		desc: "If held by a Donphan, this item allows it to Mega Evolve in battle.",
 	},
 	"dousedrive": {
 		id: "dousedrive",
@@ -1726,6 +2209,20 @@ let BattleItems = {
 		gen: 3,
 		desc: "Restores 1/4 max HP after holder is hit by a supereffective move. Single use.",
 	},
+	"etigirafarigite": {
+		id: "etigirafarigite",
+		name: "Etigirafarigite",
+		spritenum: 716,
+		megaStone: "Girafarig-Mega",
+		megaEvolves: "Girafarig",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 944,
+		gen: 7,
+		desc: "If held by a Girafarig, this item allows it to Mega Evolve in battle.",
+	},
 	"eviolite": {
 		id: "eviolite",
 		name: "Eviolite",
@@ -1823,6 +2320,20 @@ let BattleItems = {
 		gen: 2,
 		isPokeball: true,
 		desc: "A Poke Ball that makes it easier to catch Pokemon which are quick to run away.",
+	},
+	"feraligatite": {
+		id: "feraligatite",
+		name: "Feraligatite",
+		spritenum: 717,
+		megaStone: "Feraligatr-Mega",
+		megaEvolves: "Feraligatr",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 945,
+		gen: 7,
+		desc: "If held by a Feraligatr, this item allows it to Mega Evolve in battle.",
 	},
 	"fightinggem": {
 		id: "fightinggem",
@@ -2049,6 +2560,40 @@ let BattleItems = {
 		gen: 8,
 		desc: "Evolves Milcery into Alcremie when held and spun around.",
 	},
+	"flygonarmor": {
+		id: "flygonarmor",
+		name: "Flygon Armor",
+		spritenum: 704,
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Flygon') {
+				this.insertQueue({pokemon: pokemon, choice: 'runPrimal'});
+			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Flygon-Armor', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseTemplate.baseSpecies === 'Flygon') return false;
+			return true;
+		},
+		num: 932,
+		gen: 7,
+		desc: "If held by a Flygon this item triggers its Armor in battle.",
+	},
+	"flygonite": {
+		id: "flygonite",
+		name: "Flygonite",
+		spritenum: 718,
+		megaStone: "Flygon-Mega",
+		megaEvolves: "Flygon",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 946,
+		gen: 7,
+		desc: "If held by a Flygon, this item allows it to Mega Evolve in battle.",
+	},
 	"flyinggem": {
 		id: "flyinggem",
 		name: "Flying Gem",
@@ -2190,6 +2735,20 @@ let BattleItems = {
 		gen: 2,
 		isPokeball: true,
 		desc: "A Poke Ball that makes caught Pokemon more friendly.",
+	},
+	"frosslassite": {
+		id: "froslassite",
+		name: "Froslassite",
+		spritenum: 719,
+		megaStone: "Froslass-Mega",
+		megaEvolves: "Froslass",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 947,
+		gen: 7,
+		desc: "If held by a Froslass, this item allows it to Mega Evolve in battle.",
 	},
 	"fullincense": {
 		id: "fullincense",
@@ -2367,6 +2926,20 @@ let BattleItems = {
 		gen: 7,
 		desc: "Used for Hyper Training. All of a Pokemon's stats are calculated with an IV of 31.",
 	},
+		"gothitite": {
+			id: "gothitite",
+			name: "Gothitite",
+			spritenum: 720,
+			megaStone: "Gothitelle-Mega",
+			megaEvolves: "Gothitelle",
+			onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+			},
+			num: 948,
+			gen: 7,
+			desc: "If held by a Gothitelle, this item allows it to Mega Evolve in battle.",
+		},
 	"grassgem": {
 		id: "grassgem",
 		name: "Grass Gem",
@@ -2605,6 +3178,20 @@ let BattleItems = {
 		gen: 2,
 		desc: "Holder's Rock-type attacks have 1.2x power.",
 	},
+	"haxorite": {
+		id: "haxorite",
+		name: "Haxorite",
+		spritenum: 721,
+		megaStone: "Haxorus-Mega",
+		megaEvolves: "Haxorus",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 949,
+		gen: 7,
+		desc: "If held by a Haxorus, this item allows it to Mega Evolve in battle.",
+	},
 	"healball": {
 		id: "healball",
 		name: "Heal Ball",
@@ -2702,6 +3289,20 @@ let BattleItems = {
 		gen: 6,
 		isNonstandard: "Past",
 		desc: "If held by a Houndoom, this item allows it to Mega Evolve in battle.",
+	},
+	"hydreigonite": {
+		id: "hydreigonite",
+		name: "Hydreigonite",
+		spritenum: 722,
+		megaStone: "Hydreigon-Mega",
+		megaEvolves: "Hydreigon",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 950,
+		gen: 7,
+		desc: "If held by a Hydreigon, this item allows it to Mega Evolve in battle.",
 	},
 	"iapapaberry": {
 		id: "iapapaberry",
@@ -2935,6 +3536,20 @@ let BattleItems = {
 		gen: 6,
 		desc: "Can be revived into Tyrunt.",
 	},
+	"jirachite": {
+		id: "jirachite",
+		name: "Jirachite",
+		spritenum: 723,
+		megaStone: "Jirachi-Mega",
+		megaEvolves: "Jirachi",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 951,
+		gen: 7,
+		desc: "If held by a Jirachi, this item allows it to Mega Evolve in battle.",
+	},
 	"kasibberry": {
 		id: "kasibberry",
 		name: "Kasib Berry",
@@ -3165,6 +3780,26 @@ let BattleItems = {
 		gen: 1,
 		desc: "Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Eevee into Leafeon, Nuzleaf into Shiftry, and Pansage into Simisage when used.",
 		shortDesc: "Evolves certain species of Pokemon when used.",
+	},
+	"leavannyarmor": {
+		id: "leavannyarmor",
+		name: "Leavanny Armor",
+		spritenum: 705,
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Leavanny') {
+				this.insertQueue({pokemon: pokemon, choice: 'runPrimal'});
+			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Leavanny-Armor', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseTemplate.baseSpecies === 'Leavanny') return false;
+			return true;
+		},
+		num: 933,
+		gen: 7,
+		desc: "If held by a Leavanny this item triggers its Armor in battle.",
 	},
 	"leek": {
 		id: "leek",
@@ -3502,6 +4137,20 @@ let BattleItems = {
 		gen: 3,
 		desc: "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
 	},
+	"magcargonite": {
+		id: "magcargonite",
+		name: "Magcargonite",
+		spritenum: 724,
+		megaStone: "Magcargo-Mega",
+		megaEvolves: "Magcargo",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 952,
+		gen: 7,
+		desc: "If held by a Magcargo, this item allows it to Mega Evolve in battle.",
+	},
 	"magmarizer": {
 		id: "magmarizer",
 		name: "Magmarizer",
@@ -3622,6 +4271,20 @@ let BattleItems = {
 		gen: 6,
 		desc: "Raises holder's Sp. Def by 1 stage after it is hit by a special attack. Single use.",
 	},
+	"marowite": {
+		id: "marowite",
+		name: "Marowite",
+		spritenum: 725,
+		megaStone: "Marowak-Mega",
+		megaEvolves: "Marowak",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 953,
+		gen: 7,
+		desc: "If held by a Marowak, this item allows it to Mega Evolve in battle.",
+	},
 	"marshadiumz": {
 		id: "marshadiumz",
 		name: "Marshadium Z",
@@ -3697,6 +4360,20 @@ let BattleItems = {
 		gen: 6,
 		isNonstandard: "Past",
 		desc: "If held by a Medicham, this item allows it to Mega Evolve in battle.",
+	},
+	"meganiumite": {
+		id: "meganiumite",
+		name: "meganiumite",
+		spritenum: 726,
+		megaStone: "Meganium-Mega",
+		megaEvolves: "Meganium",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 954,
+		gen: 7,
+		desc: "If held by a Meganium, this item allows it to Mega Evolve in battle.",
 	},
 	"mentalherb": {
 		id: "mentalherb",
@@ -3841,6 +4518,26 @@ let BattleItems = {
 		isNonstandard: "Past",
 		desc: "If held by a Mew with Psychic, it can use Genesis Supernova.",
 	},
+	"mewtwoarmor": {
+		id: "mewtwoarmor",
+		name: "Mewtwo Armor",
+		spritenum: 708,
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Mewtwo') {
+				this.insertQueue({pokemon: pokemon, choice: 'runPrimal'});
+			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Mewtwo-Armor', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseTemplate.baseSpecies === 'Mewtwo') return false;
+			return true;
+		},
+		num: 936,
+		gen: 7,
+		desc: "If held by a Mewtwo this item triggers its Armor in battle.",
+	},
 	"mewtwonitex": {
 		id: "mewtwonitex",
 		name: "Mewtwonite X",
@@ -3873,6 +4570,20 @@ let BattleItems = {
 		isNonstandard: "Past",
 		desc: "If held by a Mewtwo, this item allows it to Mega Evolve in battle.",
 	},
+	"shadowmewtwonite": {
+		id: "shadowmewtwonite",
+		name: "Shadow Mewtwonite",
+		spritenum: 763,
+		megaStone: "Mewtwo-Shadow-Mega",
+		megaEvolves: "Mewtwo-Shadow",
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+			return true;
+		},
+		num: 991,
+		gen: 6,
+		desc: "If held by a Shadow Mewtwo, this item allows it to Mega Evolve in battle.",
+	},
 	"micleberry": {
 		id: "micleberry",
 		name: "Micle Berry",
@@ -3904,6 +4615,34 @@ let BattleItems = {
 		num: 209,
 		gen: 4,
 		desc: "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
+	},
+	"milotite": {
+		id: "milotite",
+		name: "Milotite",
+		spritenum: 727,
+		megaStone: "Milotic-Mega",
+		megaEvolves: "Milotic",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 955,
+		gen: 7,
+		desc: "If held by a Milotic, this item allows it to Mega Evolve in battle.",
+	},
+	"miltankite": {
+		id: "miltankite",
+		name: "Miltankite",
+		spritenum: 728,
+		megaStone: "Miltank-Mega",
+		megaEvolves: "Miltank",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 956,
+		gen: 7,
+		desc: "If held by a Miltank, this item allows it to Mega Evolve in battle.",
 	},
 	"mimikiumz": {
 		id: "mimikiumz",
@@ -4532,6 +5271,34 @@ let BattleItems = {
 		isPokeball: true,
 		desc: "A device for catching wild Pokemon. It is designed as a capsule system.",
 	},
+	"politoedite": {
+		id: "politoedite",
+		name: "Politoedite",
+		spritenum: 729,
+		megaStone: "Politoed-Mega",
+		megaEvolves: "Politoed",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 957,
+		gen: 7,
+		desc: "If held by a Politoed, this item allows it to Mega Evolve in battle.",
+	},
+	"poliwrathite": {
+		id: "poliwrathite",
+		name: "Poliwrathite",
+		spritenum: 730,
+		megaStone: "Poliwrath-Mega",
+		megaEvolves: "Poliwrath",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 958,
+		gen: 7,
+		desc: "If held by a Poliwrath, this item allows it to Mega Evolve in battle.",
+	},
 	"pomegberry": {
 		id: "pomegberry",
 		name: "Pomeg Berry",
@@ -5044,6 +5811,20 @@ let BattleItems = {
 		isPokeball: true,
 		desc: "A Poke Ball that works well on Pokemon species that were previously caught.",
 	},
+	"reuniclite": {
+		id: "reuniclite",
+		name: "Reuniclite",
+		spritenum: 731,
+		megaStone: "Reuniclus-Mega",
+		megaEvolves: "Reuniclus",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 959,
+		gen: 7,
+		desc: "If held by a Reuniclus, this item allows it to Mega Evolve in battle.",
+	},
 	"ribbonsweet": {
 		id: "ribbonsweet",
 		name: "Ribbon Sweet",
@@ -5527,6 +6308,20 @@ let BattleItems = {
 		gen: 3,
 		desc: "After an attack, holder gains 1/8 of the damage in HP dealt to other Pokemon.",
 	},
+	"shiftrite": {
+		id: "shiftrite",
+		name: "Shiftrite",
+		spritenum: 732,
+		megaStone: "Shiftry-Mega",
+		megaEvolves: "Shiftry",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 960,
+		gen: 7,
+		desc: "If held by a Shiftry, this item allows it to Mega Evolve in battle.",
+	},
 	"shinystone": {
 		id: "shinystone",
 		name: "Shiny Stone",
@@ -5806,6 +6601,20 @@ let BattleItems = {
 		gen: 3,
 		desc: "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
 	},
+	"spiritombite": {
+		id: "spiritombite",
+		name: "Spiritombite",
+		spritenum: 733,
+		megaStone: "Spiritomb-Mega",
+		megaEvolves: "Spiritomb",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 961,
+		gen: 7,
+		desc: "If held by a Spiritomb, this item allows it to Mega Evolve in battle.",
+	},
 	"splashplate": {
 		id: "splashplate",
 		name: "Splash Plate",
@@ -5918,6 +6727,20 @@ let BattleItems = {
 		num: 761,
 		gen: 6,
 		isNonstandard: "Past",
+		desc: "If held by a Steelix, this item allows it to Mega Evolve in battle.",
+	},
+	"steelixitefire": {
+		id: "steelixitefire",
+		name: "Steelixite Fire",
+		spritenum: 734,
+		megaStone: "Steelix-Mega-Fire",
+		megaEvolves: "Steelix",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 962,
+		gen: 7,
 		desc: "If held by a Steelix, this item allows it to Mega Evolve in battle.",
 	},
 	"steelgem": {
@@ -6044,6 +6867,48 @@ let BattleItems = {
 		num: 1109,
 		gen: 8,
 		desc: "Evolves Milcery into Alcremie when held and spun around.",
+	},
+	"stunfiskite": {
+		id: "stunfiskite",
+		name: "Stunfiskite",
+		spritenum: 735,
+		megaStone: "Stunfisk-Mega",
+		megaEvolves: "Stunfisk",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 963,
+		gen: 7,
+		desc: "If held by a Stunfisk, this item allows it to Mega Evolve in battle.",
+	},
+	"suduwoodite": {
+		id: "sudowoodite",
+		name: "Sudowoodite",
+		spritenum: 736,
+		megaStone: "Sudowoodo-Mega",
+		megaEvolves: "Sudowoodo",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 964,
+		gen: 7,
+		desc: "If held by a Sudowoodo, this item allows it to Mega Evolve in battle.",
+	},
+	"sunflorite": {
+		id: "sunflorite",
+		name: "Sunflorite",
+		spritenum: 737,
+		megaStone: "Sunflora-Mega",
+		megaEvolves: "Sunflora",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 965,
+		gen: 7,
+		desc: "If held by a Sunflora, this item allows it to Mega Evolve in battle.",
 	},
 	"sunstone": {
 		id: "sunstone",
@@ -6249,7 +7114,18 @@ let BattleItems = {
 		num: 304,
 		gen: 4,
 		desc: "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
+},
+"trickrock": {
+	id: "trickrock",
+	name: "Trick Rock",
+	spritenum: 701,
+	fling: {
+		basePower: 60,
 	},
+	num: 928,
+	gen: 7,
+	desc: "Holder's use of Trick Room lasts 8 turns instead of 5.",
+},
 	"twistedspoon": {
 		id: "twistedspoon",
 		name: "Twisted Spoon",
@@ -6266,6 +7142,40 @@ let BattleItems = {
 		num: 248,
 		gen: 2,
 		desc: "Holder's Psychic-type attacks have 1.2x power.",
+	},
+	"typhlosionite": {
+		id: "typhlosionite",
+		name: "Typhlosionite",
+		spritenum: 738,
+		megaStone: "Typhlosion-Mega",
+		megaEvolves: "Typhlosion",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 966,
+		gen: 7,
+		desc: "If held by a Typhlosion, this item allows it to Mega Evolve in battle.",
+	},
+	"tyranitararmor": {
+		id: "tyranitararmor",
+		name: "Tyranitar Armor",
+		spritenum: 703,
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Tyranitar') {
+				this.insertQueue({pokemon: pokemon, choice: 'runPrimal'});
+			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Tyranitar-Armor', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseTemplate.baseSpecies === 'Tyranitar') return false;
+			return true;
+		},
+		num: 931,
+		gen: 7,
+		desc: "If held by a Tyranitar this item triggers its Armor in battle.",
 	},
 	"tyranitarite": {
 		id: "tyranitarite",
@@ -6315,18 +7225,6 @@ let BattleItems = {
 		num: 252,
 		gen: 2,
 		desc: "Evolves Porygon into Porygon2 when traded.",
-	},
-	"utilityumbrella": {
-		id: "utilityumbrella",
-		name: "Utility Umbrella",
-		spritenum: 0,
-		fling: {
-			basePower: 60,
-		},
-		// Implemented in statuses.js, moves.js, and abilities.js
-		num: 1123,
-		gen: 8,
-		desc: "Blocks the holder from receiving any effects of Sunny Day/Rain Dance.",
 	},
 	"venusaurite": {
 		id: "venusaurite",
@@ -6652,6 +7550,40 @@ let BattleItems = {
 		gen: 4,
 		desc: "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
 	},
+	"zebstrikite": {
+		id: "zebstrikite",
+		name: "Zebstrikite",
+		spritenum: 739,
+		megaStone: "Zebstrika-Mega",
+		megaEvolves: "Zebstrika",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 967,
+		gen: 7,
+		desc: "If held by a Zebstrika, this item allows it to Mega Evolve in battle.",
+	},
+	"zekromarmor": {
+		id: "zekromarmor",
+		name: "Zekrom Armor",
+		spritenum: 706,
+		onSwitchIn(pokemon) {
+			if (pokemon.isActive && pokemon.baseTemplate.species === 'Zekrom') {
+				this.insertQueue({pokemon: pokemon, choice: 'runPrimal'});
+			}
+		},
+		onPrimal(pokemon) {
+			pokemon.formeChange('Zekrom-Armor', this.effect, true);
+		},
+		onTakeItem(item, source) {
+			if (source.baseTemplate.baseSpecies === 'Zekrom') return false;
+			return true;
+		},
+		num: 934,
+		gen: 7,
+		desc: "If held by a Zekrom this item triggers its Armor in battle.",
+	},
 	"zoomlens": {
 		id: "zoomlens",
 		name: "Zoom Lens",
@@ -6668,6 +7600,20 @@ let BattleItems = {
 		num: 276,
 		gen: 4,
 		desc: "The accuracy of attacks by the holder is 1.2x if it moves after its target.",
+	},
+	"zoronite": {
+		id: "zoronite",
+		name: "Zoronite",
+		spritenum: 740,
+		megaStone: "Zoroark-Mega",
+		megaEvolves: "Zoroark",
+		onTakeItem(item, source) {
+		if (item.megaEvolves === source.baseTemplate.baseSpecies) return false;
+		return true;
+		},
+		num: 968,
+		gen: 7,
+		desc: "If held by a Zoroark, this item allows it to Mega Evolve in battle.",
 	},
 
 	// Gen 2 items
