@@ -403,8 +403,8 @@ let BattleAbilities = {
 	"firedup": {
 		desc: "When this Pokemon uses a Fire-type attack its Attack, Special Attack, and Speed are all increased by 1 stage each.",
 		shortDesc: "When the user uses a Fire-type attack its Attack, Special Attack, and Speed are increased by 1 stage.",
-		onAfterMoveSecondary(source, target, move) {
-			if (move.type === 'Fire') {
+		onModifyMove(move, pokemon) {
+			if (move.type === 'Fire' && move.category !== 'Status') {
 				this.boost({atk: 1, spa: 1, spe: 1});
 			}
 		},
