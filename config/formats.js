@@ -333,6 +333,14 @@ let Formats = [
 		],
 	},
 	{
+		name: "[Gen 8] National Dex Ubers",
+
+		mod: 'gen8',
+		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule'],
+		banlist: ['AG']
+		],
+	},
+	{
 		name: "[Gen 8] National Dex UU",
 		mod: 'gen8',
 		ruleset: ['[Gen 8] National Dex OU'],
@@ -355,6 +363,17 @@ let Formats = [
 		mod: 'gen8',
 		ruleset: ['[Gen 8] National Dex OU'],
 		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'NU', 'PUBL', 'Kommonium Z', 'Mewnium Z'],
+	},
+	{
+		name: "[Gen 8] National Dex LC",
+		mod: 'gen8',
+		maxLevel: 5,
+		ruleset: ['Obtainable', 'Little Cup', 'Standard', 'Swagger Clause', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule'],
+		banlist: [
+			'Aipom', 'Cutiefly', 'Drifloon', 'Gligar', 'Gothita', 'Meditite', 'Misdreavus', 'Murkrow', 'Porygon',
+			'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Trapinch', 'Vulpix-Base', 'Wingull', 'Yanma',
+			'Eevium Z', 'Baton Pass', 'Dragon Rage', 'Sonic Boom',
+		],
 	},
 	{
 		name: "[Gen 8] National Dex AG",
