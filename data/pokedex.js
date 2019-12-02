@@ -15339,9 +15339,8 @@ roseradedelta: {
 	hoopaunbounddelta: {
 		num: 720,
 		species: "Hoopa-Delta-Unbound",
-		baseSpecies: "Hoopa-Delta",
-		forme: "Unbound",
-		formeLetter: "U",
+		baseSpecies: "Hoopa-Unbound",
+		forme: "Delta",
 		types: ["Flying"],
 		gender: "N",
 		baseStats: {hp: 80, atk: 160, def: 60, spa: 170, spd: 130, spe: 80},
