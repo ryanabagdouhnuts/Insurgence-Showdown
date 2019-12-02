@@ -4403,7 +4403,7 @@ let BattleAbilities = {
 		shortDesc: "If New Moon or Rain is active, this Pokemon's Sp. Atk is 1.5x",
 		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
-			if (this.field.isWeather(['newmoon','rain','primordialsea'])) {
+			if (this.field.isWeather(['newmoon','raindance','primordialsea'])) {
 				return this.chainModify(1.5);
 			}
 		},
@@ -4721,7 +4721,7 @@ let BattleAbilities = {
 	},
 	"trickhouse": {
 		shortDesc: "On switch-in, this Pokemon sets up Trick Room.",
-		onStart(source) {
+		onStart(target, source) {
 			this.add('-fieldstart', 'move: Trick Room', '[of] ' + source);
 		},
 		id: "trickhouse",
