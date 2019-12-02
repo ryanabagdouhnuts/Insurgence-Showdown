@@ -337,8 +337,7 @@ let Formats = [
 
 		mod: 'gen8',
 		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule'],
-		banlist: ['AG']
-		],
+		banlist: ['AG'],
 	},
 	{
 		name: "[Gen 8] National Dex UU",
