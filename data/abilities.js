@@ -4721,8 +4721,8 @@ let BattleAbilities = {
 	},
 	"trickhouse": {
 		shortDesc: "On switch-in, this Pokemon sets up Trick Room.",
-		onStart(target, source) {
-			this.add('-fieldstart', 'move: Trick Room', '[of] ' + source);
+		onStart(source) {
+			this.field.addPseudoWeather('trickroom');
 		},
 		id: "trickhouse",
 		name: "Trick House",
