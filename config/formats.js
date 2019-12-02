@@ -321,7 +321,7 @@ let Formats = [
 		section: "National Dex",
 	},
 	{
-		name: "[Gen 8] National Dex (beta)",
+		name: "[Gen 8] National Dex OU",
 
 		mod: 'gen8',
 		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule'],
@@ -331,6 +331,30 @@ let Formats = [
 			'Marshadow', 'Mewtwo', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Palkia', 'Pheromosa',
 			'Rayquaza', 'Reshiram', 'Salamence-Mega', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zekrom',
 		],
+	},
+	{
+		name: "[Gen 8] National Dex UU",
+		mod: 'gen8',
+		ruleset: ['[Gen 8] National Dex OU'],
+		banlist: ['OU', 'UUBL', 'Kommonium Z', 'Mewnium Z'],
+	},
+	{
+		name: "[Gen 8] National Dex RU",
+		mod: 'gen8',
+		ruleset: ['[Gen 8] National Dex OU'],
+		banlist: ['OU', 'UUBL','UU','RUBL', 'Kommonium Z', 'Mewnium Z'],
+	},
+	{
+		name: "[Gen 8] National Dex NU",
+		mod: 'gen8',
+		ruleset: ['[Gen 8] National Dex OU'],
+		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Kommonium Z', 'Mewnium Z'],
+	},
+	{
+		name: "[Gen 8] National Dex PU",
+		mod: 'gen8',
+		ruleset: ['[Gen 8] National Dex OU'],
+		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'NU', 'PUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
 		name: "[Gen 8] National Dex AG",

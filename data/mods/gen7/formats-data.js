@@ -4512,8 +4512,7 @@ let BattleFormatsData = {
 	meloettapirouette: {
 		randomBattleMoves: ["relicsong", "closecombat", "knockoff", "return"],
 		randomDoubleBattleMoves: ["relicsong", "closecombat", "knockoff", "return", "protect"],
-		requiredMove: "Relic Song",
-		battleOnly: true,
+		tire: "OU",
 	},
 	genesect: {
 		inherit: true,
