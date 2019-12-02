@@ -15322,6 +15322,7 @@ roseradedelta: {
 		weightkg: 490,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
+		otherFormes: ["hoopaunbounddelta"]
 	},
 	hoopadelta: {
 		num: 720,
@@ -15334,7 +15335,6 @@ roseradedelta: {
 		abilities: {0: "Cloud Nine"},
 		weightkg: 9,
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["hoopaunbounddelta"]
 	},
 	hoopaunbounddelta: {
 		num: 720,
