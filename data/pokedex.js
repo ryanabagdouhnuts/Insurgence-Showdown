@@ -15307,7 +15307,7 @@ roseradedelta: {
 		weightkg: 9,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["hoopaunbound","hoopadelta"],
+		otherFormes: ["hoopaunbound","hoopadelta","hoopaunbounddelta"],
 	},
 	hoopaunbound: {
 		num: 720,
@@ -15322,7 +15322,6 @@ roseradedelta: {
 		weightkg: 490,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["hoopaunbounddelta"]
 	},
 	hoopadelta: {
 		num: 720,
@@ -15338,9 +15337,9 @@ roseradedelta: {
 	},
 	hoopaunbounddelta: {
 		num: 720,
-		species: "Hoopa-Unbound-Delta",
-		baseSpecies: "Hoopa-Unbound",
-		forme: "Delta",
+		species: "Hoopa-UnboundD",
+		baseSpecies: "Hoopa",
+		forme: "UnboundD",
 		types: ["Flying"],
 		gender: "N",
 		baseStats: {hp: 80, atk: 160, def: 60, spa: 170, spd: 130, spe: 80},
