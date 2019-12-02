@@ -4722,10 +4722,9 @@ let BattleAbilities = {
 	"trickhouse": {
 		shortDesc: "On switch-in, this Pokemon sets up Trick Room.",
 		onStart(source) {
-			this.field.setPseudoWeather('trickroom');
-		},
-		onRestart(source) {
-			this.field.removePseudoWeather('trickroom');
+			if (this.field.isPseudoWeather('trickroom')
+				return this.field.removePseudoWeather('trickroom');
+				else this.field.removePseudoWeather('trickroom');
 		},
 		id: "trickhouse",
 		name: "Trick House",
