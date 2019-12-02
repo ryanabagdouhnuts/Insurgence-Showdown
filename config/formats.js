@@ -324,7 +324,7 @@ let Formats = [
 		name: "[Gen 8] National Dex OU",
 
 		mod: 'gen8',
-		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule'],
+		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
 		banlist: ['Uber', 'Power Construct', 'Shadow Tag', 'Baton Pass',
 			'Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Dialga', 'Genesect', 'Gengar-Mega', 'Giratina', 'Groudon',
 			'Ho-Oh', 'Kangaskhan-Mega', 'Kyogre', 'Kyurem-White', 'Landorus-Base', 'Lucario-Mega', 'Lugia', 'Lunala',
@@ -336,7 +336,7 @@ let Formats = [
 		name: "[Gen 8] National Dex Ubers",
 
 		mod: 'gen8',
-		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule'],
+		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
 		banlist: ['AG'],
 	},
 	{
@@ -367,7 +367,7 @@ let Formats = [
 		name: "[Gen 8] National Dex LC",
 		mod: 'gen8',
 		maxLevel: 5,
-		ruleset: ['Obtainable', 'Little Cup', 'Standard', 'Swagger Clause', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule'],
+		ruleset: ['Obtainable', 'Little Cup', 'Standard', 'Swagger Clause', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
 		banlist: [
 			'Aipom', 'Cutiefly', 'Drifloon', 'Gligar', 'Gothita', 'Meditite', 'Misdreavus', 'Murkrow', 'Porygon',
 			'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Trapinch', 'Vulpix-Base', 'Wingull', 'Yanma',
