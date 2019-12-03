@@ -1000,6 +1000,12 @@ let BattleAbilities = {
 			}
 			return null;
 		},
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Fighting') {
+					this.add('-immune', target, '[from] ability: Ethereal Shroud');
+			}
+			return null;
+		},
 		id: "etherealshroud",
 		name: "Ethereal Shroud",
 		rating: 3.5,
@@ -3690,9 +3696,12 @@ let BattleAbilities = {
 			if (move.ignoreImmunity !== true) {
 				move.ignoreImmunity['Fighting'] = true;
 				move.ignoreImmunity['Normal'] = true;
-				move.ignoreAbility['Ethereal Shroud'] = true;
+			}
+			if (move.ignoreAbility !== true) {
+				move.ignoreAbility['Etherial Shroud'] = true;
 			}
 		},
+		onModifyMove(move)
 		id: "scrappy",
 		name: "Scrappy",
 		rating: 3,
