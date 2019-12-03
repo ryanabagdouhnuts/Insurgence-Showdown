@@ -5486,7 +5486,7 @@ let BattleFormatsData = {
 		tier: "PU",
 	},
 	regigigasprimal: {
-		requiredItem: "crystalpieceregigigas",
+		requiredItem: "Crystal Piece Regigigas",
 		tier: "Uber",
 	},
 	giratina: {
@@ -5511,7 +5511,7 @@ let BattleFormatsData = {
 		tier: "Uber",
 	},
 	giratinaprimal: {
-		requiredItem: "crystalpiecegiratina",
+		requiredItem: "Crystal Piece Giratina",
 		tier: "Uber",
 	},
 	cresselia: {
@@ -5593,7 +5593,7 @@ let BattleFormatsData = {
 		tier: "Uber",
 	},
 	arceusprimal: {
-		requiredItem: "crystalpiecearceus",
+		requiredItem: "Crystal Piece Arceus",
 		tier: "Uber",
 	},
 	arceusbug: {
