@@ -410,10 +410,11 @@ let BattleAbilities = {
 			}
 			move.secondaries.push({
 				chance: 100,
-				self{boosts: {
-					spa: 1,
-					atk: 1,
-					spe: 1,
+				self:{
+					boosts: {
+						spa: 1,
+						atk: 1,
+						spe: 1,
 				},
 			}
 				ability: this.dex.getAbility('firedup'),
