@@ -13107,7 +13107,7 @@ let BattleMovedex = {
 		basePower: 0,
 		category: "Status",
 		desc: "For 5 turns, the weather becomes New Moon. The damage of Ghost and Dark-type attacks is multiplied by 1.35 and the damage of Fairy-type attacks is multiplied by 0.75 during the effect. Lasts for 8 turns if the user is holding Dark Rock. Fails if the current weather is New Moon.",
-		shortDesc: "For 5 turns, heavy rain powers Water moves.",
+		shortDesc: "For 5 turns, darkness boosts Ghost and Dark-type moves and weakens Fairy-type moves.",
 		id: "newmoon",
 		name: "New Moon",
 		pp: 5,
