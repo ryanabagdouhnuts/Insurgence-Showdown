@@ -997,8 +997,8 @@ let BattleAbilities = {
 		onTryHit(target, source, move) {
 			if (target !== source && !source.hasAbility('Scrappy') && (move.type === 'Normal' || move.type === 'Fighting')) {
 					this.add('-immune', target, '[from] ability: Ethereal Shroud');
-			}
 			return null;
+		}
 		},
 		id: "etherealshroud",
 		name: "Ethereal Shroud",
