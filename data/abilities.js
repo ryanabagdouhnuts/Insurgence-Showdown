@@ -3698,7 +3698,7 @@ let BattleAbilities = {
 				move.ignoreImmunity['Normal'] = true;
 			}
 			if (move.ignoreAbility !== true) {
-				move.ignoreAbility['Etherial Shroud'] = true;
+				move.ignoreAbility['Ethereal Shroud'] = true;
 			}
 		},
 		id: "scrappy",
