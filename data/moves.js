@@ -2921,7 +2921,7 @@ let BattleMovedex = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onEffectiveness(typeMod, target, type) {
-			if (type === 'Water') return 1;
+			if (type === 'Steel') return 1;
 		},
 		ignoreImmunity: {'Steel':true},
 		secondary: null,
