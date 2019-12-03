@@ -2923,7 +2923,7 @@ let BattleMovedex = {
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Steel') return 1;
 		},
-		ignoreImmunity: {'Steel':true},
+		ignoreImmunity: {'Poison':true},
 		secondary: null,
 		target: "allAdjacent",
 		type: "Poison",
