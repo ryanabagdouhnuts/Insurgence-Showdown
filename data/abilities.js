@@ -4108,7 +4108,7 @@ let BattleAbilities = {
 		},
 		onModifyMove(move, pokemon) {
 			if (move.flags['bite']) {
-				return this.getCategory(effect) === 'Special'
+				move.category = 'Special'
 			}
 		},
 		id: "spectraljaws",
