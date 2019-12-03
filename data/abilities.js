@@ -404,17 +404,18 @@ let BattleAbilities = {
 		desc: "When this Pokemon uses a Fire-type attack its Attack, Special Attack, and Speed are all increased by 1 stage each.",
 		shortDesc: "When the user uses a Fire-type attack its Attack, Special Attack, and Speed are increased by 1 stage.",
 		onModifyMove(move) {
-			if (!move || !move.type === 'Fire' || move.target === 'self') return;
+			if (move.category === 'Status' || !move.type === 'Fire' || move.target === 'self') return;
 			if (!move.secondaries) {
 				move.secondaries = [];
 			}
 			move.secondaries.push({
 				chance: 100,
-				boosts: {
+				self{boosts: {
 					spa: 1,
 					atk: 1,
 					spe: 1,
 				},
+			}
 				ability: this.dex.getAbility('firedup'),
 			});
 		},
