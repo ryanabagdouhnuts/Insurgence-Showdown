@@ -416,7 +416,7 @@ let BattleAbilities = {
 						atk: 1,
 						spe: 1,
 				},
-			}
+			},
 				ability: this.dex.getAbility('firedup'),
 			});
 		},
