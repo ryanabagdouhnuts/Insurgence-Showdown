@@ -3701,7 +3701,6 @@ let BattleAbilities = {
 				move.ignoreAbility['Etherial Shroud'] = true;
 			}
 		},
-		onModifyMove(move)
 		id: "scrappy",
 		name: "Scrappy",
 		rating: 3,
