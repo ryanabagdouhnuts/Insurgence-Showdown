@@ -995,7 +995,7 @@ let BattleAbilities = {
 			}
 		},
 		onTryHit(target, source, move) {
-			if (target === source && !source.hasAbility('Scrappy') && (move.type === 'Normal' || move.type === 'Fighting')) {
+			if (target !== source && !source.hasAbility('Scrappy') && (move.type === 'Normal' || move.type === 'Fighting')) {
 					this.add('-immune', target, '[from] ability: Ethereal Shroud');
 			}
 			return null;
