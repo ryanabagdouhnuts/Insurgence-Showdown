@@ -2920,14 +2920,10 @@ let BattleMovedex = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		onEffectiveness(typeMod, target, type, move) {
-			if (move.type !== 'Poison') return;
-			if (!target) return; // avoid crashing when called from a chat plugin
-			// ignore effectiveness if the target is Flying type and immune to Ground
-			if (!target.runImmunity('Poison')) {
-				if (target.hasType('Steel')) return 0;
-			}
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Water') return 1;
 		},
+		ignoreImmunity: {'Steel':true},
 		secondary: null,
 		target: "allAdjacent",
 		type: "Poison",
