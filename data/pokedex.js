@@ -15304,7 +15304,7 @@ roseradedelta: {
 		weightkg: 9,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
-		otherFormes: ["hoopaunbound","hoopadelta","hoopaunbounddelta"],
+		otherFormes: ["hoopaunbound","hoopadelta"],
 	},
 	hoopaunbound: {
 		num: 720,
@@ -15331,14 +15331,14 @@ roseradedelta: {
 		abilities: {0: "Cloud Nine"},
 		weightkg: 9,
 		eggGroups: ["Undiscovered"],
+		otherFormes: ["hoopadeltaunbound"]
 	},
-	hoopaunbounddelta: {
+	hoopadeltaunbound: {
 		num: 720,
-		species: "Hoopa-UnboundD",
-		baseSpecies: "Hoopa",
-		forme: "UnboundD",
+		species: "Hoopa-Delta-Unbound",
+		baseSpecies: "Hoopa-Delta",
+		forme: "Unbound",
 		types: ["Flying"],
-		gender: "N",
 		baseStats: {hp: 80, atk: 160, def: 60, spa: 170, spd: 130, spe: 80},
 		abilities: {0: "Cloud Nine"},
 		weightkg: 9,
