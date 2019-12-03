@@ -2423,7 +2423,7 @@ let BattleFormatsData = {
 		tier: "Uber",
 	},
 	mewtwoarmor: {
-		requiredItem: "mewtwoarmor",
+		requiredItem: "Mewtwo Armor",
 		tier: "Uber",
 	},
 	mewtwoshadow: {
@@ -3307,7 +3307,7 @@ let BattleFormatsData = {
 		doublesTier: "DOU",
 	},
 	tyranitararmor: {
-		requiredItem: "tyranitararmor",
+		requiredItem: "Tyranitar Armor",
 		tier: "OU",
 	},
 	tyranitarmega: {
@@ -4162,7 +4162,7 @@ let BattleFormatsData = {
 		doublesTier: "DOU",
 	},
 	flygonarmor: {
-		requiredItem: "flygonarmor",
+		requiredItem: "Flygon Armor",
 		tier: "UU",
 	},
 	flygonmega: {
@@ -6006,7 +6006,7 @@ let BattleFormatsData = {
 		tier: "PU",
 	},
 	leavannyarmor: {
-		requiredItem: "leavannyarmor",
+		requiredItem: "Leavanny Armor",
 		tier: "PU",
 	},
 	venipede: {
@@ -6762,7 +6762,7 @@ let BattleFormatsData = {
 		tier: "OU",
 	},
 	volcaronadeltaarmor: {
-		requiredItem: "volcaronadeltaarmor",
+		requiredItem: "Volcarona Delta Armor",
 		tier: "OU",
 	},
 	cobalion: {
@@ -6873,7 +6873,7 @@ let BattleFormatsData = {
 		tier: "Uber",
 	},
 	zekromarmor: {
-		requiredItem: "zekromarmor",
+		requiredItem: "Zekrom Armor",
 		tier: "Uber",
 	},
 	landorus: {
