@@ -15339,6 +15339,7 @@ roseradedelta: {
 		baseSpecies: "Hoopa-Delta",
 		forme: "Unbound",
 		types: ["Flying"],
+		gender: "N",
 		baseStats: {hp: 80, atk: 160, def: 60, spa: 170, spd: 130, spe: 80},
 		abilities: {0: "Cloud Nine"},
 		weightkg: 9,
