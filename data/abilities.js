@@ -416,8 +416,8 @@ let BattleAbilities = {
 						atk: 1,
 						spe: 1,
 				},
-			},
 				ability: this.dex.getAbility('firedup'),
+			},
 			});
 		},
 		id: "firedup",
@@ -1007,7 +1007,7 @@ let BattleAbilities = {
 			}
 		},
 		onTryHit(target, source, move) {
-			if (target !== source && (!move.ignoreImmunity || !move.ignoreImmunity['Fighting'] || !move.ignoreImmunity['Normal']) && (move.type === 'Normal' || move.type === 'Fighting')) {
+			if (move.category !== 'Status' && target !== source && (!move.ignoreImmunity || !move.ignoreImmunity['Fighting'] || !move.ignoreImmunity['Normal']) && (move.type === 'Normal' || move.type === 'Fighting')) {
 					this.add('-immune', target, '[from] ability: Ethereal Shroud');
 			return null;
 		}
