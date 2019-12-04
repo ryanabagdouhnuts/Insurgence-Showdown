@@ -13350,7 +13350,7 @@ roseradedelta: {
 		forme: "Mega",
 		formeLetter: "M",
 		types: ["Flying","Fighting"],
-		baseStats: {hp: 65, atk: 145, def: 125, spa: 60, spd: 85, spe: 105},
+		baseStats: {hp: 65, atk: 155, def: 100, spa: 70, spd: 80, spe: 120},
 		abilities: {0: "Technician"},
 		weightkg: 70,
 	},
