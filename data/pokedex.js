@@ -3320,7 +3320,7 @@ golemdelta: {
 		otherFormes: ["kabutopsdelta"]
 	},
 	kabutopsdelta: {
-		num: 140,
+		num: 141,
 		species: "Kabutops-Delta",
 		baseSpecies: "Kabutops",
 		forme: "Delta",
