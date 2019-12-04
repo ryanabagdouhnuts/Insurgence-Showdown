@@ -337,7 +337,7 @@ let Formats = [
 
 		mod: 'gen8',
 		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
-		banlist: ['AG'],
+		banlist: ['AG','Crystal Piece Regigigas'],
 	},
 	{
 		name: "[Gen 8] National Dex UU",
