@@ -1403,9 +1403,9 @@ let BattlePokedex = {
 		otherFormes: ["dugtrioalola","dugtriodelta"],
 	},
 	dugtriodelta: {
-		num: 50,
-		species: "Diglett-Delta",
-		baseSpecies: "Diglett",
+		num: 51,
+		species: "Dugtrio-Delta",
+		baseSpecies: "Dugtrio",
 		forme: "Delta",
 		types: ["Ice","Normal"],
 		baseStats: {hp: 10, atk: 55, def: 25, spa: 35, spd: 45, spe: 95},
