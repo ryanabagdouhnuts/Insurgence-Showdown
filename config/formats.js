@@ -365,15 +365,10 @@ let Formats = [
 	},
 	{
 		name: "[Gen 8] National Dex LC",
-		threads: [
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3656348/">LC Metagame Discussion</a>`,
-		],
-
 		mod: 'gen8',
 		maxLevel: 5,
 		ruleset: ['Obtainable', 'Little Cup', 'Standard', 'Team Preview', 'Dynamax Clause','+Past', 'NatDex Rule','+Unreleased'],
 		banlist: ['Corsola-Galar', 'Sneasel', 'Swirlix', 'Baton Pass','Murkrow', 'Misdreavus', 'Porygon', 'Aipom', 'Cutiefly', 'Drifloon', 'Gothita', 'Meditite', 'Murkrow', 'Trapinch', 'Vulpix', 'Wingull', 'Yanma', 'Yanma-Delta'],
-		minSourceGen: 8,
 	},
 	{
 		name: "[Gen 8] National Dex AG",
