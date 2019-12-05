@@ -364,15 +364,16 @@ let Formats = [
 		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'NU', 'PUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
-		name: "[Gen 8] National Dex LC",
+		name: "[Gen 8] LC",
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3656348/">LC Metagame Discussion</a>`,
+		],
+
 		mod: 'gen8',
 		maxLevel: 5,
-		ruleset: ['Obtainable', 'Little Cup', 'Standard', 'Swagger Clause', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
-		banlist: [
-			'Aipom', 'Cutiefly', 'Drifloon', 'Gligar', 'Gothita', 'Meditite', 'Misdreavus', 'Murkrow', 'Porygon',
-			'Scyther', 'Sneasel', 'Swirlix', 'Tangela', 'Trapinch', 'Vulpix-Base', 'Wingull', 'Yanma',
-			'Eevium Z', 'Baton Pass', 'Dragon Rage', 'Sonic Boom',
-		],
+		ruleset: ['Obtainable', 'Little Cup', 'Standard', 'Team Preview', 'Dynamax Clause','+Past', 'NatDex Rule','+Unreleased'],
+		banlist: ['Corsola-Galar', 'Sneasel', 'Swirlix', 'Baton Pass','Murkrow', 'Misdreavus', 'Porygon', 'Aipom', 'Cutiefly', 'Drifloon', 'Gothita', 'Meditite', 'Murkrow', 'Trapinch', 'Vulpix', 'Wingull', 'Yanma', 'Yanma-Delta'],
+		minSourceGen: 8,
 	},
 	{
 		name: "[Gen 8] National Dex AG",
