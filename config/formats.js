@@ -364,7 +364,7 @@ let Formats = [
 		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'NU', 'PUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
-		name: "[Gen 8] LC",
+		name: "[Gen 8] National Dex LC",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3656348/">LC Metagame Discussion</a>`,
 		],
