@@ -2960,7 +2960,7 @@ let BattleAbilities = {
 	},
 	"phototroph": {
 		desc: "Restores 1/16 of this Pokémons maximum HP, rounded down, at the end of each turn. If Sunny Day is active, this Pokemon restores 1/8 of its maximum HP, rounded down, at the end of each turn.",
-		shortDesc: "Restores 1/16 of its max HP each turn. If Rain Dance is active, this Pokemon heals 1/8 of its max HP each turn.",
+		shortDesc: "Restores 1/16 of its max HP each turn. If Sunny Day is active, this Pokemon heals 1/8 of its max HP each turn.",
 		onWeather(target, source, effect) {
 			if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
 				this.heal(target.maxhp / 16);
