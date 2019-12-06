@@ -22070,7 +22070,7 @@ let BattleLearnsets = {
 		dracojet: ["7M"],
 		dragonbreath: ["7V"],
 		dragonclaw: ["7M", "6M", "5M", "4M", "3M"],
-		dragodance: ["8M"],
+		dragondance: ["8M"],
 		dragonify: ["7M"],
 		dragonpulse: ["7T", "6T", "5T", "4M"],
 		dragonrage: ["7V"],
