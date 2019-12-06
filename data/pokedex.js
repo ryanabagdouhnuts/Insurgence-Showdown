@@ -7927,7 +7927,7 @@ roseliadelta: {
 		forme: "Delta",
 		types: ["Dragon","Dark"],
 		baseStats: {hp: 55, atk: 104, def: 105, spa: 94, spd: 75, spe: 52},
-		abilities: {0: "Pressure", H: "Strong Jaws"},
+		abilities: {0: "Pressure", H: "Strong Jaw"},
 		weightkg: 27,
 		prevo: "clamperldelta",
 		evoType: "trade",
