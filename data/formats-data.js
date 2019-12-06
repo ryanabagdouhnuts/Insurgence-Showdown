@@ -694,7 +694,7 @@ let BattleFormatsData = {
 		encounters: [
 			{"generation": 1, "level": 18},
 		],
-		tier: "LC",
+		tier: "LC Uber",
 	},
 	vulpixalola: {
 		eventPokemon: [
@@ -3643,7 +3643,7 @@ let BattleFormatsData = {
 			{"generation": 3, "level": 2},
 		],
 		unreleasedHidden: true,
-		tier: "LC",
+		tier: "LC Uber",
 	},
 	pelipper: {
 		randomBattleMoves: ["hurricane", "hydropump", "knockoff", "roost", "scald", "uturn"],
@@ -4147,7 +4147,7 @@ let BattleFormatsData = {
 		eventPokemon: [
 			{"generation": 5, "level": 1, "shiny": true, "isHidden": false, "moves": ["bite"], "pokeball": "pokeball"},
 		],
-		tier: "LC",
+		tier: "LC Uber",
 	},
 	vibrava: {
 		tier: "NFE",
@@ -5114,7 +5114,7 @@ let BattleFormatsData = {
 	},
 	drifloon: {
 		unreleasedHidden: true,
-		tier: "LC",
+		tier: "LC Uber",
 	},
 	drifloondelta: {
 		tier: "LC",
@@ -6276,7 +6276,7 @@ let BattleFormatsData = {
 		doublesTier: "DOU",
 	},
 	gothita: {
-		tier: "LC",
+		tier: "LC Uber",
 	},
 	gothorita: {
 		eventPokemon: [
@@ -7682,7 +7682,7 @@ let BattleFormatsData = {
 		tier: "PU",
 	},
 	cutiefly: {
-		tier: "LC",
+		tier: "LC Uber",
 	},
 	ribombee: {
 		randomBattleMoves: ["aromatherapy", "moonblast", "stickyweb", "stunspore", "uturn"],

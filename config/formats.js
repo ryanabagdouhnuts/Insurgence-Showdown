@@ -368,7 +368,7 @@ let Formats = [
 		mod: 'gen8',
 		maxLevel: 5,
 		ruleset: ['Obtainable', 'Little Cup', 'Standard', 'Team Preview', 'Dynamax Clause','+Past', 'NatDex Rule','+Unreleased'],
-		banlist: ['Corsola-Galar', 'Sneasel', 'Swirlix', 'Baton Pass','Murkrow', 'Misdreavus', 'Porygon', 'Aipom', 'Cutiefly', 'Drifloon', 'Gothita', 'Meditite', 'Murkrow', 'Trapinch', 'Vulpix', 'Wingull', 'Yanma', 'Yanma-Delta', 'Scyther', 'Scyther-Delta', 'Tangela', 'Gligar'],
+		banlist: ['Baton Pass', 'LC Uber', 'Gligar', 'Scyther'],
 	},
 	{
 		name: "[Gen 8] National Dex AG",
