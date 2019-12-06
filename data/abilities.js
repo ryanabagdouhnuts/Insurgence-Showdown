@@ -1604,8 +1604,8 @@ let BattleAbilities = {
 		num: 134,
 	},
 	"heliophobia": {
-		desc: "If New Moon is active, this Pokemon's Special Attack is multiplied by 1.5 and it loses 1/8 of its maximum HP, rounded down, at the end of each turn.",
-		shortDesc: "If New Moon is active, this Pokemon's Sp. Atk is 1.5x; loses 1/8 max HP per turn.",
+		desc: "If New Moon is active, this Pokemon gains 1/8, rounded down, of its maximum HP, if Sunny Day is active it loses 1/8 of its maximum HP, rounded down, at the end of each turn.",
+		shortDesc: "This Pokemon is healed 1/8 by Darkness; is hurt 1/8 by Sun.",
 		onModifySpAPriority: 5,
 		onWeather(target, source, effect) {
 			if (effect.id === 'newmoon') {
