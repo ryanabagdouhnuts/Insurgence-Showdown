@@ -4637,7 +4637,7 @@ golemdelta: {
 		weightkg: 41.5,
 		color: "Yellow",
 		eggGroups: ["Field"],
-		otherFormes: ["girafarigmega"]
+		otherFormes: ["girafarigmega","girafarigdelta"]
 	},
 	girafarigdelta: {
 		num: 203,
@@ -4713,7 +4713,7 @@ golemdelta: {
 		species: "Dunsparce-Delta",
 		baseSpecies: "Dunsparce",
 		forme: "Delta",
-		types: ["Bug","Water"],
+		types: ["Water","Bug"],
 		baseStats: {hp: 100, atk: 70, def: 70, spa: 65, spd: 65, spe: 45},
 		abilities: {0: "Hyper Cutter", 1: "Swift Swim", H: "Skill Link"},
 		weightkg: 14,
@@ -5702,7 +5702,7 @@ golemdelta: {
 		genderRatio: {M: 0.875, F: 0.125},
 		baseStats: {hp: 80, atk: 120, def: 70, spa: 110, spd: 70, spe: 80},
 		abilities: {0: "Keen Eye", H: "Gale Wings"},
-		weightkg: 19.5,
+		weightkg: 52,
 		prevo: "combuskendelta",
 		evoLevel: "36",
 		eggGroups: ["Undiscovered"],
@@ -9237,7 +9237,7 @@ roseradedelta: {
 		types: ["Fire", "Flying"],
 		baseStats: {hp: 150, atk: 80, def: 44, spa: 90, spd: 54, spe: 80},
 		abilities: {0: "Flash Fire", 1: "Vital Spirit", H: "No Guard"},
-		weightkg: 1.2,
+		weightkg: 15,
 		prevo: "drifloondelta",
 		evoLevel: 28,
 		eggGroups: ["Undiscovered"],
