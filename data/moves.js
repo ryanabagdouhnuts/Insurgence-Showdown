@@ -4683,7 +4683,7 @@ let BattleMovedex = {
 			onBasePower(basePower, attacker, defender, move) {
 				if (move.type === 'Electric' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
 					this.debug('electric terrain boost');
-					return this.chainModify(1.5);
+					return this.chainModify(1.3);
 				}
 			},
 			onStart(battle, source, effect) {
@@ -7808,7 +7808,7 @@ let BattleMovedex = {
 				}
 				if (move.type === 'Grass' && attacker.isGrounded()) {
 					this.debug('grassy terrain boost');
-					return this.chainModify(1.5);
+					return this.chainModify(1.3);
 				}
 			},
 			onStart(battle, source, effect) {
@@ -14674,7 +14674,7 @@ let BattleMovedex = {
 			onBasePower(basePower, attacker, defender, move) {
 				if (move.type === 'Psychic' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
 					this.debug('psychic terrain boost');
-					return this.chainModify(1.5);
+					return this.chainModify(1.3);
 				}
 			},
 			onStart(battle, source, effect) {
