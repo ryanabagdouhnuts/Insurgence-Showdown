@@ -13542,7 +13542,7 @@ roseradedelta: {
 		types: ["Ground","Poison"],
 		baseStats: {hp: 92, atk: 105, def: 90, spa: 125, spd: 90, spe: 98},
 		abilities: {0: "Intoxicate"},
-		weightkg: 50,
+		weightkg: 160,
 		prevo: "zweilousdelta",
 		evoLevel: 64,
 		eggGroups: ["Undiscovered"],
