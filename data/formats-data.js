@@ -7545,7 +7545,7 @@ let BattleFormatsData = {
 		isNonstandard: "Past",
 		tier: "OU",
 	},
-	hoopaunbounddelta: {
+	hoopadeltaunbound: {
 		tier: "OU",
 	},
 	volcanion: {
