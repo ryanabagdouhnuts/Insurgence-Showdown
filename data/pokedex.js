@@ -1408,7 +1408,7 @@ let BattlePokedex = {
 		baseSpecies: "Dugtrio",
 		forme: "Delta",
 		types: ["Ice","Normal"],
-		baseStats: {hp: 10, atk: 55, def: 25, spa: 35, spd: 45, spe: 95},
+		baseStats: {hp: 35, atk: 100, def: 50, spa: 50, spd: 70, spe: 120},
 		abilities: {0: "Snow Cloak", 1: "Slush Rush", H: "Fur Coat"},
 		weightkg: 33.3,
 		prevo: "diglettdelta",
