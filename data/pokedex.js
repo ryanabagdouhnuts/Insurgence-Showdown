@@ -13606,7 +13606,7 @@ roseradedelta: {
 		baseStats: {hp: 85, atk: 60, def: 65, spa: 135, spd: 105, spe: 100},
 		abilities: {0: "Levitate", H: "Absolution"},
 		weightkg: 46,
-		prevo: "larvesta",
+		prevo: "larvestadelta",
 		evoLevel: 59,
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["volcaronadeltaarmor"]
