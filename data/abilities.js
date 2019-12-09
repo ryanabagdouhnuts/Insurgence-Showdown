@@ -1990,7 +1990,7 @@ let BattleAbilities = {
 		num: 89,
 	},
 	"irrelephant": {
-		shortDesc: "This Pokemon can hit Flying types with Ground-type moves.",
+		shortDesc: "This Pokemon ignores type-based immunities.",
 		onModifyMovePriority: -5,
 		onModifyMove(move) {
 			if (!move.ignoreImmunity) move.ignoreImmunity = {};

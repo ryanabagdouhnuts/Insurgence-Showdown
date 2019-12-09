@@ -1730,7 +1730,7 @@ let BattleFormatsData = {
 		tier: "LC Uber",
 	},
 	tangeladelta: {
-		tier: "LC",
+		tier: "LC Uber",
 	},
 	tangrowth: {
 		eventPokemon: [
