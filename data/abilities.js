@@ -1943,7 +1943,7 @@ let BattleAbilities = {
 		},
 		onBasePowerPriority: 8,
 		onBasePower(basePower, pokemon, target, move) {
-			if (move.intoxicateBoosted) return this.chainModify([0x14CC, 0x1000]);
+			if (move.intoxicateBoosted) return this.chainModify([0x1333, 0x1000]);
 		},
 		id: "intoxicate",
 		name: "Intoxicate",
