@@ -19571,7 +19571,7 @@ let BattleMovedex = {
 			onEffectiveness(typeMod, target, type, move) {
 				if (move.type !== 'Fire') return;
 				if (!target || !target.volatiles['tarshot']) return;
-				return this.dex.getEffectiveness('Fire', target) + 1;
+				return typeMod + 1;
 			},
 			onResidualOrder: 21,
 			onEnd(pokemon) {
