@@ -402,7 +402,7 @@ let BattleAbilities = {
 	},
 	"firedup": {
 		desc: "When this Pokemon uses a Fire-type attack its Attack, Special Attack, and Speed are all increased by 1 stage each.",
-		shortDesc: "When the user uses a Fire-type attack its Attack, Special Attack, and Speed are increased by 1 stage.",
+		shortDesc: "Raises Attack, Sp. Atk and Speed by 1 stage after using a Fire-type attack.",
 		onModifyMove(move) {
 			if (move.category === 'Status' || !move.type === 'Fire' || move.target === 'self') return;
 			if (!move.secondaries) {
@@ -451,8 +451,8 @@ let BattleAbilities = {
 		num: 167,
 	},
 	"chlorofury": {
-		desc: "On switch-in, this Pokemon's Attack or Special Attack is raised by 1 stage based on the weaker combined defensive stat of all opposing Pokemon. Attack is raised if their Defense is lower, and Special Attack is raised if their Special Defense is the same or lower.",
-		shortDesc: "On switch-in, Attack or Sp. Atk is raised 1 stage based on the foes' weaker Defense.",
+		desc: "On switch-in, this Pokemon's Special Attack and Special Defense are raised by 1 stage.",
+		shortDesc: "On switch-in, Sp. Atk and Sp. Def are raised 1 stage.",
 		onStart(pokemon) {
 			this.boost({spa: 1,spd: 1});
 		},
@@ -998,7 +998,7 @@ let BattleAbilities = {
 	},
 	"etherealshroud": {
 		desc: "If a Pokemon uses a Bug- or Poison-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon. This Pokémon is immune to Normal- and Fighting type moves.",
-		shortDesc: "Fire/Ice-type moves against this Pokemon deal damage with a halved attacking stat.",
+		shortDesc: "Gains the immunities and resistances of the Ghost-type.",
 		onSourceModifyAtkPriority: 6,
 		onSourceModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Bug' || move.type === 'Poison') {
@@ -2960,7 +2960,7 @@ let BattleAbilities = {
 	},
 	"phototroph": {
 		desc: "Restores 1/16 of this Pokémons maximum HP, rounded down, at the end of each turn. If Sunny Day is active, this Pokemon restores 1/8 of its maximum HP, rounded down, at the end of each turn.",
-		shortDesc: "Restores 1/16 of its max HP each turn. If Sunny Day is active, this Pokemon heals 1/8 of its max HP each turn.",
+		shortDesc: "Restores 1/16 of its max HP each turn. Heals 1/8 if Sunny Day is active.",
 		onWeather(target, source, effect) {
 			if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
 				this.heal(target.maxhp / 16);
