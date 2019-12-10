@@ -11908,7 +11908,7 @@ roseradedelta: {
 		prevo: "darumaka",
 		evoLevel: 35,
 		eggGroups: ["Field"],
-		otherFormes: ["darmanitanzen","darmanitandelta","darmanitangalar"],
+		otherFormes: ["darmanitanzen","darmanitandelta","darmanitangalar","darmanitangalarzen"],
 	},
 	darmanitandelta: {
 		num: 555,
@@ -11957,8 +11957,8 @@ roseradedelta: {
 	darmanitangalarzen: {
 		num: 555,
 		species: "Darmanitan-Galar-Zen",
-		baseSpecies: "Darmanitan-Galar",
-		forme: "Zen",
+		baseSpecies: "Darmanitan",
+		forme: "Galar-Zen",
 		types: ["Ice", "Fire"],
 		baseStats: {hp: 105, atk: 160, def: 55, spa: 30, spd: 55, spe: 135},
 		abilities: {0: "Zen Mode"},
