@@ -861,7 +861,7 @@ let BattleStatuses = {
 		num: 493,
 		onTypePriority: 1,
 		onType(types, pokemon) {
-			if (pokemon.transformed) return types;
+			if (pokemon.transformed || pokemon.ability !== 'multitype' && this.gen >= 8) return types;
 			/** @type {string | undefined} */
 			let type = 'Normal';
 			if (pokemon.ability === 'multitype') {
@@ -879,7 +879,7 @@ let BattleStatuses = {
 		num: 773,
 		onTypePriority: 1,
 		onType(types, pokemon) {
-			if (pokemon.transformed) return types;
+			if (pokemon.transformed || pokemon.ability !== 'rkssystem' && this.gen >= 8) return types;
 			/** @type {string | undefined} */
 			let type = 'Normal';
 			if (pokemon.ability === 'rkssystem') {
