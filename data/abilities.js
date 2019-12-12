@@ -2013,7 +2013,7 @@ let BattleAbilities = {
 				if (!target.hasAbility('flashfire')) {
 					move.ignoreImmunity['Fire'] = true;
 				}
-				if (!target.hasAbility(['waterabsorb','stormdrain','dryskin'])) {
+				if (!target.hasAbility(['waterabsorb','stormdrain','dryskin','vaporization'])) {
 					move.ignoreImmunity['Water'] = true;
 				}
 				if (!target.hasAbility('sapsipper')) {
