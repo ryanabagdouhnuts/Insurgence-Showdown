@@ -1994,25 +1994,31 @@ let BattleAbilities = {
 		onModifyMovePriority: -5,
 		onModifyMove(move) {
 			if (!move.ignoreImmunity) move.ignoreImmunity = {};
-			if (move.ignoreImmunity !== true) {
+			if (move.ignoreImmunity !== true && !target.hasAbility('wonderguard')) {
 				move.ignoreImmunity['Fighting'] = true;
 				move.ignoreImmunity['Normal'] = true;
-				move.ignoreImmunity['Ground'] = true;
+				if (!target.hasAbility('levitate')) {
+					move.ignoreImmunity['Ground'] = true;
+				}
 				move.ignoreImmunity['Psychic'] = true;
-				move.ignoreImmunity['Ice'] = true;
-				move.ignoreImmunity['Flying'] = true;
-				move.ignoreImmunity['Electric'] = true;
-				move.ignoreImmunity['Steel'] = true;
-				move.ignoreImmunity['Rock'] = true;
+				if (!target.hasAbility('windforce')) {
+					move.ignoreImmunity['Flying'] = true;
+				}
+				if (!target.hasAbility(['voltabsorb','motordrive','lightningrod'])) {
+					move.ignoreImmunity['Electric'] = true;
+				}
 				move.ignoreImmunity['Poison'] = true;
 				move.ignoreImmunity['Ghost'] = true;
-				move.ignoreImmunity['Dark'] = true;
 				move.ignoreImmunity['Dragon'] = true;
-				move.ignoreImmunity['Fairy'] = true;
-				move.ignoreImmunity['Fire'] = true;
-				move.ignoreImmunity['Water'] = true;
-				move.ignoreImmunity['Grass'] = true;
-				move.ignoreImmunity['Bug'] = true;
+				if (!target.hasAbility('flashfire')) {
+					move.ignoreImmunity['Fire'] = true;
+				}
+				if (!target.hasAbility(['waterabsorb','stormdrain','dryskin'])) {
+					move.ignoreImmunity['Water'] = true;
+				}
+				if (!target.hasAbility('sapsipper')) {
+					move.ignoreImmunity['Grass'] = true;
+				}
 			}
 		},
 		id: "irrelephant",
