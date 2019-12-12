@@ -1997,8 +1997,6 @@ let BattleAbilities = {
 			if (move.ignoreImmunity !== true && !target.hasAbility('wonderguard')) {
 				if (!target.hasAbility('etherealshroud')) {
 					move.ignoreImmunity['Fighting'] = true;
-				}
-				if (!target.hasAbility('etherealshroud')) {
 					move.ignoreImmunity['Normal'] = true;
 				}
 				if (!target.hasAbility('levitate') && !target.hasItem('airballoon') && !target.volatiles['magnetrise']) {
@@ -2008,7 +2006,7 @@ let BattleAbilities = {
 				if (!target.hasAbility('windforce')) {
 					move.ignoreImmunity['Flying'] = true;
 				}
-				if (!target.hasAbility(['voltabsorb','motordrive','lightningrod'])) {
+				if (!target.hasAbility('voltabsorb') && !target.hasAbility('motordrive') && !target.hasAbility('lightningrod')) {
 					move.ignoreImmunity['Electric'] = true;
 				}
 				move.ignoreImmunity['Poison'] = true;
@@ -2017,7 +2015,7 @@ let BattleAbilities = {
 				if (!target.hasAbility('flashfire')) {
 					move.ignoreImmunity['Fire'] = true;
 				}
-				if (!target.hasAbility(['waterabsorb','stormdrain','dryskin','vaporization'])) {
+				if (!target.hasAbility('waterabsorb') && !target.hasAbility('stormdrain') && !target.hasAbility('dryskin') && !target.hasAbility('vaporization')) {
 					move.ignoreImmunity['Water'] = true;
 				}
 				if (!target.hasAbility('sapsipper')) {
