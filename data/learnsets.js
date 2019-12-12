@@ -15334,6 +15334,7 @@ let BattleLearnsets = {
 		mirrormove: ["7M"],
 		acrobatics: ["7M"],
 		hurricane: ["7M"],
+		overdrive: ["8M"],
 		haze: ["7M"],
 		bellydrum: ["7M"],
 		tackle: ["7M"],
