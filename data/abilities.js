@@ -2001,7 +2001,7 @@ let BattleAbilities = {
 				if (!target.hasAbility('etherealshroud')) {
 					move.ignoreImmunity['Normal'] = true;
 				}
-				if (!target.hasAbility('levitate') && !target.hasItem('airballoon')) {
+				if (!target.hasAbility('levitate') && !target.hasItem('airballoon') && !target.volatiles['magnetrise']) {
 					move.ignoreImmunity['Ground'] = true;
 				}
 				move.ignoreImmunity['Psychic'] = true;
