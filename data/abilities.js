@@ -1997,7 +1997,7 @@ let BattleAbilities = {
 			if (move.ignoreImmunity !== true && !target.hasAbility('wonderguard')) {
 				move.ignoreImmunity['Fighting'] = true;
 				move.ignoreImmunity['Normal'] = true;
-				if (!target.hasAbility('levitate')) {
+				if (!target.hasAbility('levitate') && !target.hasItem('airballoon')) {
 					move.ignoreImmunity['Ground'] = true;
 				}
 				move.ignoreImmunity['Psychic'] = true;
