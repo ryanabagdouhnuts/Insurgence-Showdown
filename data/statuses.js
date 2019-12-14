@@ -614,12 +614,8 @@ let BattleStatuses = {
 				this.add('-weather', 'SunnyDay');
 			}
 		},
-<<<<<<< HEAD
-		onImmunity(type) {
-=======
 		onImmunity(type, pokemon) {
 			if (pokemon.hasItem('utilityumbrella')) return;
->>>>>>> upstream/master
 			if (type === 'frz') return false;
 		},
 		onResidualOrder: 1,
@@ -656,12 +652,8 @@ let BattleStatuses = {
 		onStart(battle, source, effect) {
 			this.add('-weather', 'DesolateLand', '[from] ability: ' + effect, '[of] ' + source);
 		},
-<<<<<<< HEAD
-		onImmunity(type) {
-=======
 		onImmunity(type, pokemon) {
 			if (pokemon.hasItem('utilityumbrella')) return;
->>>>>>> upstream/master
 			if (type === 'frz') return false;
 		},
 		onResidualOrder: 1,

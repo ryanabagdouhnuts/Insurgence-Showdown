@@ -463,13 +463,8 @@ let BattleAbilities = {
 	},
 	"chlorophyll": {
 		shortDesc: "If Sunny Day is active, this Pokemon's Speed is doubled.",
-<<<<<<< HEAD
-		onModifySpe(spe) {
-			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
-=======
 		onModifySpe(spe, pokemon) {
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
->>>>>>> upstream/master
 				return this.chainModify(2);
 			}
 		},
@@ -924,10 +919,7 @@ let BattleAbilities = {
 			}
 		},
 		onWeather(target, source, effect) {
-<<<<<<< HEAD
-=======
 			if (target.hasItem('utilityumbrella')) return;
->>>>>>> upstream/master
 			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
 				this.heal(target.baseMaxhp / 8);
 			} else if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
@@ -1129,22 +1121,14 @@ let BattleAbilities = {
 		num: 18,
 	},
 	"flowergift": {
-<<<<<<< HEAD
-		desc: "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5.",
-=======
 		desc: "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5. If this Pokemon is a Cherrim and it is holding Utility Umbrella, it remains in its regular form and the Attack and Special Defense stats of it and its allies are not boosted. If this Pokemon is a Cherrim in its Sunshine form and is given Utility Umbrella, it will immediately switch back to its regular form. If this Pokemon is a Cherrim holding Utility Umbrella and its item is removed while Sunny Day is active, it will transform into its Sunshine Form. If an ally is holding Utility Umbrella while Cherrim is in its Sunshine Form, they will not receive the Attack and Special Defense boosts.",
->>>>>>> upstream/master
 		shortDesc: "If user is Cherrim and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x.",
 		onStart(pokemon) {
 			delete this.effectData.forme;
 		},
 		onUpdate(pokemon) {
 			if (!pokemon.isActive || pokemon.baseTemplate.baseSpecies !== 'Cherrim' || pokemon.transformed) return;
-<<<<<<< HEAD
-			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
-=======
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
->>>>>>> upstream/master
 				if (pokemon.template.speciesid !== 'cherrimsunshine') {
 					pokemon.formeChange('Cherrim-Sunshine', this.effect, false, '[msg]');
 				}
@@ -1157,22 +1141,14 @@ let BattleAbilities = {
 		onAllyModifyAtkPriority: 3,
 		onAllyModifyAtk(atk) {
 			if (this.effectData.target.baseTemplate.baseSpecies !== 'Cherrim') return;
-<<<<<<< HEAD
-			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
-=======
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
->>>>>>> upstream/master
 				return this.chainModify(1.5);
 			}
 		},
 		onModifySpDPriority: 4,
 		onAllyModifySpD(spd) {
 			if (this.effectData.target.baseTemplate.baseSpecies !== 'Cherrim') return;
-<<<<<<< HEAD
-			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
-=======
 			if (['sunnyday', 'desolateland'].includes(pokemon.effectiveWeather())) {
->>>>>>> upstream/master
 				return this.chainModify(1.5);
 			}
 		},
@@ -2106,21 +2082,13 @@ let BattleAbilities = {
 		desc: "If Sunny Day is active, this Pokemon cannot gain a major status condition and Rest will fail for it.",
 		shortDesc: "If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it.",
 		onSetStatus(status, target, source, effect) {
-<<<<<<< HEAD
-			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
-=======
 			if (['sunnyday', 'desolateland'].includes(target.effectiveWeather())) {
->>>>>>> upstream/master
 				if (effect && effect.status) this.add('-immune', target, '[from] ability: Leaf Guard');
 				return false;
 			}
 		},
 		onTryAddVolatile(status, target) {
-<<<<<<< HEAD
-			if (status.id === 'yawn' && this.field.isWeather(['sunnyday', 'desolateland'])) {
-=======
 			if (status.id === 'yawn' && ['sunnyday', 'desolateland'].includes(target.effectiveWeather())) {
->>>>>>> upstream/master
 				this.add('-immune', target, '[from] ability: Leaf Guard');
 				return null;
 			}
@@ -3421,10 +3389,7 @@ let BattleAbilities = {
 		desc: "If Rain Dance is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn.",
 		shortDesc: "If Rain Dance is active, this Pokemon heals 1/16 of its max HP each turn.",
 		onWeather(target, source, effect) {
-<<<<<<< HEAD
-=======
 			if (target.hasItem('utilityumbrella')) return;
->>>>>>> upstream/master
 			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
 				this.heal(target.baseMaxhp / 16);
 			}
@@ -4545,11 +4510,7 @@ let BattleAbilities = {
 	"swiftswim": {
 		shortDesc: "If Rain Dance is active, this Pokemon's Speed is doubled.",
 		onModifySpe(spe, pokemon) {
-<<<<<<< HEAD
-			if (this.field.isWeather(['raindance', 'primordialsea'])) {
-=======
 			if (['raindance', 'primordialsea'].includes(pokemon.effectiveWeather())) {
->>>>>>> upstream/master
 				return this.chainModify(2);
 			}
 		},
@@ -4748,11 +4709,7 @@ let BattleAbilities = {
 		num: 137,
 	},
 	"trace": {
-<<<<<<< HEAD
-		desc: "On switch-in, or when this Pokemon acquires this ability, this Pokemon copies a random adjacent opposing Pokemon's Ability. However, if one or more adjacent Pokemon has the Ability \"No Ability\", Trace won't copy anything even if there is another valid Ability it could normally copy. Otherwise, if there is no Ability that can be copied at that time, this Ability will activate as soon as an Ability can be copied. Abilities that cannot be copied are the previously mentioned \"No Ability\", as well as Comatose, , Flower Gift, Forecast, Illusion, Imposter, Multitype, Schooling, Stance Change, Trace, and Zen Mode.",
-=======
 		desc: "On switch-in, or when this Pokemon acquires this ability, this Pokemon copies a random adjacent opposing Pokemon's Ability. However, if one or more adjacent Pokemon has the Ability \"No Ability\", Trace won't copy anything even if there is another valid Ability it could normally copy. Otherwise, if there is no Ability that can be copied at that time, this Ability will activate as soon as an Ability can be copied. Abilities that cannot be copied are the previously mentioned \"No Ability\", as well as Comatose, Disguise, Flower Gift, Forecast, Gulp Missile, Hunger Switch, Ice Face, Illusion, Imposter, Multitype, Schooling, Stance Change, Trace, and Zen Mode.",
->>>>>>> upstream/master
 		shortDesc: "On switch-in, or when it can, this Pokemon copies a random adjacent foe's Ability.",
 		onStart(pokemon) {
 			if (pokemon.side.foe.active.some(foeActive => foeActive && this.isAdjacent(pokemon, foeActive) && foeActive.ability === 'noability')) {

@@ -255,10 +255,6 @@ export class Pokemon {
 		const genders: {[key: string]: GenderName} = {M: 'M', F: 'F', N: 'N'};
 		this.gender = genders[set.gender] || this.template.gender || (this.battle.random() * 2 < 1 ? 'M' : 'F');
 		if (this.gender === 'N') this.gender = '';
-<<<<<<< HEAD
-    const maxHappiness = (this.battle.gen <= 7 ? 255 : 160);
-		this.happiness = typeof set.happiness === 'number' ? this.battle.dex.clampIntRange(set.happiness, 0, maxHappiness) : maxHappiness;
-=======
 
 		const maxHappiness = (this.battle.gen <= 7 ? 255 : 160);
 		if (typeof set.happiness === 'number') {
@@ -268,7 +264,6 @@ export class Pokemon {
 		}
 		this.happiness = set.happiness;
 
->>>>>>> upstream/master
 		this.pokeball = this.set.pokeball || 'pokeball';
 
 		this.baseMoveSlots = [];

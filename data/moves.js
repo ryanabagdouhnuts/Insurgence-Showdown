@@ -4691,11 +4691,7 @@ let BattleMovedex = {
 			onBasePower(basePower, attacker, defender, move) {
 				if (move.type === 'Electric' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
 					this.debug('electric terrain boost');
-<<<<<<< HEAD
-					return this.chainModify(1.3);
-=======
 					return this.chainModify([0x14CD, 0x1000]);
->>>>>>> upstream/master
 				}
 			},
 			onStart(battle, source, effect) {
@@ -7008,19 +7004,12 @@ let BattleMovedex = {
 		priority: 0,
 		flags: {},
 		isMax: "Centiskorch",
-<<<<<<< HEAD
-		onHit(target, source) {
-			for (let pokemon of target.side.active) {
-				pokemon.addVolatile('partiallytrapped');
-			}
-=======
 		self: {
 			onHit(source) {
 				for (let pokemon of source.side.foe.active) {
 					pokemon.addVolatile('partiallytrapped', source, this.dex.getActiveMove('G-Max Centiferno'), 'trapper');
 				}
 			},
->>>>>>> upstream/master
 		},
 		secondary: null,
 		target: "adjacentFoe",
@@ -7260,14 +7249,9 @@ let BattleMovedex = {
 		flags: {},
 		isMax: "Snorlax",
 		self: {
-<<<<<<< HEAD
-			onHit(target, source) {
-				for (let pokemon of target.side.active) {
-=======
 			onHit(source) {
 				if (this.random(2) === 0) return;
 				for (let pokemon of source.side.active) {
->>>>>>> upstream/master
 					if (!pokemon.item && pokemon.lastItem && this.dex.getItem(pokemon.lastItem).isBerry) {
 						let item = pokemon.lastItem;
 						pokemon.lastItem = '';
@@ -7319,19 +7303,12 @@ let BattleMovedex = {
 		priority: 0,
 		flags: {},
 		isMax: "Sandaconda",
-<<<<<<< HEAD
-		onHit(target, source) {
-			for (let pokemon of target.side.active) {
-				pokemon.addVolatile('partiallytrapped');
-			}
-=======
 		self: {
 			onHit(source) {
 				for (let pokemon of source.side.foe.active) {
 					pokemon.addVolatile('partiallytrapped', source, this.dex.getActiveMove('G-Max Sandblast'), 'trapper');
 				}
 			},
->>>>>>> upstream/master
 		},
 		secondary: null,
 		target: "adjacentFoe",
@@ -7374,14 +7351,6 @@ let BattleMovedex = {
 		priority: 0,
 		flags: {},
 		isMax: "Grimmsnarl",
-<<<<<<< HEAD
-		onHit(target, source) {
-			for (let pokemon of target.side.active) {
-				if (!target.status && target.runStatusImmunity('slp')) {
-					pokemon.addVolatile('yawn');
-				}
-			}
-=======
 		onHit(target) {
 			if (target.status || !target.runStatusImmunity('slp')) return;
 			if (this.random(2) === 0) return;
@@ -7391,7 +7360,6 @@ let BattleMovedex = {
 			if (target.status || !target.runStatusImmunity('slp')) return;
 			if (this.random(2) === 0) return;
 			target.addVolatile('yawn');
->>>>>>> upstream/master
 		},
 		secondary: null,
 		target: "adjacentFoe",
@@ -7491,22 +7459,11 @@ let BattleMovedex = {
 		priority: 0,
 		flags: {},
 		isMax: "Appletun",
-<<<<<<< HEAD
-		onHit(target, source, move) {
-			this.add('-activate', source, 'move: G-Max Sweetness');
-			let success = false;
-			for (const ally of source.side.pokemon) {
-				// TODO: test move's interaction with sap sipper and Substitute
-				if (ally !== source && ((ally.hasAbility('sapsipper')) ||
-						(ally.volatiles['substitute'] && !move.infiltrates))) {
-					continue;
-=======
 		self: {
 			onHit(source) {
 				this.add('-activate', source, 'move: G-Max Sweetness');
 				for (const ally of source.side.pokemon) {
 					ally.cureStatus();
->>>>>>> upstream/master
 				}
 				if (ally.cureStatus()) success = true;
 			}
@@ -7529,13 +7486,6 @@ let BattleMovedex = {
 		pp: 10,
 		priority: 0,
 		flags: {},
-<<<<<<< HEAD
-		isMax: "Gengar",
-		onHit(target, source, move) {
-			for (const pokemon of target.side.active) {
-				pokemon.addVolatile('trapped', source, move, 'trapper');
-			}
-=======
 		isMax: "Flapple",
 		self: {
 			onHit(source) {
@@ -7543,7 +7493,6 @@ let BattleMovedex = {
 					this.boost({evasion: -1}, pokemon);
 				}
 			},
->>>>>>> upstream/master
 		},
 		secondary: null,
 		target: "adjacentFoe",
@@ -7562,13 +7511,6 @@ let BattleMovedex = {
 		pp: 10,
 		priority: 0,
 		flags: {},
-<<<<<<< HEAD
-		isMax: "Flapple",
-		onHit(target, source, move) {
-			for (const pokemon of target.side.active) {
-				this.boost({evasion: -1}, pokemon, source, move);
-			}
-=======
 		isMax: "Gengar",
 		self: {
 			onHit(source) {
@@ -7576,7 +7518,6 @@ let BattleMovedex = {
 					pokemon.addVolatile('trapped', source, null, 'trapper');
 				}
 			},
->>>>>>> upstream/master
 		},
 		secondary: null,
 		target: "adjacentFoe",
@@ -7885,11 +7826,7 @@ let BattleMovedex = {
 				}
 				if (move.type === 'Grass' && attacker.isGrounded()) {
 					this.debug('grassy terrain boost');
-<<<<<<< HEAD
-					return this.chainModify(1.3);
-=======
 					return this.chainModify([0x14CD, 0x1000]);
->>>>>>> upstream/master
 				}
 			},
 			onStart(battle, source, effect) {
@@ -14786,11 +14723,7 @@ let BattleMovedex = {
 			onBasePower(basePower, attacker, defender, move) {
 				if (move.type === 'Psychic' && attacker.isGrounded() && !attacker.isSemiInvulnerable()) {
 					this.debug('psychic terrain boost');
-<<<<<<< HEAD
-					return this.chainModify(1.3);
-=======
 					return this.chainModify([0x14CD, 0x1000]);
->>>>>>> upstream/master
 				}
 			},
 			onStart(battle, source, effect) {
@@ -17905,11 +17838,7 @@ let BattleMovedex = {
 				return;
 			}
 			this.add('-prepare', attacker, move.name, defender);
-<<<<<<< HEAD
-			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
-=======
 			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather())) {
->>>>>>> upstream/master
 				this.attrLastMove('[still]');
 				this.addMove('-anim', attacker, move.name, defender);
 				return;
@@ -17921,11 +17850,7 @@ let BattleMovedex = {
 			return null;
 		},
 		onBasePower(basePower, pokemon, target) {
-<<<<<<< HEAD
-			if (this.field.isWeather(['raindance', 'primordialsea', 'sandstorm', 'hail'])) {
-=======
 			if (['raindance', 'primordialsea', 'sandstorm', 'hail'].includes(pokemon.effectiveWeather())) {
->>>>>>> upstream/master
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}
@@ -17952,11 +17877,7 @@ let BattleMovedex = {
 				return;
 			}
 			this.add('-prepare', attacker, move.name, defender);
-<<<<<<< HEAD
-			if (this.field.isWeather(['sunnyday', 'desolateland'])) {
-=======
 			if (['sunnyday', 'desolateland'].includes(attacker.effectiveWeather())) {
->>>>>>> upstream/master
 				this.attrLastMove('[still]');
 				this.addMove('-anim', attacker, move.name, defender);
 				return;
@@ -17968,11 +17889,7 @@ let BattleMovedex = {
 			return null;
 		},
 		onBasePower(basePower, pokemon, target) {
-<<<<<<< HEAD
-			if (this.field.isWeather(['raindance', 'primordialsea', 'sandstorm', 'hail'])) {
-=======
 			if (['raindance', 'primordialsea', 'sandstorm', 'hail'].includes(pokemon.effectiveWeather())) {
->>>>>>> upstream/master
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}
@@ -19509,11 +19426,7 @@ let BattleMovedex = {
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
-<<<<<<< HEAD
-		desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect, 2/3 of its maximum HP if the weather is Desolate Land or , and 1/4 of its maximum HP if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm, all rounded half down.",
-=======
 		desc: "The user restores 1/2 of its maximum HP if Delta Stream or no weather conditions are in effect or if the user is holding Utility Umbrella, 2/3 of its maximum HP if the weather is Desolate Land or Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm, all rounded half down.",
->>>>>>> upstream/master
 		shortDesc: "Heals the user by a weather-dependent amount.",
 		id: "synthesis",
 		isViable: true,
@@ -21267,13 +21180,8 @@ let BattleMovedex = {
 		pp: 10,
 		priority: 0,
 		flags: {bullet: 1, protect: 1, mirror: 1},
-<<<<<<< HEAD
-		onModifyMove(move) {
-			switch (this.field.effectiveWeather()) {
-=======
 		onModifyType(move, pokemon) {
 			switch (pokemon.effectiveWeather()) {
->>>>>>> upstream/master
 			case 'sunnyday':
 			case 'desolateland':
 				move.type = 'Fire';

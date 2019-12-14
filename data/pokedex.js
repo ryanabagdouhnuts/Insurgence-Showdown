@@ -11947,7 +11947,6 @@ roseradedelta: {
 		prevo: "darumaka",
 		evoLevel: 35,
 		eggGroups: ["Field"],
-<<<<<<< HEAD
 		otherFormes: ["darmanitanzen","darmanitandelta","darmanitangalar","darmanitangalarzen"],
 	},
 	darmanitandelta: {
@@ -11962,9 +11961,6 @@ roseradedelta: {
 		prevo: "darumakadelta",
 		evoLevel: 35,
 		eggGroups: ["Undiscovered"],
-=======
-		otherFormes: ["darmanitanzen", "darmanitangalar", "darmanitangalarzen"],
->>>>>>> upstream/master
 	},
 	darmanitanzen: {
 		num: 555,
