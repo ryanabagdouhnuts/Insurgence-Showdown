@@ -247,6 +247,7 @@ let BattlePokedex = {
 		weightkg: 0,
 		color: "Red",
 		eggGroups: ["Monster", "Dragon"],
+		inheritsFrom: "charizard",
 	},
 	squirtle: {
 		num: 7,
@@ -408,6 +409,7 @@ let BattlePokedex = {
 		weightkg: 0,
 		color: "White",
 		eggGroups: ["Bug"],
+		inheritsFrom: "butterfree",
 	},
 	weedle: {
 		num: 13,
@@ -921,6 +923,7 @@ let BattlePokedex = {
 		weightkg: 0,
 		color: "Yellow",
 		eggGroups: ["Field", "Fairy"],
+		inheritsFrom: "pikachu",
 	},
 	raichu: {
 		num: 26,
@@ -1483,6 +1486,7 @@ let BattlePokedex = {
 		weightkg: 0,
 		color: "Yellow",
 		eggGroups: ["Field"],
+		inheritsFrom: "meowth",
 	},
 	persian: {
 		num: 53,
@@ -1787,6 +1791,7 @@ let BattlePokedex = {
 		weightkg: 0,
 		color: "Gray",
 		eggGroups: ["Human-Like"],
+		inheritsFrom: "machamp",
 	},
 	bellsprout: {
 		num: 69,
@@ -2405,6 +2410,7 @@ golemdelta: {
 		weightkg: 0,
 		color: "Purple",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "gengar",
 	},
 	onix: {
 		num: 95,
@@ -2482,6 +2488,7 @@ golemdelta: {
 		weightkg: 0,
 		color: "Red",
 		eggGroups: ["Water 3"],
+		inheritsFrom: "kingler",
 	},
 	voltorb: {
 		num: 100,
@@ -3137,6 +3144,7 @@ golemdelta: {
 		weightkg: 0,
 		color: "Blue",
 		eggGroups: ["Monster", "Water 1"],
+		inheritsFrom: "lapras",
 	},
 	ditto: {
 		num: 132,
@@ -3204,6 +3212,7 @@ golemdelta: {
 		weightkg: 0,
 		color: "Brown",
 		eggGroups: ["Field"],
+		inheritsFrom: "eevee",
 	},
 	vaporeon: {
 		num: 134,
@@ -3415,6 +3424,7 @@ golemdelta: {
 		weightkg: 0,
 		color: "Black",
 		eggGroups: ["Monster"],
+		inheritsFrom: "snorlax",
 	},
 	articuno: {
 		num: 144,
@@ -5814,7 +5824,7 @@ golemdelta: {
 		color: "Brown",
 		evos: ["linoone"],
 		eggGroups: ["Field"],
-		otherFormes: ["Zigzagoon-Galar"],
+		otherFormes: ["zigzagoongalar"],
 	},
 	zigzagoongalar: {
 		num: 263,
@@ -5842,7 +5852,7 @@ golemdelta: {
 		prevo: "zigzagoon",
 		evoLevel: 20,
 		eggGroups: ["Field"],
-		otherFormes: ["Linoone-Galar"],
+		otherFormes: ["linoonegalar"],
 	},
 	linoonegalar: {
 		num: 264,
@@ -8443,6 +8453,7 @@ roseliadelta: {
 		weightkg: 60.8,
 		color: "Red",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "deoxys",
 	},
 	deoxysdefense: {
 		num: 386,
@@ -8457,6 +8468,7 @@ roseliadelta: {
 		weightkg: 60.8,
 		color: "Red",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "deoxys",
 	},
 	deoxysspeed: {
 		num: 386,
@@ -8471,6 +8483,7 @@ roseliadelta: {
 		weightkg: 60.8,
 		color: "Red",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "deoxys",
 	},
 	turtwig: {
 		num: 387,
@@ -9129,6 +9142,7 @@ roseradedelta: {
 		heightm: 0.5,
 		weightkg: 9.3,
 		color: "Pink",
+		prevo: "cherubi",
 		evoLevel: 25,
 		eggGroups: ["Fairy", "Grass"],
 	},
@@ -10312,6 +10326,7 @@ roseradedelta: {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "rotom",
 	},
 	rotomwash: {
 		num: 479,
@@ -10326,6 +10341,7 @@ roseradedelta: {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "rotom",
 	},
 	rotomfrost: {
 		num: 479,
@@ -10340,6 +10356,7 @@ roseradedelta: {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "rotom",
 	},
 	rotomfan: {
 		num: 479,
@@ -10354,6 +10371,7 @@ roseradedelta: {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "rotom",
 	},
 	rotommow: {
 		num: 479,
@@ -10368,6 +10386,7 @@ roseradedelta: {
 		weightkg: 0.3,
 		color: "Red",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "rotom",
 	},
 	uxie: {
 		num: 480,
@@ -10491,6 +10510,7 @@ roseradedelta: {
 		weightkg: 650,
 		color: "Black",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "giratina",
 	},
 	giratinaprimal: {
 		num: 487,
@@ -10579,6 +10599,7 @@ roseradedelta: {
 		weightkg: 5.2,
 		color: "Green",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "shaymin",
 	},
 	arceus: {
 		num: 493,
@@ -10607,6 +10628,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusdark: {
 		num: 493,
@@ -10621,6 +10643,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusdragon: {
 		num: 493,
@@ -10635,6 +10658,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceuselectric: {
 		num: 493,
@@ -10649,6 +10673,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusfairy: {
 		num: 493,
@@ -10663,6 +10688,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusfighting: {
 		num: 493,
@@ -10677,6 +10703,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusfire: {
 		num: 493,
@@ -10691,6 +10718,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusflying: {
 		num: 493,
@@ -10705,6 +10733,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusghost: {
 		num: 493,
@@ -10719,6 +10748,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusgrass: {
 		num: 493,
@@ -10733,6 +10763,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusground: {
 		num: 493,
@@ -10747,6 +10778,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusice: {
 		num: 493,
@@ -10761,6 +10793,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceuspoison: {
 		num: 493,
@@ -10775,6 +10808,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceuspsychic: {
 		num: 493,
@@ -10789,6 +10823,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusrock: {
 		num: 493,
@@ -10803,6 +10838,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceussteel: {
 		num: 493,
@@ -10817,6 +10853,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceuswater: {
 		num: 493,
@@ -10831,6 +10868,7 @@ roseradedelta: {
 		weightkg: 320,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "arceus",
 	},
 	arceusprimal: {
 		num: 493,
@@ -11816,6 +11854,7 @@ roseradedelta: {
 		weightkg: 18,
 		color: "Green",
 		eggGroups: ["Water 2"],
+		inheritsFrom: "basculin",
 	},
 	sandile: {
 		num: 551,
@@ -11908,6 +11947,7 @@ roseradedelta: {
 		prevo: "darumaka",
 		evoLevel: 35,
 		eggGroups: ["Field"],
+<<<<<<< HEAD
 		otherFormes: ["darmanitanzen","darmanitandelta","darmanitangalar","darmanitangalarzen"],
 	},
 	darmanitandelta: {
@@ -11922,6 +11962,9 @@ roseradedelta: {
 		prevo: "darumakadelta",
 		evoLevel: 35,
 		eggGroups: ["Undiscovered"],
+=======
+		otherFormes: ["darmanitanzen", "darmanitangalar", "darmanitangalarzen"],
+>>>>>>> upstream/master
 	},
 	darmanitanzen: {
 		num: 555,
@@ -11934,8 +11977,10 @@ roseradedelta: {
 		heightm: 1.3,
 		weightkg: 92.9,
 		color: "Blue",
+		prevo: "darumaka",
 		evoLevel: 35,
 		eggGroups: ["Field"],
+		inheritsFrom: "darmanitan",
 	},
 	darmanitangalar: {
 		num: 555,
@@ -11952,7 +11997,6 @@ roseradedelta: {
 		evoType: "useItem",
 		evoItem: "Ice Stone",
 		eggGroups: ["Field"],
-		otherFormes: ["darmanitangalarzen"],
 	},
 	darmanitangalarzen: {
 		num: 555,
@@ -11965,9 +12009,11 @@ roseradedelta: {
 		heightm: 1.7,
 		weightkg: 120,
 		color: "White",
+		prevo: "darumakagalar",
 		evoType: "useItem",
 		evoItem: "Ice Stone",
 		eggGroups: ["Field"],
+		inheritsFrom: "darmanitangalar",
 	},
 	maractus: {
 		num: 556,
@@ -12291,6 +12337,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Green",
 		eggGroups: ["Mineral"],
+		inheritsFrom: "garbodor",
 	},
 	zorua: {
 		num: 570,
@@ -13685,6 +13732,7 @@ roseradedelta: {
 		weightkg: 63,
 		color: "Green",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "tornadus",
 	},
 	thundurus: {
 		num: 642,
@@ -13713,6 +13761,7 @@ roseradedelta: {
 		weightkg: 61,
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "thundurus",
 	},
 	reshiram: {
 		num: 643,
@@ -13778,6 +13827,7 @@ roseradedelta: {
 		weightkg: 68,
 		color: "Brown",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "landorus",
 	},
 	kyurem: {
 		num: 646,
@@ -13847,6 +13897,7 @@ roseradedelta: {
 		weightkg: 48.5,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "keldeo",
 	},
 	meloetta: {
 		num: 648,
@@ -13927,6 +13978,7 @@ roseradedelta: {
 		weightkg: 82.5,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "genesect",
 	},
 	genesectshock: {
 		num: 649,
@@ -13941,6 +13993,7 @@ roseradedelta: {
 		weightkg: 82.5,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "genesect",
 	},
 	genesectburn: {
 		num: 649,
@@ -13955,6 +14008,7 @@ roseradedelta: {
 		weightkg: 82.5,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "genesect",
 	},
 	genesectchill: {
 		num: 649,
@@ -13969,6 +14023,7 @@ roseradedelta: {
 		weightkg: 82.5,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "genesect",
 	},
 	chespin: {
 		num: 650,
@@ -14536,6 +14591,7 @@ roseradedelta: {
 		heightm: 1.7,
 		weightkg: 53,
 		color: "Brown",
+		prevo: "doublade",
 		evoType: "useItem",
 		evoItem: "Dusk Stone",
 		eggGroups: ["Mineral"],
@@ -15019,6 +15075,7 @@ roseradedelta: {
 		color: "Brown",
 		evos: ["gourgeistsmall"],
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "pumpkaboo",
 	},
 	pumpkaboolarge: {
 		num: 710,
@@ -15033,6 +15090,7 @@ roseradedelta: {
 		color: "Brown",
 		evos: ["gourgeistlarge"],
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "pumpkaboo",
 	},
 	pumpkaboosuper: {
 		num: 710,
@@ -15047,6 +15105,7 @@ roseradedelta: {
 		color: "Brown",
 		evos: ["gourgeistsuper"],
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "pumpkaboo",
 	},
 	gourgeist: {
 		num: 711,
@@ -15077,6 +15136,7 @@ roseradedelta: {
 		prevo: "pumpkaboosmall",
 		evoType: "trade",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "gourgeist",
 	},
 	gourgeistlarge: {
 		num: 711,
@@ -15092,6 +15152,7 @@ roseradedelta: {
 		prevo: "pumpkaboolarge",
 		evoType: "trade",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "gourgeist",
 	},
 	gourgeistsuper: {
 		num: 711,
@@ -15107,6 +15168,7 @@ roseradedelta: {
 		prevo: "pumpkaboosuper",
 		evoType: "trade",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "gourgeist",
 	},
 	bergmite: {
 		num: 712,
@@ -15263,6 +15325,7 @@ roseradedelta: {
 		weightkg: 33.5,
 		color: "Green",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "zygarde",
 	},
 	zygardecomplete: {
 		num: 718,
@@ -15277,6 +15340,7 @@ roseradedelta: {
 		weightkg: 610,
 		color: "Green",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "zygarde",
 	},
 	diancie: {
 		num: 719,
@@ -15332,6 +15396,7 @@ roseradedelta: {
 		weightkg: 490,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "hoopa",
 	},
 	hoopadelta: {
 		num: 720,
@@ -15681,6 +15746,7 @@ roseradedelta: {
 		weightkg: 3.4,
 		color: "Yellow",
 		eggGroups: ["Flying"],
+		inheritsFrom: "oricorio",
 	},
 	oricoriopau: {
 		num: 741,
@@ -15695,6 +15761,7 @@ roseradedelta: {
 		weightkg: 3.4,
 		color: "Pink",
 		eggGroups: ["Flying"],
+		inheritsFrom: "oricorio",
 	},
 	oricoriosensu: {
 		num: 741,
@@ -15709,6 +15776,7 @@ roseradedelta: {
 		weightkg: 3.4,
 		color: "Purple",
 		eggGroups: ["Flying"],
+		inheritsFrom: "oricorio",
 	},
 	cutiefly: {
 		num: 742,
@@ -16234,6 +16302,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallydark: {
 		num: 773,
@@ -16250,6 +16319,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallydragon: {
 		num: 773,
@@ -16266,6 +16336,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallyelectric: {
 		num: 773,
@@ -16282,6 +16353,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallyfairy: {
 		num: 773,
@@ -16298,6 +16370,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallyfighting: {
 		num: 773,
@@ -16314,6 +16387,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallyfire: {
 		num: 773,
@@ -16330,6 +16404,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallyflying: {
 		num: 773,
@@ -16346,6 +16421,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallyghost: {
 		num: 773,
@@ -16362,6 +16438,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallygrass: {
 		num: 773,
@@ -16378,6 +16455,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallyground: {
 		num: 773,
@@ -16394,6 +16472,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallyice: {
 		num: 773,
@@ -16410,6 +16489,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallypoison: {
 		num: 773,
@@ -16426,6 +16506,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallypsychic: {
 		num: 773,
@@ -16442,6 +16523,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallyrock: {
 		num: 773,
@@ -16458,6 +16540,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallysteel: {
 		num: 773,
@@ -16474,6 +16557,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	silvallywater: {
 		num: 773,
@@ -16490,6 +16574,7 @@ roseradedelta: {
 		prevo: "typenull",
 		evoType: "levelFriendship",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "silvally",
 	},
 	minior: {
 		num: 774,
@@ -16577,7 +16662,7 @@ roseradedelta: {
 		weightkg: 0.7,
 		color: "Yellow",
 		eggGroups: ["Amorphous"],
-		otherFormes: ["mimikyubusted", "mimikyutotem"],
+		otherFormes: ["mimikyubusted", "mimikyutotem", "mimikyubustedtotem"],
 	},
 	mimikyubusted: {
 		num: 778,
@@ -16591,6 +16676,7 @@ roseradedelta: {
 		weightkg: 0.7,
 		color: "Yellow",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "mimikyu",
 	},
 	mimikyutotem: {
 		num: 778,
@@ -16604,13 +16690,12 @@ roseradedelta: {
 		weightkg: 2.8,
 		color: "Yellow",
 		eggGroups: ["Amorphous"],
-		otherFormes: ["mimikyutotembusted"],
 	},
-	mimikyutotembusted: {
+	mimikyubustedtotem: {
 		num: 778,
-		species: "Mimikyu-Totem-Busted",
-		baseSpecies: "Mimikyu-Totem",
-		forme: "Busted",
+		species: "Mimikyu-Busted-Totem",
+		baseSpecies: "Mimikyu",
+		forme: "Busted-Totem",
 		types: ["Ghost", "Fairy"],
 		baseStats: {hp: 55, atk: 90, def: 80, spa: 50, spd: 105, spe: 96},
 		abilities: {0: "Disguise"},
@@ -16618,6 +16703,7 @@ roseradedelta: {
 		weightkg: 2.8,
 		color: "Yellow",
 		eggGroups: ["Amorphous"],
+		inheritsFrom: "mimikyutotem",
 	},
 	bruxish: {
 		num: 779,
@@ -16920,6 +17006,7 @@ roseradedelta: {
 		weightkg: 460,
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "necrozma",
 	},
 	necrozmadawnwings: {
 		num: 800,
@@ -16934,6 +17021,7 @@ roseradedelta: {
 		weightkg: 350,
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "necrozma",
 	},
 	necrozmaultra: {
 		num: 800,
@@ -16948,6 +17036,7 @@ roseradedelta: {
 		weightkg: 230,
 		color: "Blue",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "necrozma",
 	},
 	magearna: {
 		num: 801,
@@ -16975,6 +17064,7 @@ roseradedelta: {
 		weightkg: 80.5,
 		color: "Red",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "magearna",
 	},
 	marshadow: {
 		num: 802,
@@ -17062,7 +17152,6 @@ roseradedelta: {
 		heightm: 0.2,
 		weightkg: 8,
 		color: "Gray",
-		evos: ["melmetal"],
 		eggGroups: ["Undiscovered"],
 	},
 	melmetal: {
@@ -17075,7 +17164,6 @@ roseradedelta: {
 		heightm: 2.5,
 		weightkg: 800,
 		color: "Gray",
-		prevo: "meltan",
 		eggGroups: ["Undiscovered"],
 		otherFormes: ["melmetalgmax"],
 	},
@@ -17093,6 +17181,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "melmetal",
 	},
 	grookey: {
 		num: 810,
@@ -17297,6 +17386,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Purple",
 		eggGroups: ["Flying"],
+		inheritsFrom: "corviknight",
 	},
 	blipbug: {
 		num: 824,
@@ -17351,6 +17441,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Red",
 		eggGroups: ["Bug"],
+		inheritsFrom: "orbeetle",
 	},
 	nickit: {
 		num: 827,
@@ -17465,6 +17556,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Green",
 		eggGroups: ["Monster", "Water 1"],
+		inheritsFrom: "drednaw",
 	},
 	yamper: {
 		num: 835,
@@ -17544,6 +17636,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Black",
 		eggGroups: ["Mineral"],
+		inheritsFrom: "coalossal",
 	},
 	applin: {
 		num: 840,
@@ -17568,7 +17661,7 @@ roseradedelta: {
 		color: "Green",
 		prevo: "applin",
 		evoType: "useItem",
-		evoItem: "Sweet Apple",
+		evoItem: "Tart Apple",
 		eggGroups: ["Grass", "Dragon"],
 		otherFormes: ["flapplegmax"],
 	},
@@ -17585,6 +17678,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Green",
 		eggGroups: ["Grass", "Dragon"],
+		inheritsFrom: "flapple",
 	},
 	appletun: {
 		num: 842,
@@ -17597,7 +17691,7 @@ roseradedelta: {
 		color: "Green",
 		prevo: "applin",
 		evoType: "useItem",
-		evoItem: "Tart Apple",
+		evoItem: "Sweet Apple",
 		eggGroups: ["Grass", "Dragon"],
 		otherFormes: ["appletungmax"],
 	},
@@ -17614,6 +17708,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Green",
 		eggGroups: ["Grass", "Dragon"],
+		inheritsFrom: "appletun",
 	},
 	silicobra: {
 		num: 843,
@@ -17654,6 +17749,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Green",
 		eggGroups: ["Field", "Dragon"],
+		inheritsFrom: "sandaconda",
 	},
 	cramorant: {
 		num: 845,
@@ -17773,6 +17869,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Purple",
 		eggGroups: ["Human-Like"],
+		inheritsFrom: "toxtricity",
 	},
 	sizzlipede: {
 		num: 850,
@@ -17813,6 +17910,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Red",
 		eggGroups: ["Bug"],
+		inheritsFrom: "centiskorch",
 	},
 	clobbopus: {
 		num: 852,
@@ -17837,8 +17935,7 @@ roseradedelta: {
 		color: "Blue",
 		prevo: "clobbopus",
 		evoType: "levelMove",
-		// TODO: Figure out evolution move
-		evoMove: "",
+		evoMove: "Taunt",
 		eggGroups: ["Water 1", "Human-Like"],
 	},
 	sinistea: {
@@ -17928,6 +18025,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Pink",
 		eggGroups: ["Fairy"],
+		inheritsFrom: "hatterene",
 	},
 	impidimp: {
 		num: 859,
@@ -17986,6 +18084,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Purple",
 		eggGroups: ["Fairy", "Human-Like"],
+		inheritsFrom: "grimmsnarl",
 	},
 	obstagoon: {
 		num: 862,
@@ -18093,9 +18192,8 @@ roseradedelta: {
 		weightkg: 0.5,
 		color: "White",
 		prevo: "milcery",
-		evoType: "levelHold",
-		// TODO
-		evoItem: "cloversweet",
+		evoType: "other",
+		evoCondition: "spin while holding a Sweet",
 		eggGroups: ["Fairy", "Amorphous"],
 		otherFormes: ["alcremiegmax"],
 		otherForms: ["alcremierubycream", "alcremiematcha", "alcremiemint", "alcremielemon", "alcremiesalted", "alcremierubyswirl", "alcremiecaramel", "alcremierainbow"],
@@ -18113,6 +18211,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "White",
 		eggGroups: ["Fairy", "Amorphous"],
+		inheritsFrom: "alcremie",
 	},
 	falinks: {
 		num: 870,
@@ -18291,6 +18390,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Green",
 		eggGroups: ["Field", "Mineral"],
+		inheritsFrom: "copperajah",
 	},
 	dracozolt: {
 		num: 880,
@@ -18365,6 +18465,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "White",
 		eggGroups: ["Mineral", "Dragon"],
+		inheritsFrom: "duraludon",
 	},
 	dreepy: {
 		num: 885,
@@ -18484,6 +18585,7 @@ roseradedelta: {
 		weightkg: 0,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
+		inheritsFrom: "eternatus",
 	},
 	missingno: {
 		num: 0,

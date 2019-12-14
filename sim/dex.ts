@@ -578,8 +578,8 @@ export class ModdedDex {
 			name = this.data.Aliases[id];
 			id = toID(name);
 		}
-		if (this.data.Formats.hasOwnProperty('gen7' + id)) {
-			id = ('gen7' + id) as ID;
+		if (this.data.Formats.hasOwnProperty('gen8' + id)) {
+			id = ('gen8' + id) as ID;
 		}
 		let supplementaryAttributes: AnyObject | null = null;
 		if (name.includes('@@@')) {
@@ -1521,15 +1521,6 @@ export class ModdedDex {
 		}
 
 		return this;
-	}
-
-	installFormat(id: string, format: Format) {
-		dexes['base'].includeFormats();
-		dexes['base'].formatsCache![id] = format;
-		if (this.dataCache) this.dataCache.Formats[id] = format;
-		if (!this.isBase) {
-			if (dexes['base'].dataCache) dexes['base'].dataCache.Formats[id] = format;
-		}
 	}
 }
 

@@ -21,7 +21,7 @@ let BattleItems = {
 		inherit: true,
 		desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use.",
 		onEat(pokemon) {
-			this.heal(pokemon.maxhp / 2);
+			this.heal(pokemon.baseMaxhp / 2);
 			if (pokemon.getNature().minus === 'spd') {
 				pokemon.addVolatile('confusion');
 			}
@@ -89,8 +89,28 @@ let BattleItems = {
 		isNonstandard: null,
 	},
 	custapberry: {
-		inherit: true,
-		isUnreleased: undefined,
+		id: "custapberry",
+		name: "Custap Berry",
+		spritenum: 86,
+		isBerry: true,
+		naturalGift: {
+			basePower: 100,
+			type: "Ghost",
+		},
+		onModifyPriorityPriority: -1,
+		onModifyPriority(priority, pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 4 || (pokemon.hp <= pokemon.maxhp / 2 && pokemon.hasAbility('gluttony'))) {
+				if (pokemon.eatItem()) {
+					this.add('-activate', pokemon, 'item: Custap Berry', '[consumed]');
+					pokemon.removeVolatile('custapberry');
+					return Math.round(priority) + 0.1;
+				}
+			}
+		},
+		onEat() { },
+		num: 210,
+		gen: 4,
+		desc: "Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.",
 	},
 	darkgem: {
 		inherit: true,
@@ -153,7 +173,7 @@ let BattleItems = {
 		inherit: true,
 		desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use.",
 		onEat(pokemon) {
-			this.heal(pokemon.maxhp / 2);
+			this.heal(pokemon.baseMaxhp / 2);
 			if (pokemon.getNature().minus === 'atk') {
 				pokemon.addVolatile('confusion');
 			}
@@ -240,7 +260,7 @@ let BattleItems = {
 		inherit: true,
 		desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use.",
 		onEat(pokemon) {
-			this.heal(pokemon.maxhp / 2);
+			this.heal(pokemon.baseMaxhp / 2);
 			if (pokemon.getNature().minus === 'def') {
 				pokemon.addVolatile('confusion');
 			}
@@ -305,9 +325,9 @@ let BattleItems = {
 	},
 	magoberry: {
 		inherit: true,
-		desc: "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
+		desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use.",
 		onEat(pokemon) {
-			this.heal(pokemon.maxhp / 2);
+			this.heal(pokemon.baseMaxhp / 2);
 			if (pokemon.getNature().minus === 'spe') {
 				pokemon.addVolatile('confusion');
 			}
@@ -394,6 +414,24 @@ let BattleItems = {
 	psychiumz: {
 		inherit: true,
 		isNonstandard: null,
+	},
+	quickclaw: {
+		id: "quickclaw",
+		onModifyPriorityPriority: -1,
+		onModifyPriority(priority, pokemon) {
+			if (this.randomChance(1, 5)) {
+				this.add('-activate', pokemon, 'item: Quick Claw');
+				return Math.round(priority) + 0.1;
+			}
+		},
+		name: "Quick Claw",
+		spritenum: 373,
+		fling: {
+			basePower: 80,
+		},
+		num: 217,
+		gen: 2,
+		desc: "Each turn, holder has a 20% chance to move first in its priority bracket.",
 	},
 	redorb: {
 		inherit: true,
@@ -497,8 +535,9 @@ let BattleItems = {
 	wikiberry: {
 		inherit: true,
 		isNonstandard: null,
+		desc: "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use.",
 		onEat(pokemon) {
-			this.heal(pokemon.maxhp / 2);
+			this.heal(pokemon.baseMaxhp / 2);
 			if (pokemon.getNature().minus === 'spa') {
 				pokemon.addVolatile('confusion');
 			}

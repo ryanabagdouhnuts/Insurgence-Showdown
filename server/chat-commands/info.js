@@ -585,7 +585,7 @@ const commands = {
 								evos.push(`${evo.name} (level-up with ${evo.evoMove}${condition})`);
 								break;
 							case 'other':
-								evos.push(`${evo.name} (${condition})`);
+								evos.push(`${evo.name} (${evo.evoCondition})`);
 								break;
 							case 'trade':
 								evos.push(`${evo.name} (trade)`);
@@ -1966,12 +1966,15 @@ const commands = {
 		let ability = Dex.getAbility(targets[0]);
 		let format = Dex.getFormat(targets[0]);
 		let atLeastOne = false;
-		let generation = (targets[1] || 'sm').trim().toLowerCase();
-		let genNumber = 7;
+		let generation = (targets[1] || 'ss').trim().toLowerCase();
+		let genNumber = 8;
 		let extraFormat = Dex.getFormat(targets[2]);
 
-		if (['7', 'gen7', 'seven', 'sm', 'sumo', 'usm', 'usum'].includes(generation)) {
+		if (['8', 'gen8', 'eight', 'ss', 'swsh'].includes(generation)) {
+			generation = 'ss';
+		} else if (['7', 'gen7', 'seven', 'sm', 'sumo', 'usm', 'usum'].includes(generation)) {
 			generation = 'sm';
+			genNumber = 7;
 		} else if (['6', 'gen6', 'oras', 'six', 'xy'].includes(generation)) {
 			generation = 'xy';
 			genNumber = 6;
@@ -1991,7 +1994,7 @@ const commands = {
 			generation = 'rb';
 			genNumber = 1;
 		} else {
-			generation = 'sm';
+			generation = 'ss';
 		}
 
 		// Pokemon

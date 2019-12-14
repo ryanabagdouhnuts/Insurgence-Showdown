@@ -155,11 +155,18 @@ let BattleScripts = {
 		if (move.id === 'weatherball' && zMove) {
 			// Z-Weather Ball only changes types if it's used directly,
 			// not if it's called by Z-Sleep Talk or something.
-			this.singleEvent('ModifyMove', move, null, pokemon, target, move, move);
+			this.singleEvent('ModifyType', move, null, pokemon, target, move, move);
 			if (move.type !== 'Normal') sourceEffect = move;
 		}
 		if (zMove || (move.category !== 'Status' && sourceEffect && /** @type {ActiveMove} */(sourceEffect).isZ)) {
 			move = this.getActiveZMove(move, pokemon);
+		}
+		if (maxMove && move.category !== 'Status') {
+			let moveType = move.type;
+			// Max move outcome is dependent on the move type after type modifications from ability and the move itself
+			this.singleEvent('ModifyType', move, null, pokemon, target, move, move);
+			this.runEvent('ModifyType', pokemon, target, move, move);
+			if (move.type !== moveType) sourceEffect = move;
 		}
 		if (maxMove || (move.category !== 'Status' && sourceEffect && /** @type {ActiveMove} */(sourceEffect).isMax)) {
 			move = this.getActiveMaxMove(move, pokemon);
@@ -182,6 +189,7 @@ let BattleScripts = {
 
 		this.setActiveMove(move, pokemon, target);
 
+		this.singleEvent('ModifyType', move, null, pokemon, target, move, move);
 		this.singleEvent('ModifyMove', move, null, pokemon, target, move, move);
 		if (baseTarget !== move.target) {
 			// Target changed in ModifyMove, so we must adjust it here
@@ -189,6 +197,7 @@ let BattleScripts = {
 			// event
 			target = this.resolveTarget(pokemon, move);
 		}
+		move = this.runEvent('ModifyType', pokemon, target, move, move);
 		move = this.runEvent('ModifyMove', pokemon, target, move, move);
 		if (baseTarget !== move.target) {
 			// Adjust again
@@ -430,7 +439,7 @@ let BattleScripts = {
 					if (move.ohko === 'Ice' && this.gen >= 7 && !pokemon.hasType('Ice')) {
 						accuracy = 20;
 					}
-					if (pokemon.level >= target.level && (move.ohko === true || !target.hasType(move.ohko))) {
+					if (!target.volatiles['dynamax'] && pokemon.level >= target.level && (move.ohko === true || !target.hasType(move.ohko))) {
 						accuracy += (pokemon.level - target.level);
 					} else {
 						this.add('-immune', target, '[ohko]');
@@ -1169,10 +1178,18 @@ let BattleScripts = {
 	canDynamax(pokemon, skipChecks) {
 		// {gigantamax?: string, maxMoves: {[k: string]: string} | null}[]
 		if (!skipChecks) {
+<<<<<<< HEAD
 			if (!pokemon.side.canDynamax) return;
 			if (this.canZMove(pokemon)) return;
 			if (this.canMegaEvo(pokemon)) return;
 			// TODO ban specific species from dynamaxing based on reserach
+=======
+			if (!pokemon.canDynamax) return;
+			if (pokemon.template.isMega || pokemon.template.isPrimal || pokemon.template.forme === "Ultra" || pokemon.getItem().zMove || this.canMegaEvo(pokemon)) {
+				return;
+			}
+			// Some pokemon species are unable to dynamax
+>>>>>>> upstream/master
 			const cannotDynamax = ['zacian', 'zamazenta', 'eternatus'];
 			if (cannotDynamax.includes(toID(pokemon.template.baseSpecies))) {
 				return;

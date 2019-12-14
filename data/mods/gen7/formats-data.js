@@ -5498,7 +5498,7 @@ let BattleFormatsData = {
 		tier: "UU",
 		doublesTier: "DUU",
 	},
-	mimikyutotembusted: {
+	mimikyubustedtotem: {
 		requiredAbility: 'Disguise',
 		battleOnly: true,
 	},
