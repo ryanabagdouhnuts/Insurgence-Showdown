@@ -7464,10 +7464,8 @@ let BattleMovedex = {
 				this.add('-activate', source, 'move: G-Max Sweetness');
 				for (const ally of source.side.pokemon) {
 					ally.cureStatus();
-				}
-				if (ally.cureStatus()) success = true;
-			}
-			return success;
+				},
+			},
 		},
 		secondary: null,
 		target: "adjacentFoe",
