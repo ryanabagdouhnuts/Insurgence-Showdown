@@ -2006,31 +2006,22 @@ let BattleAbilities = {
 		onModifyMove(move, target) {
 			if (!move.ignoreImmunity) move.ignoreImmunity = {};
 			if (move.ignoreImmunity !== true && !target.hasAbility('wonderguard')) {
-				if (!target.hasAbility('etherealshroud')) {
-					move.ignoreImmunity['Fighting'] = true;
-					move.ignoreImmunity['Normal'] = true;
-				}
-				if (!target.hasAbility('levitate') && !target.hasItem('airballoon') && !target.volatiles['magnetrise']) {
-					move.ignoreImmunity['Ground'] = true;
-				}
 				move.ignoreImmunity['Psychic'] = true;
-				if (!target.hasAbility('windforce')) {
-					move.ignoreImmunity['Flying'] = true;
-				}
-				if (!target.hasAbility('voltabsorb') && !target.hasAbility('motordrive') && !target.hasAbility('lightningrod')) {
-					move.ignoreImmunity['Electric'] = true;
-				}
+				move.ignoreImmunity['Flying'] = true;
+				move.ignoreImmunity['Electric'] = true;
 				move.ignoreImmunity['Poison'] = true;
 				move.ignoreImmunity['Ghost'] = true;
 				move.ignoreImmunity['Dragon'] = true;
-				if (!target.hasAbility('flashfire')) {
-					move.ignoreImmunity['Fire'] = true;
+				move.ignoreImmunity['Fire'] = true;
+				move.ignoreImmunity['Water'] = true;
+				move.ignoreImmunity['Grass'] = true;
+				if (target.hasAbility('etherealshroud') === false) {
+					move.ignoreImmunity['Fighting'] = true;
+					move.ignoreImmunity['Normal'] = true;
 				}
-				if (!target.hasAbility('waterabsorb') && !target.hasAbility('stormdrain') && !target.hasAbility('dryskin') && !target.hasAbility('vaporization')) {
-					move.ignoreImmunity['Water'] = true;
+				if (target.hasAbility('levitate') === false && target.hasItem('airballoon') === false && target.volatiles['magnetrise'] === false) {
+					move.ignoreImmunity['Ground'] = true;
 				}
-				if (!target.hasAbility('sapsipper')) {
-					move.ignoreImmunity['Grass'] = true;
 				}
 			}
 		},
