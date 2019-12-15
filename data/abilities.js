@@ -408,6 +408,7 @@ let BattleAbilities = {
 			if (!move.secondaries) {
 				move.secondaries = [];
 			}
+			if (move.type === 'Fire') {
 			move.secondaries.push({
 				chance: 100,
 				self:{
@@ -420,6 +421,7 @@ let BattleAbilities = {
 			},
 			});
 		},
+	},
 		id: "firedup",
 		name: "Fired Up",
 		rating: 4,
