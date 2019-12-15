@@ -2019,7 +2019,7 @@ let BattleAbilities = {
 					move.ignoreImmunity['Fighting'] = true;
 					move.ignoreImmunity['Normal'] = true;
 				}
-				if (target.hasAbility('levitate') === false && target.hasItem('airballoon') === false && target.volatiles['magnetrise'] === false) {
+				if (target.hasAbility('levitate') === false && target.hasItem('airballoon') === false && target.volatiles['magnetrise'] === null) {
 					move.ignoreImmunity['Ground'] = true;
 				}
 			}
