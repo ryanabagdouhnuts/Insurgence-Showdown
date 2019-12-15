@@ -420,7 +420,7 @@ let BattleAbilities = {
 				ability: this.dex.getAbility('firedup'),
 			},
 			});
-		},
+		}
 	},
 		id: "firedup",
 		name: "Fired Up",
