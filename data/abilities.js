@@ -2022,7 +2022,6 @@ let BattleAbilities = {
 				if (target.hasAbility('levitate') === false && target.hasItem('airballoon') === false && target.volatiles['magnetrise'] === false) {
 					move.ignoreImmunity['Ground'] = true;
 				}
-				}
 			}
 		},
 		id: "irrelephant",
