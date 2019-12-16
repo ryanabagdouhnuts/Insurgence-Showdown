@@ -763,7 +763,7 @@ let BattleStatuses = {
 			if (this.field.isWeather('Sleet')) this.eachEvent('Weather');
 		},
 		onWeather(target) {
-			this.damage(target.maxhp / 5);
+			this.damage(target.maxhp / 8);
 		},
 		onEnd() {
 			this.add('-weather', 'none');
