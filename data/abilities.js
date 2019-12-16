@@ -2003,7 +2003,7 @@ let BattleAbilities = {
 	"irrelephant": {
 		shortDesc: "This Pokemon ignores type-based immunities.",
 		onModifyMovePriority: -5,
-		onModifyMove(move, target) {
+		onModifyMove(move,source, target) {
 			if (!move.ignoreImmunity) move.ignoreImmunity = {};
 			if (move.ignoreImmunity !== true && !target.hasAbility('wonderguard')) {
 				move.ignoreImmunity['Psychic'] = true;
