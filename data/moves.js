@@ -13905,7 +13905,12 @@ let BattleMovedex = {
 	},
 		effect: {
 			duration: 2,
-			onInvulnerability: false,
+			onInvulnerability(target, source, move) {
+				if (move.id === 'helpinghand') {
+					return;
+				}
+				return false;
+			}
 		},
 		secondary: null,
 		target: "normal",
