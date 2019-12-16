@@ -2021,6 +2021,7 @@ let BattleAbilities = {
 				}
 				if (target.hasAbility('levitate') !== true && target.hasItem('airballoon') !== true && target.volatiles['magnetrise'] !== true) {
 					move.ignoreImmunity['Ground'] = true;
+					this.add('-message', target.volatiles['magnetrise']);
 				}
 			}
 		},
