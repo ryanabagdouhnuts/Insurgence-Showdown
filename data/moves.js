@@ -903,7 +903,7 @@ let BattleMovedex = {
 		flags: {snatch: 1},
 		sideCondition: 'auroraveil',
 		onTryHitSide() {
-			if (!this.field.isWeather(['hail', 'sleet'])) return false;
+			if (!['hail','sleet'].includes(attacker.effectiveWeather())) return false;
 		},
 		effect: {
 			duration: 5,
@@ -1533,8 +1533,8 @@ let BattleMovedex = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
 		onModifyMove(move) {
-			if (this.field.isWeather('hail')) move.accuracy = true;
-			if (this.field.isWeather('sleet')) move.accuracy = true;
+			if (['hail'].includes(attacker.effectiveWeather())) move.accuracy = true;
+			if (['sleet'].includes(attacker.effectiveWeather())) move.accuracy = true;
 		},
 		secondary: {
 			chance: 10,
@@ -6430,7 +6430,7 @@ let BattleMovedex = {
 			return null;
 		},
 		onBasePower(basePower, pokemon, target) {
-			if (this.field.isWeather(['newmoon'])) {
+			if (['newmoon'].includes(attacker.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.3);
 			}
@@ -9182,7 +9182,7 @@ let BattleMovedex = {
 		priority: 0,
 		flags: {snatch: 1},
 		onModifyMove(move) {
-			if (this.field.isWeather(['newmoon'])) move.boosts = {atk: 2, accuracy: 2};
+			if (['newmoon'].includes(attacker.effectiveWeather())) move.boosts = {atk: 2, accuracy: 2};
 		},
 		boosts: {
 			atk: 1,
@@ -10884,7 +10884,7 @@ let BattleMovedex = {
 					return;
 				}
 				this.add('-prepare', attacker, move.name, defender);
-				if (this.field.isWeather(['newmoon'])) {
+				if (['newmoon'].includes(attacker.effectiveWeather())) {
 					this.attrLastMove('[still]');
 					this.addMove('-anim', attacker, move.name, defender);
 					return;
@@ -13892,7 +13892,7 @@ let BattleMovedex = {
 				return;
 			}
 			this.add('-prepare', attacker, move.name, defender);
-			if (this.field.isWeather(['newmoon'])) {
+			if (['newmoon'].includes(attacker.effectiveWeather())) {
 				this.attrLastMove('[still]');
 				this.addMove('-anim', attacker, move.name, defender);
 				return;
@@ -16657,7 +16657,7 @@ let BattleMovedex = {
 				return;
 			}
 			this.add('-prepare', attacker, move.name, defender);
-			if (this.field.isWeather(['newmoon'])) {
+			if (['newmoon'].includes(attacker.effectiveWeather())) {
 				this.attrLastMove('[still]');
 				this.addMove('-anim', attacker, move.name, defender);
 				return;
@@ -19206,7 +19206,7 @@ let BattleMovedex = {
 		priority: 0,
 		flags: {protect: 1, mirror: 1, nonsky: 1},
 		onBasePower(basePower, pokemon, target) {
-			if (this.field.isWeather(['newmoon'])) {
+			if (['newmoon'].includes(attacker.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}

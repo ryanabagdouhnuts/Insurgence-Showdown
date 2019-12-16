@@ -49,7 +49,7 @@ let BattleAbilities = {
 		shortDesc: "If New Moon is active, this Pokemon's Sp. Atk is 1.5x; loses 1/8 max HP per turn.",
 		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
-			if (this.field.isWeather(['newmoon'])) {
+			if (['newmoon'].includes(attacker.effectiveWeather())) {
 				return this.chainModify(1.5);
 			}
 		},
@@ -3778,7 +3778,7 @@ let BattleAbilities = {
 	"shadowdance": {
 		shortDesc: "If New Moon is active, this Pokemon's Speed is doubled.",
 		onModifySpe(spe, pokemon) {
-			if (this.field.isWeather(['newmoon'])) {
+			if (['newmoon'].includes(attacker.effectiveWeather())) {
 				return this.chainModify(2);
 			}
 		},
@@ -3998,7 +3998,7 @@ let BattleAbilities = {
 	"slushrush": {
 		shortDesc: "If Hail is active, this Pokemon's Speed is doubled.",
 		onModifySpe(spe, pokemon) {
-			if (this.field.isWeather('hail')) {
+			if (['newmoon'].includes(attacker.effectiveWeather())) {
 				return this.chainModify(2);
 			}
 		},
@@ -4028,7 +4028,7 @@ let BattleAbilities = {
 		},
 		onModifyAccuracy(accuracy) {
 			if (typeof accuracy !== 'number') return;
-			if (this.field.isWeather('hail')) {
+			if (['hail'].includes(attacker.effectiveWeather())) {
 				this.debug('Snow Cloak - decreasing accuracy');
 				return accuracy * 0.8;
 			}
@@ -4425,7 +4425,7 @@ let BattleAbilities = {
 		shortDesc: "If New Moon or Rain is active, this Pokemon's Sp. Atk is 1.5x",
 		onModifySpAPriority: 5,
 		onModifySpA(spa, pokemon) {
-			if (this.field.isWeather(['newmoon','raindance','primordialsea'])) {
+			if (['newmoon','raindance','primordialsea'].includes(attacker.effectiveWeather())) {
 				return this.chainModify(1.5);
 			}
 		},
