@@ -15251,6 +15251,7 @@ let BattleLearnsets = {
 		gunkshot: ["7M"],
 		magiccoat: ["7M"],
 		waterpulse: ["7M"],
+		overdrive: ["8M"],
 	}},
 	weezing: {learnset: {
 		assurance: ["8M", "8L16", "7L12", "6L12", "5L15", "4L15"],
