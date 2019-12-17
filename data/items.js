@@ -1409,7 +1409,7 @@ let BattleItems = {
 		},
 		onModifySpDPriority: 2,
 		onModifySpD(spd, pokemon) {
-			if (pokemon.baseTemplate.species === 'Clamperl') {
+			if (pokemon.baseTemplate.species === 'Clamperl' || pokemon.baseTemplate.species === 'Clamperl-Delta') {
 				return this.chainModify(2);
 			}
 		},
@@ -1428,7 +1428,7 @@ let BattleItems = {
 		},
 		onModifySpAPriority: 1,
 		onModifySpA(spa, pokemon) {
-			if (pokemon.baseTemplate.species === 'Clamperl') {
+			if (pokemon.baseTemplate.species === 'Clamperl' || pokemon.baseTemplate.species === 'Clamperl-Delta') {
 				return this.chainModify(2);
 			}
 		},
