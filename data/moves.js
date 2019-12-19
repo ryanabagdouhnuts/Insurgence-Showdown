@@ -18476,6 +18476,7 @@ let BattleMovedex = {
 			onStart(side, source) {
 				if(source.hasAbility('foundry')) {
 					this.add('-sidestart', side, 'move: Stealth Coal');
+					return;
 				} else {
 				this.add('-sidestart', side, 'move: Stealth Rock');
 			}
