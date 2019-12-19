@@ -18476,7 +18476,7 @@ let BattleMovedex = {
 			onModifyMove(move, source) {
 			if(source.hasAbility('foundry')) {
 				this.add('-sidestart', side, 'move: Stealth Coal');
-			},
+			}
 				onSwitchIn(pokemon) {
 					if (pokemon.hasItem('heavydutyboots')) return;
 					let typeMod = this.dex.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthcoal')), -6, 6);
