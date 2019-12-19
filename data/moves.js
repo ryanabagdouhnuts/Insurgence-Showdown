@@ -18426,6 +18426,37 @@ let BattleMovedex = {
 		zMoveBoost: {spd: 1},
 		contestType: "Cute",
 	},
+	"stealthcoal": {
+		num: 999,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Fire type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin or Defog successfully, or is hit by Defog.",
+		shortDesc: "Hurts foes on switch-in. Factors Fire weakness.",
+		id: "stealthcoal",
+		isViable: true,
+		name: "Stealth Coal",
+		pp: 20,
+		priority: 0,
+		flags: {reflectable: 1},
+		sideCondition: 'stealthcoal',
+		effect: {
+			// this is a side condition
+			onStart(side) {
+				this.add('-sidestart', side, 'move: Stealth Coal');
+			},
+			onSwitchIn(pokemon) {
+				if (pokemon.hasItem('heavydutyboots')) return;
+				let typeMod = this.dex.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthcoal')), -6, 6);
+				this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
+			},
+		},
+		secondary: null,
+		target: "foeSide",
+		type: "Fire",
+		zMoveBoost: {def: 1},
+		contestType: "Cool",
+	},
 	"stealthrock": {
 		num: 446,
 		accuracy: true,
@@ -18442,6 +18473,18 @@ let BattleMovedex = {
 		sideCondition: 'stealthrock',
 		effect: {
 			// this is a side condition
+			onModifyMove(move, source) {
+			if(source.hasAbility('foundry')) {
+				onStart(side) {
+				this.add('-sidestart', side, 'move: Stealth Coal');
+			},
+				onSwitchIn(pokemon) {
+					if (pokemon.hasItem('heavydutyboots')) return;
+					let typeMod = this.dex.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthcoal')), -6, 6);
+					this.damage(pokemon.maxhp * Math.power(2, typeMod) /8);
+				},
+			},
+		}
 			onStart(side) {
 				this.add('-sidestart', side, 'move: Stealth Rock');
 			},
