@@ -18481,7 +18481,8 @@ let BattleMovedex = {
 					this.add('-sidestart', side, 'move: Stealth Coal');
 				} else {
 				this.add('-sidestart', side, 'move: Stealth Rock');
-			},
+			}
+		},
 			onSwitchIn(pokemon) {
 				if (pokemon.hasItem('heavydutyboots')) return;
 				if(sideCondition = ('stealthrock')) {
