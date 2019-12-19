@@ -18442,8 +18442,10 @@ let BattleMovedex = {
 		sideCondition: 'stealthcoal',
 		effect: {
 			// this is a side condition
-			onStart(side, source) {
+			onTryHit(source) {
 				if (!source.hasAbility('foundry')) return;
+			},
+			onStart(side, source) {
 				this.add('-sidestart', side, 'move: Stealth Coal');
 			},
 			onSwitchIn(pokemon) {
@@ -18474,8 +18476,10 @@ let BattleMovedex = {
 		sideCondition: 'stealthrock',
 		effect: {
 			// this is a side condition
-			onStart(side, source) {
+			onTryHit(source) {
 				if (source.hasAbility('foundry')) return;
+			},
+			onStart(side, source) {
 				this.add('-sidestart', side, 'move: Stealth Rock');
 			},
 			onSwitchIn(pokemon) {
