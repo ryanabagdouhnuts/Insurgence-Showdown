@@ -18473,7 +18473,7 @@ let BattleMovedex = {
 		sideCondition: 'stealthrock',
 		effect: {
 			// this is a side condition
-			onModifyMove(move, source) {
+			onModifyMove(move, source, side) {
 			if(source.hasAbility('foundry')) {
 				onStart(side) {
 				this.add('-sidestart', side, 'move: Stealth Coal');
