@@ -18476,15 +18476,22 @@ let BattleMovedex = {
 			onStart(side, source) {
 				if(source.hasAbility('foundry')) {
 					this.add('-sidestart', side, 'move: Stealth Coal');
+
+					onSwitchIn(pokemon) {
+						if (pokemon.hasItem('heavydutyboots')) return;
+						let typeMod = this.dex.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthcoal')), -6, 6);
+						this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
+					},
+
 				} else {
 				this.add('-sidestart', side, 'move: Stealth Rock');
+
+				onSwitchIn(pokemon) {
+					if (pokemon.hasItem('heavydutyboots')) return;
+					let typeMod = this.dex.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
+					this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
+				},
 			}
-			},
-			onSwitchIn(pokemon) {
-				if (pokemon.hasItem('heavydutyboots')) return;
-				let typeMod = this.dex.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
-				this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
-			},
 		},
 		secondary: null,
 		target: "foeSide",
