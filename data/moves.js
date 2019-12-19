@@ -18482,8 +18482,7 @@ let BattleMovedex = {
 				if (pokemon.hasItem('heavydutyboots')) return;
 				let typeMod = this.dex.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthrock')), -6, 6);
 				this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
-				},
-			}
+			},
 		},
 		secondary: null,
 		target: "foeSide",
