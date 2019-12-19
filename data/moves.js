@@ -3055,7 +3055,7 @@ let BattleMovedex = {
 		flags: {mirror: 1},
 		onHitField(target, source) {
 			const sideConditions = [
-				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'lightscreen', 'reflect', 'auroraveil', 'tailwind',
+				'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'lightscreen', 'reflect', 'auroraveil', 'tailwind', 'stealthcoal',
 			];
 			const side1 = this.sides[0];
 			const side2 = this.sides[1];
@@ -3529,7 +3529,7 @@ let BattleMovedex = {
 		onHit(target, source, move) {
 			let success = false;
 			if (!target.volatiles['substitute'] || move.infiltrates) success = !!this.boost({evasion: -1});
-			let removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
+			let removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'stealthcoal'];
 			let removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 			for (const targetCondition of removeTarget) {
 				if (target.side.removeSideCondition(targetCondition)) {
@@ -7634,7 +7634,7 @@ let BattleMovedex = {
 		isMax: "Corviknight",
 		onHit(target, source, move) {
 			let success = false;
-			let removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb'];
+			let removeTarget = ['reflect', 'lightscreen', 'auroraveil', 'safeguard', 'mist', 'spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'stealthcoal'];
 			let removeAll = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
 			for (const targetCondition of removeTarget) {
 				if (target.side.removeSideCondition(targetCondition)) {
@@ -15252,7 +15252,7 @@ let BattleMovedex = {
 				if (pokemon.hp && pokemon.removeVolatile('leechseed')) {
 					this.add('-end', pokemon, 'Leech Seed', '[from] move: Rapid Spin', '[of] ' + pokemon);
 				}
-				let sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge'];
+				let sideConditions = ['spikes', 'toxicspikes', 'stealthrock', 'stickyweb', 'gmaxsteelsurge', 'stealthcoal'];
 				for (const condition of sideConditions) {
 					if (pokemon.hp && pokemon.side.removeSideCondition(condition)) {
 						this.add('-sideend', pokemon.side, this.dex.getEffect(condition).name, '[from] move: Rapid Spin', '[of] ' + pokemon);
@@ -18442,7 +18442,8 @@ let BattleMovedex = {
 		sideCondition: 'stealthcoal',
 		effect: {
 			// this is a side condition
-			onStart(side) {
+			onStart(side, source) {
+				if (!source.hasAbility('foundry')) return;
 				this.add('-sidestart', side, 'move: Stealth Coal');
 			},
 			onSwitchIn(pokemon) {
@@ -18474,20 +18475,7 @@ let BattleMovedex = {
 		effect: {
 			// this is a side condition
 			onStart(side, source) {
-				if(source.hasAbility('foundry')) {
-					this.add('-sidestart', side, 'move: Stealth Coal');
-<<<<<<< HEAD
-					return;
-=======
-
-					onSwitchIn(pokemon) {
-						if (pokemon.hasItem('heavydutyboots')) return;
-						let typeMod = this.dex.clampIntRange(pokemon.runEffectiveness(this.dex.getActiveMove('stealthcoal')), -6, 6);
-						this.damage(pokemon.maxhp * Math.pow(2, typeMod) / 8);
-					},
-
->>>>>>> 36f68b7039c6b3206d152e7f00b344c14553791e
-				} else {
+				if (source.hasAbility('foundry')) return;
 				this.add('-sidestart', side, 'move: Stealth Rock');
 
 				onSwitchIn(pokemon) {
