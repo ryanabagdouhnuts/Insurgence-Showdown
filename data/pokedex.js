@@ -18602,7 +18602,7 @@ roseradedelta: {
 		types: ["Psychic", "Electric"],
 		gender: "N",
 		baseStats: {hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100},
-		abilities: {0: "Event Horizon"},
+		abilities: {0: "Arena Trap"},
 		weightkg: 9,
 		eggGroups: ["Undiscovered"],
 	},
