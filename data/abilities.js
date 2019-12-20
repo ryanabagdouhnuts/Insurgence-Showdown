@@ -1024,9 +1024,9 @@ let BattleAbilities = {
 		desc: "If a Pokemon makes contact with this Pokemon, that Pokemon gets trapped",
 		shortDesc: "Pokemon get trapped upon making contact",
 		onAfterDamageOrder: 1,
-		onAfterDamage(damage, target, source, move) {
+		onAfterDamage(damage, target, source, move, pokemon) {
 			if (source && source !== target && move && move.flags['contact']) {
-				target.tryTrap(true);
+				pokemon.tryTrap();
 			}
 		},
 		id: "eventhorizon",
