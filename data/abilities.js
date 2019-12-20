@@ -1025,7 +1025,11 @@ let BattleAbilities = {
 		shortDesc: "Pokemon get trapped upon making contact",
 		onAfterDamageOrder: 1,
 		onAfterDamage(damage, target, source, move, pokemon) {
-			if (source && source !== target && move && move.flags['contact']) {
+			if (!source || source === target || !move || !move.flags['contact']) return;
+		},
+		onFoeTrapPokemon(pokemon) {
+			if (!this.isAdjacent(pokemon, this.effectData.target)) return;
+			else {
 				pokemon.tryTrap(true);
 			}
 		},
