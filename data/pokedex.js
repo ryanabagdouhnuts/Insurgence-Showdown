@@ -9547,7 +9547,7 @@ roseradedelta: {
 		species: "Spiritomb",
 		types: ["Ghost", "Dark"],
 		baseStats: {hp: 50, atk: 92, def: 108, spa: 92, spd: 108, spe: 35},
-		abilities: {0: "Pressure", H: "Noctem"},
+		abilities: {0: "Pressure", 1: "Infiltrator", H: "Noctem"},
 		heightm: 1,
 		weightkg: 108,
 		color: "Purple",
