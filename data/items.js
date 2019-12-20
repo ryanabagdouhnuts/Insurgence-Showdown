@@ -2741,7 +2741,7 @@ let BattleItems = {
 		isPokeball: true,
 		desc: "A Poke Ball that makes caught Pokemon more friendly.",
 	},
-	"frosslassite": {
+	"froslassite": {
 		id: "froslassite",
 		name: "Froslassite",
 		spritenum: 719,
