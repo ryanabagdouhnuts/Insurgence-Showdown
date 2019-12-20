@@ -4497,6 +4497,7 @@ let BattleFormatsData = {
 		tier: "NU",
 	},
 	froslassmega: {
+		requiredItem: "Froslassite",
 		tier: "UU",
 	},
 	froslassdeltamega: {
