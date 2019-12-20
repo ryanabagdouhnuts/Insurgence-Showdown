@@ -4846,6 +4846,10 @@ let BattleFormatsData = {
 		isUnreleased: true,
 		tier: "OU",
 	},
+	jirachimega: {
+		requiredItem: "jirachite",
+		tier: "Uber",
+	},
 	deoxys: {
 		eventPokemon: [
 			{"generation": 3, "level": 30, "shiny": 1, "moves": ["taunt", "pursuit", "psychic", "superpower"]},

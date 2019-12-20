@@ -2911,6 +2911,20 @@ let BattleAbilities = {
 		rating: 2,
 		num: 257,
 	},
+	"periodicorbit": {
+		desc: "Two-turn moves happen immediately.",
+		shortDesc: "Two-turn moves happen immediately.",
+		onChargeMove(pokemon, target, move) {
+				this.debug('power herb - remove charge turn for ' + move.id);
+				this.attrLastMove('[still]');
+				this.addMove('-anim', pokemon, move.name, target);
+				return false; // skip charge turn
+		},
+		id: "periodicorbit",
+		name: "Periodic Orbit",
+		rating: 4,
+		num: 260,
+	},
 	"perishbody": {
 		desc: "When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle.",
 		shortDesc: "When hit by a contact move, the Pokémon and the attacker faint in 3 turns.",
