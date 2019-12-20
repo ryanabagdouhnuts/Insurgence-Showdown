@@ -1026,13 +1026,10 @@ let BattleAbilities = {
 		onAfterDamageOrder: 1,
 		onAfterDamage(damage, target, source, move, pokemon) {
 			if (!source || source === target || !move || !move.flags['contact']) return;
-
-		onFoeTrapPokemon(pokemon) {
 			if (!this.isAdjacent(pokemon, this.effectData.target)) return;
 			else {
 				pokemon.tryTrap(true);
 			}
-		},
 	},
 		id: "eventhorizon",
 		name: "Event Horizon",
