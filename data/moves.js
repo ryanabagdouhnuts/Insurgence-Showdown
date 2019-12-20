@@ -13915,7 +13915,7 @@ let BattleMovedex = {
 				return;
 			}
 			this.add('-prepare', attacker, move.name, defender);
-			if (this.field.isWeather(['newmoon'])) {
+			if (['newmoon'].includes(attacker.effectiveWeather())) {
 				this.attrLastMove('[still]');
 				this.addMove('-anim', attacker, move.name, defender);
 				return;
@@ -13928,12 +13928,7 @@ let BattleMovedex = {
 	},
 		effect: {
 			duration: 2,
-			onInvulnerability(target, source, move) {
-				if (move.id === 'helpinghand') {
-					return;
-				}
-				return false;
-			}
+			onInvulnerability: false,
 		},
 		secondary: null,
 		target: "normal",
