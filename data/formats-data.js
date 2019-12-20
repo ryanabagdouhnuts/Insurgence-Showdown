@@ -8796,6 +8796,9 @@ let BattleFormatsData = {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	ufi: {
+		tier: "OU",
+	},
 	missingno: {
 		isNonstandard: "Glitch",
 		tier: "Illegal",

@@ -1020,6 +1020,20 @@ let BattleAbilities = {
 		rating: 3.5,
 		num: 240,
 	},
+	"eventhorizon": {
+		desc: "If a Pokemon makes contact with this Pokemon, that Pokemon gets trapped",
+		shortDesc: "Pokemon get trapped upon making contact",
+		onAfterDamageOrder: 1,
+		onAfterDamage(damage, target, source, move) {
+			if (source && source !== target && move && move.flags['contact']) {
+				source.trytrap(true);
+			}
+		},
+		id: "eventhorizon",
+		name: "Event Horizon",
+		rating: 4,
+		num: 301,
+	},
 	"fairyaura": {
 		desc: "While this Pokemon is active, the power of Fairy-type moves used by active Pokemon is multiplied by 1.33.",
 		shortDesc: "While this Pokemon is active, a Fairy move used by any Pokemon has 1.33x power.",

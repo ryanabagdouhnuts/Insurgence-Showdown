@@ -18596,6 +18596,16 @@ roseradedelta: {
 		eggGroups: ["Undiscovered"],
 		inheritsFrom: "eternatus",
 	},
+	ufi: {
+		num: 3000,
+		species: "UFI",
+		types: ["Psychic", "Electric"],
+		gender: "N",
+		baseStats: {hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100},
+		abilities: {0: "Event Horizon"},
+		weightkg: 9,
+		eggGroups: ["Undiscovered"],
+	},
 	missingno: {
 		num: 0,
 		species: "Missingno.",
