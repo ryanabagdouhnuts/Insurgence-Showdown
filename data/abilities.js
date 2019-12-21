@@ -1026,9 +1026,8 @@ let BattleAbilities = {
 		onAfterDamageOrder: 1,
 		onAfterDamage(damage, target, source, move, pokemon) {
 			if (!source || source === target || !move || !move.flags['contact']) return;
-			if (!this.isAdjacent(pokemon, this.effectData.target)) return;
-			else {
-				pokemon.maybeTrapped = true;
+			if (this.isAdjacent(pokemon, this.effectData.target)) {
+				pokemon.tryTrap(true);
 			}
 	},
 		id: "eventhorizon",
