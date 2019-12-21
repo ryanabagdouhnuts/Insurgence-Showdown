@@ -3700,7 +3700,7 @@ let BattleMovedex = {
 		effect: {
 			duration: 2,
 			onImmunity(type, pokemon) {
-				if (type === 'sandstorm' || type === 'hail') return false;
+				if (type === 'sandstorm' || type === 'hail' || type === 'sleet') return false;
 			},
 			onInvulnerability(target, source, move) {
 				if (['earthquake', 'magnitude', 'helpinghand'].includes(move.id)) {
@@ -3859,7 +3859,7 @@ let BattleMovedex = {
 		effect: {
 			duration: 2,
 			onImmunity(type, pokemon) {
-				if (type === 'sandstorm' || type === 'hail') return false;
+				if (type === 'sandstorm' || type === 'hail' || type === 'sleet') return false;
 			},
 			onInvulnerability(target, source, move) {
 				if (['surf', 'whirlpool', 'helpinghand'].includes(move.id)) {
@@ -12774,6 +12774,8 @@ let BattleMovedex = {
 			case 'primordialsea':
 			case 'sandstorm':
 			case 'hail':
+			case 'sleet':
+			case 'newmoon':
 				factor = 0.25;
 				break;
 			}
@@ -12809,8 +12811,11 @@ let BattleMovedex = {
 			case 'primordialsea':
 			case 'sandstorm':
 			case 'hail':
+			case 'sleet':
 				factor = 0.25;
 				break;
+			case 'newmoon':
+				factor = 0.16667;
 			}
 			return !!this.heal(this.modify(pokemon.maxhp, factor));
 		},
@@ -17866,7 +17871,7 @@ let BattleMovedex = {
 			return null;
 		},
 		onBasePower(basePower, pokemon, target) {
-			if (['raindance', 'primordialsea', 'sandstorm', 'hail'].includes(pokemon.effectiveWeather())) {
+			if (['raindance', 'primordialsea', 'sandstorm', 'hail', 'sleet'].includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}
@@ -17905,7 +17910,7 @@ let BattleMovedex = {
 			return null;
 		},
 		onBasePower(basePower, pokemon, target) {
-			if (['raindance', 'primordialsea', 'sandstorm', 'hail'].includes(pokemon.effectiveWeather())) {
+			if (['raindance', 'primordialsea', 'sandstorm', 'hail', 'sleet'].includes(pokemon.effectiveWeather())) {
 				this.debug('weakened by weather');
 				return this.chainModify(0.5);
 			}
@@ -19497,10 +19502,13 @@ let BattleMovedex = {
 				break;
 			case 'raindance':
 			case 'primordialsea':
+			case 'sleet':
 			case 'sandstorm':
 			case 'hail':
 				factor = 0.25;
 				break;
+			case 'newmoon':
+				factor = 0.16667;
 			}
 			return !!this.heal(this.modify(pokemon.maxhp, factor));
 		},
@@ -21270,7 +21278,11 @@ let BattleMovedex = {
 			case 'sandstorm':
 				move.basePower *= 2;
 				break;
+			case 'newmoon':
+				move.basePower *= 2;
+				break;
 			case 'hail':
+			case 'sleet':
 				move.basePower *= 2;
 				break;
 			}
