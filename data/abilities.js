@@ -1028,7 +1028,7 @@ let BattleAbilities = {
 			if (!source || source === target || !move || !move.flags['contact']) return;
 			if (!this.isAdjacent(pokemon, this.effectData.target)) return;
 			else {
-				pokemon.tryTrap(true);
+				pokemon.maybeTrapped = true;
 			}
 	},
 		id: "eventhorizon",
