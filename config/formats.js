@@ -6,6 +6,74 @@
 /**@type {(FormatsData | {section: string, column?: number})[]} */
 let Formats = [
 
+	// National Dex
+	///////////////////////////////////////////////////////////////////
+
+	{
+		section: "Custom Format",
+	},
+	{
+		name: "[Gen 8] Custom OU",
+
+		mod: 'gen8',
+		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
+		banlist: ['Uber', 'Power Construct', 'Shadow Tag', 'Baton Pass',
+			'Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Dialga', 'Genesect', 'Gengar-Mega', 'Giratina', 'Groudon',
+			'Ho-Oh', 'Kangaskhan-Mega', 'Kyogre', 'Kyurem-White', 'Landorus-Base', 'Lucario-Mega', 'Lugia', 'Lunala',
+			'Marshadow', 'Mewtwo', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Palkia', 'Pheromosa',
+			'Rayquaza', 'Reshiram', 'Salamence-Mega', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zekrom', 'Crystal Piece Regigigas',
+		],
+		unbanlist: ['Melmetal', 'Meltan'],
+	},
+	{
+		name: "[Gen 8] Custom Ubers",
+
+		mod: 'gen8',
+		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
+		banlist: ['AG'],
+	},
+	{
+		name: "[Gen 8] Custom UU",
+		mod: 'gen8',
+		ruleset: ['[Gen 8] National Dex OU'],
+		banlist: ['OU', 'UUBL', 'Kommonium Z', 'Mewnium Z'],
+	},
+	{
+		name: "[Gen 8] Custom RU",
+		mod: 'gen8',
+		ruleset: ['[Gen 8] National Dex OU'],
+		banlist: ['OU', 'UUBL','UU','RUBL', 'Kommonium Z', 'Mewnium Z'],
+	},
+	{
+		name: "[Gen 8] Custom NU",
+		mod: 'gen8',
+		ruleset: ['[Gen 8] National Dex OU'],
+		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Kommonium Z', 'Mewnium Z'],
+	},
+	{
+		name: "[Gen 8] Custom PU",
+		mod: 'gen8',
+		ruleset: ['[Gen 8] National Dex OU'],
+		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'NU', 'PUBL', 'Kommonium Z', 'Mewnium Z'],
+	},
+	{
+		name: "[Gen 8] Custom LC",
+		mod: 'gen8',
+		maxLevel: 5,
+		ruleset: ['Obtainable', 'Little Cup', 'Standard', 'Team Preview', 'Dynamax Clause','+Past', 'NatDex Rule','+Unreleased'],
+		banlist: ['Baton Pass', 'LC Uber', 'Gligar', 'Scyther'],
+	},
+	{
+		name: "[Gen 8] Custom AG",
+		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3656779/">National Dex AG</a>`,
+		],
+
+		mod: 'gen8',
+		ruleset: ['Obtainable', 'Team Preview', 'Nickname Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', '+Past', '+Unreleased', 'NatDex Rule'],
+		unbanlist: ['Melmetal', 'Meltan'],
+	},
+
 	// Sw/Sh Singles
 	///////////////////////////////////////////////////////////////////
 
@@ -323,74 +391,6 @@ let Formats = [
 		},
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod'],
-	},
-
-	// National Dex
-	///////////////////////////////////////////////////////////////////
-
-	{
-		section: "National Dex",
-	},
-	{
-		name: "[Gen 8] National Dex OU",
-
-		mod: 'gen8',
-		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
-		banlist: ['Uber', 'Power Construct', 'Shadow Tag', 'Baton Pass',
-			'Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Dialga', 'Genesect', 'Gengar-Mega', 'Giratina', 'Groudon',
-			'Ho-Oh', 'Kangaskhan-Mega', 'Kyogre', 'Kyurem-White', 'Landorus-Base', 'Lucario-Mega', 'Lugia', 'Lunala',
-			'Marshadow', 'Mewtwo', 'Naganadel', 'Necrozma-Dawn-Wings', 'Necrozma-Dusk-Mane', 'Palkia', 'Pheromosa',
-			'Rayquaza', 'Reshiram', 'Salamence-Mega', 'Shaymin-Sky', 'Solgaleo', 'Xerneas', 'Yveltal', 'Zekrom', 'Crystal Piece Regigigas',
-		],
-		unbanlist: ['Melmetal', 'Meltan'],
-	},
-	{
-		name: "[Gen 8] National Dex Ubers",
-
-		mod: 'gen8',
-		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
-		banlist: ['AG'],
-	},
-	{
-		name: "[Gen 8] National Dex UU",
-		mod: 'gen8',
-		ruleset: ['[Gen 8] National Dex OU'],
-		banlist: ['OU', 'UUBL', 'Kommonium Z', 'Mewnium Z'],
-	},
-	{
-		name: "[Gen 8] National Dex RU",
-		mod: 'gen8',
-		ruleset: ['[Gen 8] National Dex OU'],
-		banlist: ['OU', 'UUBL','UU','RUBL', 'Kommonium Z', 'Mewnium Z'],
-	},
-	{
-		name: "[Gen 8] National Dex NU",
-		mod: 'gen8',
-		ruleset: ['[Gen 8] National Dex OU'],
-		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Kommonium Z', 'Mewnium Z'],
-	},
-	{
-		name: "[Gen 8] National Dex PU",
-		mod: 'gen8',
-		ruleset: ['[Gen 8] National Dex OU'],
-		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'NU', 'PUBL', 'Kommonium Z', 'Mewnium Z'],
-	},
-	{
-		name: "[Gen 8] National Dex LC",
-		mod: 'gen8',
-		maxLevel: 5,
-		ruleset: ['Obtainable', 'Little Cup', 'Standard', 'Team Preview', 'Dynamax Clause','+Past', 'NatDex Rule','+Unreleased'],
-		banlist: ['Baton Pass', 'LC Uber', 'Gligar', 'Scyther'],
-	},
-	{
-		name: "[Gen 8] National Dex AG",
-		threads: [
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3656779/">National Dex AG</a>`,
-		],
-
-		mod: 'gen8',
-		ruleset: ['Obtainable', 'Team Preview', 'Nickname Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', '+Past', '+Unreleased', 'NatDex Rule'],
-		unbanlist: ['Melmetal', 'Meltan'],
 	},
 
 	// OM of the Month
