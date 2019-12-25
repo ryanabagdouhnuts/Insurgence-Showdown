@@ -6,7 +6,7 @@
 /**@type {(FormatsData | {section: string, column?: number})[]} */
 let Formats = [
 
-	// National Dex
+	// Custom
 	///////////////////////////////////////////////////////////////////
 
 	{
@@ -406,8 +406,6 @@ let Formats = [
 		ruleset: ['Team Preview', 'Cancel Mod'],
 	},
 
-<<<<<<< HEAD
-=======
 	// National Dex
 	///////////////////////////////////////////////////////////////////
 
@@ -443,7 +441,6 @@ let Formats = [
 		ruleset: ['Obtainable', 'Standard ND', 'Team Preview'],
 	},
 
->>>>>>> upstream/master
 	// OM of the Month
 	///////////////////////////////////////////////////////////////////
 

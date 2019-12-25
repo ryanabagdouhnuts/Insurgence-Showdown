@@ -1465,15 +1465,9 @@ let BattleFormatsData = {
 		tier: "LC",
 	},
 	steelix: {
-<<<<<<< HEAD
 		randomBattleMoves: ["dragondance", "earthquake", "ironhead", "rockslide", "stealthrock"],
 		tier: "NU",
 		doublesTier: "DOU",
-=======
-		randomBattleMoves: ["dragondance", "earthquake", "headsmash", "heavyslam", "stealthrock"],
-		tier: "UU",
-		doublesTier: "New",
->>>>>>> upstream/master
 	},
 	steelixmega: {
 		requiredItem: "Steelixite",
@@ -1855,15 +1849,9 @@ let BattleFormatsData = {
 		tier: "NFE",
 	},
 	mrrime: {
-<<<<<<< HEAD
 		randomBattleMoves: ["focusblast", "freezedry", "nastyplot", "psychic", "rapidspin", "slackoff"],
 		tier: "RU",
 		doublesTier: "DOU",
-=======
-		randomBattleMoves: ["focusblast", "freezedry", "psychic", "rapidspin", "slackoff", "trick"],
-		tier: "UU",
-		doublesTier: "New",
->>>>>>> upstream/master
 	},
 	scyther: {
 		eventPokemon: [
@@ -3139,14 +3127,9 @@ let BattleFormatsData = {
 			{"generation": 3, "level": 10, "gender": "M", "moves": ["present"], "pokeball": "pokeball"},
 			{"generation": 6, "level": 10, "isHidden": false, "abilities": ["vitalspirit"], "moves": ["present", "happyhour"], "pokeball": "cherishball"},
 		],
-<<<<<<< HEAD
 		unreleasedHidden: true,
 		tier: "PU",
 		doublesTier: "DOU",
-=======
-		tier: "UU",
-		doublesTier: "New",
->>>>>>> upstream/master
 	},
 	mantyke: {
 		tier: "LC",
@@ -4480,18 +4463,12 @@ let BattleFormatsData = {
 		tier: "LC",
 	},
 	glalie: {
-<<<<<<< HEAD
 		randomBattleMoves: ["earthquake", "freezedry", "protect", "spikes", "taunt"],
 		tier: "PU",
 		doublesTier: "DOU",
 	},
 	glaliedelta: {
 		tier: "PU",
-=======
-		randomBattleMoves: ["disable", "earthquake", "freezedry", "protect", "substitute"],
-		tier: "UU",
-		doublesTier: "New",
->>>>>>> upstream/master
 	},
 	glaliemega: {
 		requiredItem: "Glalitite",
@@ -7090,11 +7067,7 @@ let BattleFormatsData = {
 		tier: "LC",
 	},
 	diggersby: {
-<<<<<<< HEAD
-		randomBattleMoves: ["bodyslam", "earthquake", "swordsdance", "uturn", "wildcharge"],
-=======
 		randomBattleMoves: ["bodyslam", "earthquake", "firepunch", "quickattack", "swordsdance", "uturn"],
->>>>>>> upstream/master
 		tier: "UU",
 		doublesTier: "DOU",
 	},
@@ -8579,15 +8552,9 @@ let BattleFormatsData = {
 		tier: "LC",
 	},
 	toxtricity: {
-<<<<<<< HEAD
 		randomBattleMoves: ["boomburst", "overdrive", "sludgewave", "shiftgear", "voltswitch"],
 		tier: "UU",
 		doublesTier: "DOU",
-=======
-		randomBattleMoves: ["boomburst", "overdrive", "shiftgear", "sludgewave", "voltswitch"],
-		tier: "OU",
-		doublesTier: "New",
->>>>>>> upstream/master
 	},
 	toxtricitylowkey: {
 		randomBattleMoves: ["boomburst", "overdrive", "sludgewave", "voltswitch"],
@@ -8652,15 +8619,9 @@ let BattleFormatsData = {
 		tier: "NFE",
 	},
 	grimmsnarl: {
-<<<<<<< HEAD
 		randomBattleMoves: ["bulkup", "darkestlariat", "drainpunch", "playrough", "thunderwave", "taunt"],
 		tier: "RU",
 		doublesTier: "DOU",
-=======
-		randomBattleMoves: ["bulkup", "rest", "sleeptalk", "spiritbreak"],
-		tier: "OU",
-		doublesTier: "New",
->>>>>>> upstream/master
 	},
 	grimmsnarlgmax: {
 		randomBattleMoves: ["bulkup", "darkestlariat", "playrough", "substitute", "suckerpunch", "thunderwave", "trick"],
