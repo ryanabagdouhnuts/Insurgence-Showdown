@@ -4302,6 +4302,7 @@ golemdelta: {
 		color: "Green",
 		prevo: "poliwhirl",
 		evoType: "trade",
+		evoItem: "King's Rock",
 		eggGroups: ["Water 1"],
 		otherFormes: ["politoedmega"]
 	},
@@ -4583,6 +4584,7 @@ golemdelta: {
 		color: "Pink",
 		prevo: "slowpoke",
 		evoType: "trade",
+		evoItem: "King's Rock",
 		eggGroups: ["Monster", "Water 1"],
 	},
 	misdreavus: {
@@ -4752,6 +4754,7 @@ golemdelta: {
 		color: "Gray",
 		prevo: "onix",
 		evoType: "trade",
+		evoItem: "Metal Coat",
 		eggGroups: ["Mineral"],
 		otherFormes: ["steelixmega","steelixmegaf"],
 	},
@@ -4828,6 +4831,7 @@ golemdelta: {
 		color: "Red",
 		prevo: "scyther",
 		evoType: "trade",
+		evoItem: "Metal Coat",
 		eggGroups: ["Bug"],
 		otherFormes: ["scizormega"],
 	},
@@ -5181,6 +5185,7 @@ golemdelta: {
 		color: "Blue",
 		prevo: "seadra",
 		evoType: "trade",
+		evoItem: "Dragon Scale",
 		eggGroups: ["Water 1", "Dragon"],
 	},
 	phanpy: {
@@ -5231,6 +5236,7 @@ golemdelta: {
 		color: "Red",
 		prevo: "porygon",
 		evoType: "trade",
+		evoItem: "Up-Grade",
 		evos: ["porygonz"],
 		eggGroups: ["Mineral"],
 	},
@@ -7521,6 +7527,7 @@ roseliadelta: {
 		color: "Pink",
 		prevo: "feebas",
 		evoType: "trade",
+		evoItem: "Prism Scale",
 		eggGroups: ["Water 1", "Dragon"],
 		otherFormes: ["miloticmega"],
 	},
@@ -7927,6 +7934,7 @@ roseliadelta: {
 		color: "Blue",
 		prevo: "clamperl",
 		evoType: "trade",
+		evoItem: "Deep Sea Tooth",
 		eggGroups: ["Water 1"],
 		otherFormes: ["huntaildelta"]
 	},
@@ -7954,6 +7962,7 @@ roseliadelta: {
 		color: "Pink",
 		prevo: "clamperl",
 		evoType: "trade",
+		evoItem: "Deep Sea Scale",
 		eggGroups: ["Water 1"],
 		otherFormes: ["gorebyssdelta"]
 	},
@@ -9974,6 +9983,7 @@ roseradedelta: {
 		color: "Gray",
 		prevo: "rhydon",
 		evoType: "trade",
+		evoItem: "Protector",
 		eggGroups: ["Monster", "Field"],
 	},
 	tangrowth: {
@@ -10017,6 +10027,7 @@ roseradedelta: {
 		color: "Yellow",
 		prevo: "electabuzz",
 		evoType: "trade",
+		evoItem: "Electrizer",
 		eggGroups: ["Human-Like"],
 		otherFormes: ["electiviredelta"]
 	},
@@ -10046,6 +10057,7 @@ roseradedelta: {
 		color: "Red",
 		prevo: "magmar",
 		evoType: "trade",
+		evoItem: "Magmarizer",
 		eggGroups: ["Human-Like"],
 		otherFormes: ["magmortardelta"]
 	},
@@ -10178,6 +10190,7 @@ roseradedelta: {
 		color: "Red",
 		prevo: "porygon2",
 		evoType: "trade",
+		evoItem: "Dubious Disk",
 		eggGroups: ["Mineral"],
 	},
 	gallade: {
@@ -10260,6 +10273,7 @@ roseradedelta: {
 		color: "Black",
 		prevo: "dusclops",
 		evoType: "trade",
+		evoItem: "Reaper Cloth",
 		eggGroups: ["Amorphous"],
 	},
 	froslass: {
@@ -12713,6 +12727,7 @@ roseradedelta: {
 		color: "Gray",
 		prevo: "karrablast",
 		evoType: "trade",
+		evoCondition: "with a Shelmet",
 		eggGroups: ["Bug"],
 		otherFormes: ["escavalierdelta"]
 	},
@@ -13220,6 +13235,7 @@ roseradedelta: {
 		color: "Red",
 		prevo: "shelmet",
 		evoType: "trade",
+		evoCondition: "with a Karrablast",
 		eggGroups: ["Bug"],
 	},
 	stunfisk: {
@@ -14628,6 +14644,7 @@ roseradedelta: {
 		color: "Pink",
 		prevo: "spritzee",
 		evoType: "trade",
+		evoItem: "Sachet",
 		eggGroups: ["Fairy"],
 	},
 	swirlix: {
@@ -14653,6 +14670,7 @@ roseradedelta: {
 		color: "White",
 		prevo: "swirlix",
 		evoType: "trade",
+		evoItem: "Whipped Dream",
 		eggGroups: ["Fairy"],
 	},
 	inkay: {
