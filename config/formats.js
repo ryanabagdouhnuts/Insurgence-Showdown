@@ -16,7 +16,7 @@ let Formats = [
 		name: "[Gen 8] Custom OU",
 
 		mod: 'gen8',
-		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
+		ruleset: ['Obtainable', 'Standard ND', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Team Preview', 'Sleep Clause Mod'],
 		banlist: ['Uber', 'Power Construct', 'Shadow Tag', 'Baton Pass',
 			'Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Dialga', 'Genesect', 'Gengar-Mega', 'Giratina', 'Groudon',
 			'Ho-Oh', 'Kangaskhan-Mega', 'Kyogre', 'Kyurem-White', 'Landorus-Base', 'Lucario-Mega', 'Lugia', 'Lunala',
@@ -29,38 +29,38 @@ let Formats = [
 		name: "[Gen 8] Custom Ubers",
 
 		mod: 'gen8',
-		ruleset: ['Obtainable', 'Standard', 'Team Preview', '+Past', '+Unreleased', 'NatDex Rule', 'Dynamax Clause'],
+		ruleset: ['Obtainable', 'Standard ND', 'Team Preview'],
 		banlist: ['AG'],
 	},
 	{
 		name: "[Gen 8] Custom UU",
 		mod: 'gen8',
-		ruleset: ['[Gen 8] National Dex OU'],
+		ruleset: ['[Gen 8] Custom OU'],
 		banlist: ['OU', 'UUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
 		name: "[Gen 8] Custom RU",
 		mod: 'gen8',
-		ruleset: ['[Gen 8] National Dex OU'],
+		ruleset: ['[Gen 8] Custom OU'],
 		banlist: ['OU', 'UUBL','UU','RUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
 		name: "[Gen 8] Custom NU",
 		mod: 'gen8',
-		ruleset: ['[Gen 8] National Dex OU'],
+		ruleset: ['[Gen 8] Custom OU'],
 		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
 		name: "[Gen 8] Custom PU",
 		mod: 'gen8',
-		ruleset: ['[Gen 8] National Dex OU'],
+		ruleset: ['[Gen 8] Custom OU'],
 		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'NU', 'PUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
 		name: "[Gen 8] Custom LC",
 		mod: 'gen8',
 		maxLevel: 5,
-		ruleset: ['Obtainable', 'Little Cup', 'Standard', 'Team Preview', 'Dynamax Clause','+Past', 'NatDex Rule','+Unreleased'],
+		ruleset: ['Obtainable', 'Little Cup', 'Standard ND', 'Team Preview', 'Dynamax Clause','+Past', 'NatDex Rule','+Unreleased'],
 		banlist: ['Baton Pass', 'LC Uber', 'Gligar', 'Scyther'],
 	},
 	{
@@ -70,7 +70,7 @@ let Formats = [
 		],
 
 		mod: 'gen8',
-		ruleset: ['Obtainable', 'Team Preview', 'Nickname Clause', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', '+Past', '+Unreleased', 'NatDex Rule'],
+		ruleset: ['Obtainable', 'Standard ND', 'Team Preview'],
 		unbanlist: ['Melmetal', 'Meltan'],
 	},
 
