@@ -10,10 +10,10 @@ let Formats = [
 	///////////////////////////////////////////////////////////////////
 
 	{
-		section: "Custom Format",
+		section: "Delta Format",
 	},
 	{
-		name: "[Gen 8] Custom OU",
+		name: "National Dex Delta OU",
 
 		mod: 'gen8',
 		ruleset: ['Obtainable', 'Standard ND', 'OHKO Clause', 'Evasion Moves Clause', 'Species Clause', 'Team Preview', 'Sleep Clause Mod'],
@@ -26,45 +26,45 @@ let Formats = [
 		unbanlist: ['Melmetal', 'Meltan'],
 	},
 	{
-		name: "[Gen 8] Custom Ubers",
+		name: "National Dex Delta Ubers",
 
 		mod: 'gen8',
 		ruleset: ['Obtainable', 'Standard ND', 'Team Preview'],
 		banlist: ['AG'],
 	},
 	{
-		name: "[Gen 8] Custom UU",
+		name: "National Dex Delta UU",
 		mod: 'gen8',
 		ruleset: ['[Gen 8] Custom OU'],
 		banlist: ['OU', 'UUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
-		name: "[Gen 8] Custom RU",
+		name: "National Dex Delta RU",
 		mod: 'gen8',
 		ruleset: ['[Gen 8] Custom OU'],
 		banlist: ['OU', 'UUBL','UU','RUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
-		name: "[Gen 8] Custom NU",
+		name: "National Dex Delta NU",
 		mod: 'gen8',
 		ruleset: ['[Gen 8] Custom OU'],
 		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
-		name: "[Gen 8] Custom PU",
+		name: "National Dex Delta PU",
 		mod: 'gen8',
 		ruleset: ['[Gen 8] Custom OU'],
 		banlist: ['OU', 'UUBL', 'UU', 'RUBL', 'RU', 'NUBL', 'NU', 'PUBL', 'Kommonium Z', 'Mewnium Z'],
 	},
 	{
-		name: "[Gen 8] Custom LC",
+		name: "National Dex Delta LC",
 		mod: 'gen8',
 		maxLevel: 5,
 		ruleset: ['Obtainable', 'Little Cup', 'Standard ND', 'Team Preview', 'Dynamax Clause','+Past', 'NatDex Rule','+Unreleased'],
 		banlist: ['Baton Pass', 'LC Uber', 'Gligar', 'Scyther'],
 	},
 	{
-		name: "[Gen 8] Custom AG",
+		name: "National Dex Delta AG",
 		threads: [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3656779/">National Dex AG</a>`,
 		],
