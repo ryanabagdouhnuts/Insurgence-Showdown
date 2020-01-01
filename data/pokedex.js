@@ -13940,8 +13940,8 @@ roseradedelta: {
 	},
 	meloettadeltamagician: {
 		num: 648,
-		species: "Meloetta-Delta-Magician",
-		baseSpecies: "Meloetta-Delta-Mime",
+		species: "Meloetta-DeltaMagician",
+		baseSpecies: "Meloetta-DeltaMime",
 		forme: "Delta",
 		types: ["Dark","Fighting"],
 		gender: "N",
@@ -13952,7 +13952,7 @@ roseradedelta: {
 	},
 	meloettadeltamime: {
 		num: 648,
-		species: "Meloetta-Delta-Mime",
+		species: "Meloetta-DeltaMime",
 		baseSpecies: "Meloetta",
 		forme: "Delta",
 		types: ["Dark","Fairy"],
