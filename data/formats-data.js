@@ -4834,7 +4834,6 @@ let BattleFormatsData = {
 			{"generation": 7, "level": 15, "moves": ["swift", "wish", "healingwish", "rest"], "pokeball": "cherishball"},
 		],
 		eventOnly: true,
-		isUnreleased: true,
 		tier: "OU",
 	},
 	jirachimega: {
@@ -6081,7 +6080,6 @@ let BattleFormatsData = {
 		tier: "UU",
 	},
 	darumaka: {
-		isUnreleased: true,
 		tier: "LC",
 	},
 	darumakagalar: {
@@ -6099,7 +6097,6 @@ let BattleFormatsData = {
 		encounters: [
 			{"generation": 6, "level": 32, "maxEggMoves": 1},
 		],
-		isUnreleased: true,
 		tier: "UU",
 	},
 	darmanitandelta: {
@@ -6576,7 +6573,6 @@ let BattleFormatsData = {
 	},
 	stunfisk: {
 		randomBattleMoves: ["discharge", "earthpower", "foulplay", "scald", "stealthrock"],
-		isUnreleased: true,
 		tier: "PU",
 	},
 	stunfiskgalar: {
@@ -6770,7 +6766,6 @@ let BattleFormatsData = {
 			{"generation": 7, "level": 60, "shiny": 1, "moves": ["sacredsword", "swordsdance", "quickattack", "ironhead"]},
 		],
 		eventOnly: true,
-		isUnreleased: true,
 		tier: "UU",
 	},
 	terrakion: {
@@ -6783,7 +6778,6 @@ let BattleFormatsData = {
 			{"generation": 7, "level": 60, "shiny": 1, "moves": ["sacredsword", "swordsdance", "rockslide", "stoneedge"]},
 		],
 		eventOnly: true,
-		isUnreleased: true,
 		tier: "UU",
 	},
 	virizion: {
@@ -6796,7 +6790,6 @@ let BattleFormatsData = {
 			{"generation": 7, "level": 60, "shiny": 1, "moves": ["sacredsword", "swordsdance", "gigadrain", "leafblade"]},
 		],
 		eventOnly: true,
-		isUnreleased: true,
 		tier: "RU",
 	},
 	tornadus: {
