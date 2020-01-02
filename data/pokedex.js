@@ -3405,7 +3405,7 @@ golemdelta: {
 		baseStats: {hp: 160, atk: 110, def: 65, spa: 65, spd: 110, spe: 30},
 		abilities: {0: "Overcoat", 1: "Thick Fat", H: "Adaptability"},
 		weightkg: 460,
-		prevo: "munchlax",
+		prevo: "munchlaxdelta",
 		evoType: "levelFriendship",
 		eggGroups: ["Amorphous"],
 		canHatch: true,
