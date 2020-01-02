@@ -60,7 +60,7 @@ let Formats = [
 		name: "[Gen 8] National Dex Delta LC",
 		mod: 'gen8',
 		maxLevel: 5,
-		ruleset: ['Obtainable', 'Little Cup', 'Standard ND', 'Team Preview', 'Dynamax Clause','+Past', 'NatDex Rule','+Unreleased'],
+		ruleset: ['Obtainable', 'Little Cup', 'Standard ND', 'Team Preview', 'Dynamax Clause'],
 		banlist: ['Baton Pass', 'LC Uber', 'Gligar', 'Scyther'],
 	},
 	{
