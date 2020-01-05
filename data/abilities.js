@@ -3293,7 +3293,7 @@ let BattleAbilities = {
 		shortDesc: "Pokemon using a move without making contact with this Pokemon lose 1/8 of their max HP.",
 		onAfterDamageOrder: 1,
 		onAfterDamage(damage, target, source, move) {
-			if (source && source !== target && move !== move.flags['contact']) {
+			if (source && source !== target && move && !move.flags['contact']) {
 				this.damage(source.maxhp / 8, source, target);
 			}
 		},
